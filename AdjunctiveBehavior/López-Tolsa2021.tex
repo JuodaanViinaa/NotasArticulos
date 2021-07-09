@@ -1,0 +1,106 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage{anysize}
+\usepackage{graphicx}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+
+\title{Assessment of the ``timing'' function of schedule induced behavior on fixed interval performance}
+\author{Gabriela E. López-Tolsa \and Ricardo Pellón}
+\date{2021}
+
+\begin{document}
+{\scshape\bfseries \maketitle}
+
+La conducta inducida por el programa (antes conocida como {\itshape adjuntiva}) se desarrolla en el intervalo entre reforzadores de los programas intermitentes sin ser reforzada explícitamente. Dos hipótesis sobre su origen en los mismos términos que aquellos de conductas operantes prevalecen: reforzamiento o inducción.
+
+Pellón y col. concluyeron que se trata de respuestas operantes mantenidas individualmente por reforzamiento retrasado o como parte de un patrón conductual reforzado en conjunto y repetido en cada intervalo entre reforzamiento. 
+
+Baum señala que todas las conductas son inducidas por su correlación con eventos filogenéticamente importantes (PIE, reforzadores). Tras varias presentaciones de una conducta con un PIE la tasa de ocurrencia de esa conducta incrementa en presencia del PIE específico.
+
+Aunque parecen opuestas, ambas explicaciones tienen en común que (1) la contingencia no es vista como una relación de causa-efecto, sino como la ocurrencia contigua de conducta y PIE, (2) el reforzamiento inmediato no es necesario para la adquisición, (3) presentaciones repetidas de PIEs incrementan la ocurrencia de ciertas conductas y decrementan la de otras, y (4) no distinguen entre tipos de conducta (operante/adjuntiva).
+
+Aun si se tratase de procesos distintos, ambos parecen tener un papel en el mantenimiento de la conducta: se ha encontrado que la polidipsia puede inducirse pero también reforzarse por sus consecuencias.
+
+Una vez que un patrón específico de conducta se desarrolla durante el intervalo entre reforzamiento tiende a ocurrir de forma semi-invariante si las condiciones ambientales permanecen constantes.
+
+Con base en el desarrollo de estos patrones, Killeen y Fetterman propusieron la teoría conductual de timing (BET), que indica que la habilidad del timing depende de una progresión natural entre clases de conducta inducida por el programa que funcionan como estímulos discriminativos del momento temporal en el que suelen ocurrir. Se podría argumentar que el timing es la habilidad de un organismo para usar secuencias de estímulos o respuestas en el ambiente para ejecutar apropiadamente en una situación temporalmente controlada.
+
+Con base en esta teoría Machado desarrolló el modelo {\itshape learning to time} (LeT), que indica que se activan estados conductuales asociados en diferentes grados con la respuesta operante. Los estados que ocurren más cerca de la respuesta tienen una asociación más fuerte y ejercen más control sobre ella, con lo que se vuelven estímulos discriminativos de ella.
+
+Se ha buscado estudiar el efecto de la conducta inducida por el programa en tareas temporales. Se ha observado que al permitir la bebida inducida, mayor cantidad de conductas inducidas lleva a más reforzadores ganados. Y si la conducta inducida es prevenida o interrumpida, la ejecución en DRL es menos precisa (las ratas respondían antes de tiempo y no ganaban tantos reforzadores).
+
+Se ha encontrado evidencia que indica que las conductas inducidas no ocurren en la misma cantidad en todos los intervalos, por lo que probablemente no medien el timing. Por otro lado, Machado y Keen encontraron que palomas en una tarea temporal desarrollaron patrones conductuales consistentes entre ensayos y correlacionados con sus elecciones. {\itshape Concluyeron que las conductas que ocurren en el intervalo entre reforzamiento son el reloj conductual, y no solo una representación de un reloj interno}. En un estudio con igualación a la muestra demorada, pericos desarrollaron patrones regulares de conducta durante las demoras, y tendieron a elegir después con base en la conducta que estaban realizando y no con ase en el estímulo presentado al comienzo del intervalo.
+
+Así, los patrones conductuales durante el intervalo pueden impactar la ejecución en tareas basadas en tiempo, pero el impacto suele ser visto accidentalmente y no probado directamente. Para hacerlo tendría que compararse la ejecución de organismos que tienen disponible la oportunidad de desarrollar conducta inducida con la ejecución de organismos que no.
+
+Este estudio pretende evaluar el efecto de la bebida inducida (SID) en la ejecución de ratas en programas de intervalo fijo. Programas FI se usan para estudiar el ajuste de los organismos a las regularidades temporales.
+
+Se ha encontrado que la adquisición del patrón de respuesta de festón se facilita cuando los organismos tienen experiencia previa en programas con regularidades temporales, y que las palomas que responden en programas concurrentes desarrollan patrones de respuesta que mejoran su desempeño en timing. Esto puede indicar que la bebida inducida pasará a formar parte de los patrones que permiten a los organismos adaptarse a las regularidades del ambiente.
+
+Dado que la bebida inducida suele ocurrir en los primeros 10-20 segundos del intervalo, sus efectos en la precisión de la ejecución deberían ser dependientes de la longitud del FI. Se escogieron valores de FI de 15, 30 y 60s, de modo que la bebida inducida ocurriría en todo el intervalo, en aproximadamente la mitad, o en el primer cuarto.
+
+{\scshape\bfseries Method}
+
+Se usaron 44 ratas. Las cajas experimentales tenían un comedero, dos palancas (solo una utilizada), luz general, y dispensador de agua. El contacto entre la lengua del sujeto y el bebedero era registrado electrónicamente.
+
+Los sujetos fueron divididos en seis grupos con bade en dos variables: disponibilidad de agua y valor del programa FI.
+
+Las ratas fueron expuestas a programas FI 15, 30 y 60 por 30 sesiones cada uno. Cada sesión duró 60 ensayos.
+
+Se registraron presiones a la palanca y lamidas y se calcularon tasas de respuesta. Se computaron dos medidas comunes de timing: pausa post-reforzamiento (PRP, tiempo desde el inicio del ensayo [entrega de comida del ensayo anterior] hasta la primera respuesta) y {\itshape breakpoint} (BP, tiempo en el que la tasa de respuesta en un intervalo pasa de baja a alta). Tiempos entre respuesta mayores indican mejor ajuste al programa FI. {\itshape Breakpoints} que ocurren más tarde en el intervalo indican un mejor ajuste al programa. También se calculó el pico de lamidas como el {\itshape bin} de un segundo en el que se observó la mayor tasa de lamidas.
+
+Se analizaron los datos de las últimas 5 sesiones con modelos lineales de efectos mixtos Bayesianos (BLMMs). Los modelos lineales mixtos se aconsejan dado que toman en cuenta la variación intra y entre sujetos, lidian adecuadamente con datos anidados o desbalanceados, o disminuyen la probabilidad de errores de tipo 1. Además, la aproximación Bayesiana enfatiza la evidencia sobre las decisiones y la construcción sobre el conocimiento de estudios previos.
+
+También se realizaron correlaciones de Pearson Bayesianas para comparar la pausa post-reforzamiento con el tiempo de la última lamida. 
+
+{\scshape\bfseries Results}
+
+Las lamidas comenzaron en la primera parte del intervalo para los grupos con agua, y la presión a la palanca comenzó cuando terminaron las lamidas. Para el grupo W15 las lamidas no llegaron nunca a cero durante el intervalo entre reforzamiento. El pico de lamidas ocurrió más tarde cuanto más grande era el valor del FI: 6.73, 8.9, y 11.93 segundos. Hubo evidencia convincente de que el pico era una función del FI. Además, las lamidas duraron más tiempo cuanto mayor fue el FI. 
+
+El patrón de festón fue visible para todos los grupos. Los sujetos NW15 y NW30 tuvieron una pendiente más empinada en su registro acumulativo que sus contrapartes W, pero para FI 60 ocurrió lo contrario.
+
+Las pausas post-reforzamiento eran mayores con valores de FI más grandes, y fueron mayores para los grupos W que para NW en los tres valores de IF. PRP era una función del valor de FI. También hubo evidencia que indicó que las PRP eran mayores para los grupos de FI30 y FI60 que para FI15. 
+
+El {\itshape breakpoint} aumentó con incrementos de FI, y ocurrió aproximadamente a los dos tercios del intervalo total. BP pareció ser función del grupo y el valor de FI, pero no hubo suficiente evidencia para indicar que era menor para NW que para W.
+
+Para investigar la relación entre la bebida inducida y la presión a las palancas se calculó el tiempo de la última lamida de cada ensayo. El BLMM de mejor ajuste indicó que el tiempo de la última lamida era una función del valor de FI. Se realizaron correlaciones de Pearson entre el tiempo de la última lamida y la PRP. Casi todos los sujetos mostraron correlaciones positivas, pero la fuerza de la correlación disminuyó según incrementó el valor de FI. 
+
+{\scshape\bfseries Discussion}
+
+La tasa de presión a las palancas fue similar, pero levemente mayor para los grupos NW. La tasa de lamidas fue mayor para W15 que para los otros grupos W, quizá porque ese FI tenía la mayor frecuencia de reforzamiento.
+
+Las PRP fueron mayores para los grupos W que para NW, y la diferencia fue mayor entre los grupos FI15 que entre los demás.
+
+Los {\itshape breakpoints} ocurrieron levemente antes para los grupos NW, pero no hubo evidencia suficiente para determinar que la diferencia es mayor que cero. Aunque en el caso de W15 solo se calcularon los {\itshape breakpoints} para la mitad de los ensayos dado que en el resto ocurrieron menos de 4 presiones a la palanca (el mínimo necesario para el cálculo). Parece ser que la presión a las palancas compite con la bebida inducida, como indica la correlación entre la última lamida y el PRP para el grupo W15, en lugar de por un proceso de timing.
+
+Los resultados de PRP y BP apoyan la hipótesis de patrones conductuales de Killeen y Fetterman: las ratas pasan de un estado de conducta (beber) a otro (presionar), y los PRP reflejan el cambio de bebida inducida a presión de palanca.
+
+Las distribuciones de presiones y de lamidas fueron distintas: la de presiones mostraron la propiedad escalar, mientras que la distribución de lamidas fue similar entre los grupos. Sin embargo, un análisis cuidadoso muestra que las lamidas duraron más especialmente en el FI más largo, lo que indica que la duración del intervalo afectó de alguna forma a la bebida inducida, pero no de manera escalar como a las presiones.
+
+El modelo LeT asume que el mismo número de estados se repite en intervalos de distintas longitudes, de modo que según cambia el tiempo de ocurrencia de la última conducta también cambiará cuál de los estados conductuales previos está activo. Así, la activación de estados conductuales también debería manifestar la propiedad escalar. Pero este estudio parece ir contra esa hipótesis.
+
+Un argumento contra la noción de que las conductas inducidas son iguales a las operantes es su localización temporal en la parte temprana del intervalo entre reforzamiento. Pero quizá más que su localización lo que debería ser importante puede ser la interacción con otras conductas, donde el final de una respuesta puede llevar al inicio de la siguiente en el patrón conductual.
+
+Un estudio previo con jerbos indicó que las conductas inducidas no median el timing, pero este estudio muestra que aun si las lamidas no ocurrían en el mismo momento en todos los intervalos, eran consistentemente seguidas por presiones de palanca, y en algunos casos las presiones eran moduladas por el fin de la bebida.
+
+La razón por la que las ratas solo beben en los primeros 10-20 segundos del intervalo podría ser que solo pueden beber una cantidad limitada por entrega de comida, o que el efecto de la conducta inducida en el timing puede depender del tipo de conducta inducida que los sujetos tienen la oportunidad de realizar. Por ejemplo, el ejercicio en rueda inducido puede durar más de 60 segundos por intervalo, y su desarrollo quizá afectaría a programas de FI más largos.
+
+Estos datos indican que las conductas inducidas influyen los patrones conductuales que los organismos desarrollan, pero no afectan directamente a las medidas de timing cuantitativas. ¿Qué se mide entonces al hablar de estimación temporal?
+
+Se ha propuesto que las conductas inducidas no median el timing, sino dos procesos distintos: uno de estimación temporal con un contador y un segundo proceso con un mecanismo de {\itshape arousal} que relaciona la actividad con la tasa de reforzamiento. Pero el primer proceso podría no ocurrir o ser distinto. Sin embargo, los datos de este estudio indican que algunas conductas se ajustan a la propiedad escalar y otras no, por lo que podría haber un segundo proceso además de la inducción.
+
+En este estudio la entrega de reforzamiento dependía de la emisión de una presión a la palanca en un momento específico, de modo que esa respuesta debió ser más estrictamente controlada por la entrega. Otras conductas no tenían una contingencia explícita entre respuesta y reforzador, de modo que no están forzadas a ocurrir en un momento específico y no necesariamente mostrarán la propiedad escalar. Esta proposición puede probarse imponiendo una contingencia respuesta reforzador en otras respuestas, como en la bebida. En ese caso quizá la bebida mostraría la propiedad escalar también.
+
+Estos datos no apoyan la idea de que el desarrollo de bebida inducida tiene un efecto directo en el timing, pero muestra cómo la competencia entre conductas en ocasiones ejerce mayor control que el timing en el momento en que ocurre una operante. 
+
+Aunque no se asumen que el propósito de las conductas inducidas es ayudar al timing, la dependencia secuencial en los patrones conductuales puede volverse una propiedad discriminativa que determina la ejecución en tareas temporales.
+
+Un entendimiento del aprendizaje temporal requiere un análisis de la conducta que mire más de cerca a los animales comportándose en un continuo, dando oportunidad para que el reforzamiento actúe en un repertorio conductual más amplio.
+
+{\itshape El timing parece consistir en la organización conductual de la conducta que lleva a que una conducta específica ocurra en un momento específico. Los organismos siempre se comportan, el ambiente provee oportunidades para que algunas conductas sean inducidas, y el programa de reforzamiento moldea su distribución.}
+
+
+\end{document}
