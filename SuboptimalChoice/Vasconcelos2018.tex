@@ -1,0 +1,78 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{anysize}
+\usepackage[makeroom]{cancel}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+\title{Ultimate Explanations and Suboptimal Choice}
+\author{Marco Vasconcelos, Armando Machado,\\*Josefa N. S. Pandeirada}
+\date{2018}
+
+\begin{document}
+
+{\scshape\bfseries \maketitle}
+
+La explicación de la conducta requiere tanto de mecanismos (explicaciones proximales, el `cómo') como de funciones evolutivas (explicaciones finales, el `por qué').
+
+La adecuación inclusiva ({\itshape inclusive fitness}) parece ser la moneda de cambio que la selección natural maximiza, su {\slshape maximando}. Una explicación final debe decir cómo una conducta particular contribuye a esa maximización. Aunque la adecuación es difícil de medir, se pueden medir correlatos, como la tasa de ganancia energética por unidad de tiempo, o la eficiencia (ganancia energética por unidad de energía usada).
+
+Si la toma de decisiones fue esculpida por la selección natural, uno podría esperar ingenuamente que la mayoría, si no toda, de la conducta esté bien ajustada a las demandas ambientales. Sin embargo, la evidencia de conducta `irracional' se acumula. Esta contradicción puede aminorarse pensando en que los mecanismos de elección tienen dos limitaciones al menos: (1) no fueron construidos por la selección natural desde cero, sino que se construyeron sobre aquello que ya había en un proceso elaborativo, de modo que están muy limitados en la optimalidad que pueden alcanzar. Y (2), la conducta ``irracional'' puede provenir de mecanismos adaptativos que están en un contexto que no refleja las características del ambiente en el que el organismo se desarrolló.
+
+{\scshape\bfseries Elección subóptima}
+
+Aunque el fallo de los animales para maximizar la ingesta de comida es incuestionable, el signifiado de ese fallo no esta claro. Algunos lo ven como una violación de los principios de la teoría de forrajeo óptimo, quizá porque {\bfseries piensan que de acuerdo con ella, los animales deberían escoger de forma racional u óptima en toda circunstancia}. Esta presunción malinterpreta todo el marco de referencia de la teoría, y quizá venga de la premisa errónea de que los animales deben computar los óptimos para actuar. Si así fuese, una breve revisión podría falsear la teoría completa, porque los animales a menudo fallan en maximizar: en autocontrol (descuento temporal) y en igualación (Herrnstein, 1961) hay desviaciones de la maximización en una variedad de preparaciones. 
+
+En cambio, estas preferencias subóptimas deberían verse como herramientas para entender la significancia adaptativa de los mecanismos que generan las preferencias. Se asume que la selección natural es el agente optimizador (no los organismos), así que los mecanismos presentes actualmente deben ser aquellos que se desempeñaron mejor que los demás en el pasado. Así, en promedio, deberían ser adaptativos. Para reconciliar esto con las preferencias irracionales observadas, hay que tomar en cuenta la características estadísticas del ambiente y los mecanismos bien establecidos que ya sabemos que los animales poseen.
+
+{\scshape\bfseries Un modelo funcional}
+
+Según la teoría de forreajeo óptimo clásica, los mecanismos conductuales evolucionados deberían maximizar la tasa de ganancias por tiempo (correlato de la adecuación). Es decir, deben minimizar la {\slshape oportunidad perdida}, porque el tiempo usado en una alternativa no se puede usar en otras. Consideremos la ecuación 
+$$R_i = \frac{p_i}{s+p_i\times(t+h)+(1-p_i)\times t}$$
+en la que un animal encuentra una presa $i$ tras $s$ segundos, la persigue por $t$ segundos, y la atrapa y consume con probabilidad $p$ y tiempo de manejo $h$; o bien, ésta escapa con probabilidad $1-p$. En elección subóptima $p_i$ sería la probabilidad de reforzamiento de una alternativa, $s$ es el ITI, $t$ es la duración de los TL, y $h$ es el tiempo de consumo. Dado que $p_i$ es más alto para la opción no informativa, se predice preferencia por ella, pero en realidad los animales escogen la informativa.
+
+En circunstancias naturales, un animal no se quedaría esperando la no-recompensa, sino que comenzaría una nueva búsqueda. En el laboratorio se le impone un período de espera en presencia de $S^-$, pero la selección natural esculpió sus mecanismos para usar la información sobre no-recompensa para redirigir sus esfuerzos. La ecuación presupone que los animales pagan el costo de oportunidad en presencia de $S^-$, pero los autores proponen que más bien se {\slshape desinvolucran} de éste, como harían en su entorno natural. En ausencia de las presiones necesarias, los mecanismos no evolucionaron para tomar en cuenta $S^-$.
+
+Otra diferencia entre la tarea del laboratorio y la natural está en el ITI. En el entorno natural, los animales experimentan el tiempo de búsqueda solo tras comenzar a buscar. En el laboratorio éste comienza automáticamente {\slshape antes} del ensayo. Se ha mostrado que así, no se le asigna el crédito del ITI a ninguna opción. En la naturaleza no hay demora entre la comida y la siguiente oportunidad de forrajeo, sino que ésta se puede comenzar de inmediato.
+
+Considerando las restricciones ligadas a ITI y el tiempo pasado en presencia de $S^-$, y asumiendo que $h=1$, la tasa de recompensa de la alternativa informativa sería 
+$$R_{Info}=\frac{p_{info}}{\cancel{s+}p_{info}\times(t+1)\cancel{+(1-p_{info})\times t}}=\frac{p_{info}}{p_{info}\times(t+1)}=\frac{1}{t+1}$$
+
+donde $p_{info}$ es la probabilidad de recompensa de la alternativa informativa. Ni el ITI ni el tiempo pasado e presencia de $S^-$ están presentes. El animal percibe la alternativa como si siempre resultase en $S^+$. Para la alternativa no informativa se excluye también ITI, pero dado que la comida no está anunciada confiablemente, ambas duraciones de TL son consideradas, es decir
+$$R_{Non-info}=\frac{p_{non-info}}{\cancel{s+}p_{non-info}\times(t+1)+(1-p_{non-info})\times t}=\frac{1}{\frac{t}{p_{non-info}}+1}$$
+donde $p_{non-info}$ es la probabilidad de recompensa de la alternativa no informativa. Con estas ecuaciones ajustadas, la tasa de la alternativa informativa es mayor que la de la no-informativa (0.09 vs 0.05 reforzadores por segundo).
+
+Esta explicación fue hecha en reversa: primero se identificó un resultado desconcertante, luego se consideraron las posibles desigualdades entre el ambiente natural y el del laboratorio, y finalmetne se propuso cómo el resultado podría emerger de mecanismos del mundo real operando en condiciones artificiales. Esto es especulativo, así que se debe probar el modelo con datos reales y tratar de hacer predicciones.
+
+Las presunciones principales del modelo que se deben probar son: 
+\begin{itemize}
+	\item 1 Los animales aprenden las propiedades señalizadoras de cada estímulo.
+	\item 2 Los animales se ``desinvolucran'' de $S^-$ pero no de otros estímulos.
+\end{itemize}
+
+Estas dos presunciones fueron probadas por Vasconcelos (2015), experimento 2, grupo control. Los animales respondían en presencia de $S^+$ y $S^\pm$, pero no de $S^-$. La segunda, más específicamente, fue probada por Fortes y col. (2017), experimento 2. Registrando la localización de los sujetos en la caja operante encontraron que al presentarse $S^-$, se alejaban de la tecla de respuesta, a diferencia de al presentarse cualquier otro estímulo. Prueba adicional está en las respuestas de escape emitidas exclusivamente ante $S^-$.
+
+Con base en este modelo se pueden hacer ciertas predicciones:
+\begin{itemize}
+	\item 3 La preferencia por la opción informativa no debe depender de su probabilidad de reforzamiento, en tanto que $p_{non-info} <1$.
+	\item 4 La preferencia por la opción informativa no debe depender de la duración de $S^-$, pues la selección natural ha hecho que los animales lo ignoren.
+	\item 5 El tiempo bajo incertidumbre es importante: si la opción informativa no elimina inmediatamente la incertidumbre, los animales no tendrían motivo para desinvolucrarse de $S^-$ y el tiempo bajo incertidumbre se debería incluir en los cálculos. Si el momento en que se entrega la información se retrasa en $t$ segundos (igualando la incertidumbre entre opciones, pero manteniendo la predictabilidad), la preferencia debería seguir las probabilidades objetivas de reforzamiento.
+\end{itemize}
+
+La predicción 3 fue probada en palomas y starlings (Fortes 2016, Vasconcelos 2015). Ambas especies continuaron eligiendo la alternativa informativa aun cuando $p_{info}$ fue reducida hasta .05, revirtiendo su preferencia solo cuando $p_{info}=0$.
+
+La predicción 4 fue probada por Fortes (2016), quienes incrementaron la duración de $S^-$ de acuerdo con las elecciones de los sujetos, y llegaron a valores tan altos como 210 segundos con preferencia sostenida por la alternativa informativa. Con una duración de 200 segundos en $S^-$, la alternativa no informativa es objetivamente 35 veces mejor. Sin embargo, el modelo predice que la duración es inconsecuente, y la evidencia confirmó esta predicción.
+
+La predicción 5 fue probada por Vasconcelos (2015) igualando la duración de la incertidumbre entre opciones moviendo la demora de 10s del eslabón terminal al eslabón inicial de la alternativa informativa, de modo que la duración del ensayo y la predictabilidad permanecieron sin cambios, pero la duración de la incertidumbre era ahora aproximadamente igual entre alternativas. Como se esperaba, la preferencia por la alternativa informativa declinó con el procedimiento modificado.
+
+{\scshape\bfseries Conclusiones}
+
+Las ``fallas'' al maximizar, en lugar de ser evidencia en contra del valor adaptativo de la conducta, son herramientas para evaluar la significancia adaptativa de los mecanismos conductuales evolucionados.
+
+Las explicaciones finales no presuponen que la conducta es ópitma en todas las circunstancias. Dada la complejidad en los ambientes, la selección natural no dotó a los organismos con mecanismos específicos para cada circunstancia particular, sino con mecanismos generales ajustados a su ecología típica que se desempeñan bien en promedio. Sin embargo, en circunstancias atípicas estos mecanismos que usualmente funcionan resultarán en conducta desadaptativa.
+
+Los autores mostraron cómo una aproximación de optimalidad informada por mecanismos evolucionados conocidos puede no solo explicar las preferencias subóptimas, sino generar predicciones contraintuitivas que resultan correctas. La misma aproximación ha resultado útil en otros problemas, como elección intertemporal, forrajeo sensible al riesgo, e incluso el juego entre procesos de timing y forrajeo.
+
+Las violaciones a los principios de la racionalidad no indican que éstos sean normativamente inadecuados. Solo nos recuerdan que para explicar cómo los mecanismos que subyacen a esas desviaciones evolucionaron, debemos considerar el valor adaptativo de los mecanismos en la ecología característica del animal. Los mecanismos existentes llevan la huella de las presiones selectivas de dicha ecología.
+
+\end{document}
