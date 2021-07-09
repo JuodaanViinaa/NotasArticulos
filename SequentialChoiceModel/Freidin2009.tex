@@ -1,0 +1,81 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{anysize}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+%\usepackage[colorlinks, citecolor=blue]{hyperref}
+%\renewcommand{\refname}{Referencias}
+%\usepackage[backend=biber,style=apa]{biblatex}
+%\addbibresource{library.bib}
+
+\title{Sequential and Simultaneous Choices: Testing the Diet Selection and Sequential Choice Models}
+\author{Esteban Freidin, Justine Aw, Alex Kacelnik}
+\date{2009}
+
+\begin{document}
+{\scshape\bfseries\maketitle}
+
+Se basan en los resultados de Shapiro (2008), quienes proponen que la preferencia en ensayos simultáneos se puede predecir con la latencia en ensayos individuales. El modelo SCM proporciona un enlace entre los paradigmas teóricos de elecciones secuenciales y simultáneas. SCM lleva a preferencias parciales por la alternativa más rica en grados distintos dependiendo de la riqueza relativa del ambiente. Esto a menudo choca con la maximización.
+
+De acuedo con Charnov (1976), los animales deberían tener en cuenta (1) la redituabilidad ({\slshape profitability}) de una presa (la tasa entre su aporte energético y el tiempo de manejo) y (2) su costo de oportunidad (la tasa de aporte energético del ambiente completo multiplicado por el tiempo de manejo) para maximizar sus beneficios.
+
+La redituabilidad de Chernov, a veces traducida en la tasa entre el reforzamiento obtenido y la demora entre la respuesta y el consumo, toma un papel importante en los modelos de elección de la tradición del análisis de la conducta. La latencia de un animal para aceptar una alternativa podría ser correlato de su disposición para consumir una presa en un entorno natural.
+
+{\scshape El Experimento}
+
+Cada ensayo consistía en una fase de búsqueda tras la cual se podía encontrar uno de tres estímulos. Dos de ellos (A y B) estaban relacionados con distintas demoras de refozamiento. El tercero (R) era una tecla de rechazo que llevaba al inicio del ensayo siguiente. Los sujetos desarrollaron latencias particulares a cada estímulo. Después, comenzaron a presentarlos en pares (A vs R, B vs R, y A vs B), donde los dos primeros pares representan encuentros secuenciales (los sujetos eligen aceptar o rechazar A o B) y el tercero representa encuentros simultáneos. La demora de A se mantuvo en 1s, y la de B se varió de 4 a 24s (4, 8, 12, 16.8 y 24s). Los valores de B se tomaron con referencia al modelo de Charnov que compara a un generalista (que siempre acepta A o B sobre R) con un especialista (que escoge A sobre R pero R sobre B). Dadas las demoras particulares, se encontraría maximización al escoger siempre A sobre B o R, B sobre R cuando su demora sea de 4 u 8 segundos, y R sobre B cuando su demora sea de 16.8 o 24 segundos.
+
+{\scshape Fase de entrenamiento}\\*
+Cada tratamiento duró solamente un día (tres sesiones) por cada demora de B. Una respuesta en una tecla central parpadeante la encendía de forma continua y activaba una fase de búsqueda con una media de 5.5 segundos. Una nueva respuesta la apagaba y encendía una tecla lateral con uno solo de los tres estímulos posibles. Si se presionaba la tecla R, se apagaban las luces presentes y comenzaba el siguiente ensayo con la tecla central iluminada.
+
+{\scshape Fase de Elección}\\*
+Había ensayos secuenciales (A vs R o B vs R) y simultáneos (A vs B). Responder en R llevaba al inicio inmediato del siguiente ensayo (sin IEE).
+
+{\scshape Resultados}
+
+Las latencias para responder a A y R fueron relativamente estables durante el entrenamiento, pero las latencias a B aumentaron conforme aumentó la demora de reforzamiento. La elección de la alternativa A sobre B fue siempre superior al 90\%. En las elecciones simultáneas, hubo diferencias en preferencias entre el tratamiento 1 y los tratamientos 4 y 5.\\*
+De acuerdo con la lógica de la maximización, la opción más rica no debería rechazarse nunca. En la práctica, la preferencia de A sobre R fue casi absoluta e inalterada a pesar del tratamiento. Por el contrario, sí hubo rechazos de B que incrementaron con los aumentos en su demora.
+
+Se comparan las predicciones de tres modelos: rate-maximizing classic diet-choice model (que predecía una estrategia generalista en los tratamientos 1 y 2, neutralidad para 3, y una estrategia especialista en 4 y 5); modified diet-choice model (que incluye las latencias en sus cálculos, y predecía generalista en 1-4 y especialista en 5), y sequential choice model (que predecía lo mismo dado que las latencias de R fueron menores que las de B solo en el tratamiento 5). Los datos apoyaron a el modified diet-choice model y al SCM.
+
+El modelo clásico es como sigue: se imagina un forrajeador que se encuentra una presa en promedio cada $VT$ segundos. Los tipos de presa $A$ y $B$ se encuentran con probabilidades $p_A$ y $1-p_A$. La presa $A$ entraga $amt_A$ unidades de comida tras una demora $delay_A$, y $B$ hace lo mismo. La tasa de ganancias de un generalista que acepta siempre $A$ o $B$ está dada por
+$$generalist\ rate=\frac{(p_A\times amt_A)+[(1-p_A)amt_B]}{(p_A\times delay_A)+[\{(1-p_A)delay_B\}+VT]}$$
+En contraste, la tasa de ganancia de un especialista que rechaza $B$ siempre sería 
+$$specialist\ rate=\frac{p_A\times amt_A}{(p_A\times delay_A)+VT}$$
+
+Con esas dos ecuaciones se puede determinar en qué casos una estraegia sería superior a otra. En este caso en particular $amt_A=amt_B$, $p_A=p_B=0{.}5$, $VT=5{.}5$, $delay_A=1s$, y $delay_B$ varía entre tratamientos.
+
+Sin embargo, se ha postulado que estas ecuaciones son poco relistas debido a que asumen que el especialista no paga ningún costo temporal por rechazar una opción. Al incorporar las latencias de respuesta además de las demoras, la estrategia generalista estaría definida por
+$$=\frac{(p_A\times amt_A)+[(1-p_A)amt_B]}{(p_A\times dObs_A)+[\{(1-p_A)dObs_B\}+VT}$$ donde $dObs$ es la suma de latencia más demora.
+
+En contraste, la estategia especialista estaría dada por
+$$=\frac{p_A\times amt_A}{(p_A\times dObs_A)+(1-p_A)LatR+VT}$$
+
+Estas ecuaciones componen el modelo modificado.
+\\
+
+Debía postularse cómo se relacionan las latencias con el grado de las preferencias. Como predictor de la magnitud de la preferencia, usan el valor relativo de latencias a R y B $$RelLat_{R,B}=\frac{latencia\ para\ B}{latencia\ para\ B + latencia\ para\ R}$$ de la última sesión de entrenamiento. Nótese que latencias a B más largas llevan a más elecciones predichas por R.
+
+{\scshape Discusión}
+
+Los resultados indican que el modelo clásico de maximización predecía una tendencia correcta en los datos, pero sugería un paso a una estrategia especialista más temprano de lo observado. Al incluir detalles de la conducta observada, como las latencias, en este caso, las predicciones se hacen más acertadas. Esto se debió a que los animales se tardaban más tiempo en picar el estímulo R que el estímulo de baja recompensa, de modo que el costo de rechazar y volver a la búsqueda es mayor que el de un animal ideal sin tiempos de reacción. Es decir, el modelo clásico sobreestima las ganancias al desestimar los costos temporales. 
+
+Igual que Shapiro (2008), encontraron que cada estímulo provocaba una latencia distinta que podía predecir las elecciones simultáneas posteriores. Así, el modelo de elección secuencial provee un mecanismo para las elecciones de maximización de tasa.
+
+El mecanismo que gobierna las latencias aún debe investigarse. En este caso, los sujetos aprendieron a responder a estímulos arbitrarios, lo que podría explicarse mediante procesos de condicionamiento clásico, como el modelo de Rescorla y Wagner, si es que se incorpora una regla que relacione la fuerza asociativa con las respuestas.
+
+La selección natural descarta mecanismos de aprendizaje o de estado estable que no se aproximen a la optimalidad propuesta usando modelos de optimalidad. Las visiones funcionales y mecanísticas de la conducta deben ir de la mano.
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
