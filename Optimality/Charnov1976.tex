@@ -1,0 +1,103 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage{anysize}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+
+\title{Optimal Foraging, the Marginal Value Theorem}
+\author{Eric L. Charnov}
+\date{1976}
+
+\begin{document}
+{\scshape\bfseries \maketitle}
+
+Este artículo desarrolla un modelo sobre el uso de un ambiente distribuido en parches por un depredador óptimo.
+
+La comida se encuentra en cúmulos o parches. El depredador encuentra la comida dentro de un parche, pero gasta tiempo para viajar entre parches. El depredador debe tomar decisiones sobre cuál parche debe visitar y cuándo abandonar el actual. Es ese segundo problema el enfoque del artículo.
+
+Mientras el organismo está en un parche, la tasa de ingesta para él decrece con el tiempo. El depredador deprime la disponibilidad de la comida para sí mismo de modo que la cantidad de comida ganada por un tiempo $T$ en el parche del tipo $i$ es $h_i(T)$, y la función de ganancia de comida es asintótica. Aunque no es necesario que la primera derivada de $h_i(T)$ decremente para  toda $T$, la discusión se limitará a ese caso.
+
+El modelo es determinista, aunque predicciones cualitativamente similares se pueden derivar de un modelo estocástico correspondiente que considera al forrajeo como un proceso de renovación acumulativa. 
+
+Si el ambiente se forma de varios tipos de parches, éstos se distribuyen al azar, y muchos de los parches se visitan una sola vez en una sesión de forrajeo. Un tipo de parche se asocia con una curva $h_i(T)$ particular. Además, se presume que el depredador toma decisiones para maximizar la tasa neta de energía ingerida durante una sesión de forrajeo.
+
+{\itshape The patch use model}
+
+Se define lo siguiente:
+\begin{itemize}
+	\item $P_i$ = proporción de los parches visitados que son del tipo $i$.
+	\item $E_T$ =  costo energético por unidad de tiempo al viajar entre parches.
+	\item $E_{si}$ = costo energético por unidad de tiempo mientras se busca dentro del parche tipo $i$.
+	\item $h_i(T)$ = energía asimilada por cazar por $T$ unidades de tiempo en un parche del tipo $i$ menos los costos energéticos (excepto por el costo de búsqueda).
+	\item $g_i(T) = h_i(T) - E_{si} \cdot T$ = energía asimilada corregida para el costo de búsqueda.
+\end{itemize}
+
+El tiempo en que un depredador usa un solo parche es el tiempo de viaje entre parches ($t$) más el tiempo dentro del parche. $T_u$ es el tiempo promedio para usar un parche.
+$$
+T_u = t + \sum P_i \cdot T_i.
+$$
+$T$ ahora se escribe como $T_i$ para indicar que puede ser distinto para cada tipo de parche. La energía promedio de un parche es $E_e$.
+$$
+E_e=\sum P_i \cdot g_i(T_i).
+$$
+La tasa neta de ingesta de energía ($En$) está dada por 
+\begin{equation}
+En = \frac{
+	E_e - t \cdot E_T
+}{
+	T_u
+}.
+\end{equation}
+$En$ se puede escribir como 
+\begin{equation}
+En = \frac{
+	\sum P_i \cdot g_i (T_i) - t \cdot E_T
+}{
+	t + \sum P_i \cdot T_i
+}.
+\end{equation}
+Se puede mostrar que (2) es una ecuación de balance energético y que $En$ es la tasa neta de ingesta energética.
+El depredador controla qué parches visita y cuándo los abandona. $t$ es una función de cuáles parches visita el depredador y debería incrementar cuantos más parches son saltados. $t$ se podría asumir como proporcional a la distancia entre parches dividida entre la velocidad de movimiento del depredador. $t$, además, sería independiente de $T_i$: el tiempo de viaje entre parches es independiente del tiempo gastado dentro de uno (aunque lo contrario no es verdad).
+
+Si esta independencia es cierta, (2) puede escribirse (desde el punto de vista de un parche $j$ de interés) como:
+\begin{equation}
+	En = \frac{
+		P_j \cdot g_j(T_j) + A
+	}{
+		P_j \cdot T_j + B
+	},
+\end{equation}
+donde $A$ y $B$ no son funciones de $T_j$. $S$ y $B$ se encuentran igualando los términos en (2) y (3), nombrando uno de los parches como $j$.
+
+Si se visita $j$, se asume que el depredador controla solamente $T_j$. El valor óptimo de $T_j$ está dado por un teorema. Para algunos de los parches visitados, escribimos $En$ como $En*$ cuando todos los $T_i$ son valores óptimos. Cuando esto es cierto, $T_j$ satisface la relación
+\begin{equation}
+	\frac{
+		\delta g-j(T_j)
+	}{
+		\delta T_j
+	}
+	=
+	En*,
+	\ \ \ \ 
+	para\ todo\ i=j.
+\end{equation}
+
+El depredador debería abandonar un parche cuando la {\itshape tasa marginal de captura en el parche ($\delta g/\delta T$) cae por debajo de la tasa de captura del hábitat completo}.
+
+Esta regla se encuentra ajustando $\delta EN/\delta T_i = 0$ para todos los tipos de parche simultáneamente. Dado que se asume que los $\delta h_i(T_i)/\delta T_i$ siempre están decreciendo, igualmente los hacen los $\delta g_i(T_i)/\delta T_i$, y hay un set único de $T_i$ que satisface (4). Este set representa un máximo cuando la matriz Hessiana es negativa-definida. 
+{\scshape\bfseries Discusión}
+
+Se han realizado pruebas empíricas para probar cualitativamente (4). En ellas se define el tiempo entre la última captura y cuando el individuo abandona un parche para ir a otro como el {\itshape ``giving up time''} (GUT). Esto se toma como una medida del inverso de la tasa de captura cuando el individuo abandona un parche (la tasa marginal de captura). En ese experimento se probaron dos supuestos del teorema: GUT debería ser constante en un ambiente a través de tipos de parches, y GUT debería ser menor en un ambiente rico.
+
+Otro experimento mostró que la tendencia de un abe a permanecer en el área en la cual ya realizó una captura era mayor cuanto menor era la disponibilidad de comida en el hábitat. 
+
+{\scshape\bfseries Conclusiones}
+
+Se propone una regla para el movimiento de un depredador óptimo en un ambiente en el que la comida se encuentra en parches y se gasta tiempo moviéndose entre ellos. El teorema es muy general y debería ser útil cuando los depredadores causan que las presas estén menos disponibles cuanto más tiempo permanecen ahí. Hay soporte de estudios de laboratorio y de campo, pero hace falta una prueba cuantitativa. 
+
+
+
+
+\end{document}
