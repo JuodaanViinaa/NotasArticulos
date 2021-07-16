@@ -18,7 +18,7 @@ Llaman ``2ABT'' a subcho (por {\itshape two-armed bandit task} y también por pa
 
 Buscan avanzar un modelo que integra perspectivas de modelos asociativos de atención en un modelo que, de otro modo, escogería de forma óptima para explicar los resultados de palomas y ratas en 2ABT.
 
-Las palomas escogen consistentemente $\mbox{TL}_{info}$, y su preferencia parece ser relativemente insensible a las probabilidades de reforzamiento de $\mbox{TL}_{+r}$. Las ratas, en cambio, escogen $\mbox{IL}_{noninfo}$, y la evidencia sugiere que escogerán $\mbox{IL}_{info}$ solo si $\mbox{TL}_{+r}$ y $\mbox{TL}_{-g}$ vienen de modalidades sensoriales distintas (Chow, 2017). Cuando las ratas escogen $\mbox{TL}_{info}$, su elección disminuye con la probabilidad $P(\mbox{TL}_{+r})$.
+Las palomas escogen consistentemente $\mbox{TL}_{info}$, y su preferencia parece ser relativamente insensible a las probabilidades de reforzamiento de $\mbox{TL}_{+r}$. Las ratas, en cambio, escogen $\mbox{IL}_{noninfo}$, y la evidencia sugiere que escogerán $\mbox{IL}_{info}$ solo si $\mbox{TL}_{+r}$ y $\mbox{TL}_{-g}$ vienen de modalidades sensoriales distintas (Chow, 2017). Cuando las ratas escogen $\mbox{TL}_{info}$, su elección disminuye con la probabilidad $P(\mbox{TL}_{+r})$.
 
 Si los estímulos de TL no son discriminativos, las palomas escogen $\mbox{IL}_{noninfo}$, de modo que no escogen $\mbox{IL}_{info}$ por aversión a la incertidumbre de $\mbox{IL}_{noninfo}$.
 
@@ -30,11 +30,12 @@ Iigaya (2016) propuso el modelo de utilidad anticipatoria, que supone que el val
 
 Ambos modelos asumen que la alocación de la atención es crítica, pero no especifican cómo esto sucede. Además, no esta claro cómo se adaptan a los resultados de las ratas y su sensibilidad a la frecuencia, duración y modalidad de TL$_{-g}$ sin cambiar supuestos fundamentales. Tampoco aclaran cómo las palomas adquieren la preferencia, pues ambos modelos requieren conocimiento a priori sobre el tiempo hasta una consecuencia.  Zhu (2017) propuso un modelo alternativo para abordar algunas de esas limitaciones: el {\itshape anticiparoty prediction error model}. Sin embargo, también presupone una alocación diferencial de la atención sin explicarla con dinámicas ensayo por ensayo.
 
-Proponen el modelo de decaimiento de la asociabilidad, que especifica cómo las palomas aprenden a ignorar el TL$_{-g}$. Asume que la atención, y por lo tanto, la asociabilidad de cada TL y su consecuencia con respecto a IL, es unafunción inversa de la certeza de la consecuencia, señalada por el TL, y no una función positiva de la predictabilidad de la recompensa. Incorpora la noción de la certidumbre por medio de los errores depredicción de recompensa (RPEs): los RPE son la diferencia entre la recompensa obtenida y la esperada. Si la recompensa obtenida es mayor que la esperada, el RPE es positivo, y a la inversa. El modelo asume que conforme los valores absolutos de RPE se hacen más pequeños (disminuye la diferencia entre lo esperado y lo obtenido), el valor de IL se vuelve menos maleable. El modelo es una variación del modelo de atención de Pierce y Hall (1980), según el cual la atención se centra en estímulos que señalan resultados inciertos.
+Proponen el modelo de decaimiento de la asociabilidad, que especifica cómo las palomas aprenden a ignorar el TL$_{-g}$. Asume que la atención, y por lo tanto, la asociabilidad de cada TL y su consecuencia con respecto a IL, es una función inversa de la certeza de la consecuencia, señalada por el TL, y no una función positiva de la predictabilidad de la recompensa. Incorpora la noción de la certidumbre por medio de los errores de predicción de recompensa (RPEs): los RPE son la diferencia entre la recompensa obtenida y la esperada. Si la recompensa obtenida es mayor que la esperada, el RPE es positivo, y a la inversa. El modelo asume que conforme los valores absolutos de RPE se hacen más pequeños (disminuye la diferencia entre lo esperado y lo obtenido), el valor de IL se vuelve menos maleable. El modelo es una variación del modelo de atención de Pierce y Hall (1980), según el cual la atención se centra en estímulos que señalan resultados inciertos.
 
 {\scshape\bfseries El modelo ADM}
 
-Los valores de IL y TL se actualizan en cada ensayo de acuerdo con$$
+Los valores de IL y TL se actualizan en cada ensayo de acuerdo con
+$$
 \begin{array}{l}
 	\Delta V_{t}\left(T L_{i}\right)=V_{t}\left(r_{k} \mid T L_{i}\right)-V_{t}\left(T L_{i}\right) \\
 	V_{t+1}\left(T L_{i}\right)=\left\{\begin{array}{ll}
@@ -69,7 +70,7 @@ H_{M A X}, & \mbox { si }\left|\Delta V_{t}\left(T L_{i}\right)\right| \geq \the
 \end{array}\right.
 $$
 
-Donde $H_t(TL_i)$ es la asociabilidad de un TL y su resultado con su IL correspondiente en el ensayo $t$; $H_{MAX}$ es la asociabilidad máxima; $\delta$ es la proporción de asociabilidad obtenida de ensayo a ensayo ($1-\delta$ es la proporción en la cual la asociabilidad decae por ensayo) cuando el valor absoluto de TL RPE está debajo del umbral $\theta$ de decaimiento de asociabilidad; y $H_i(TL_i)=H_{MAX}$ al comienzo del entrenamiento y cuando $TL RPE \geq \theta; 0 \leq \theta, \delta \leq 1$. El parámetro $\theta$ es el grado de certeza requerido para que la asociabilidad decaiga. Cuando $\theta$ es pequeña, se requiere más certeza para que decaiga (menores valores aboslutos de TL RPE).
+Donde $H_t(TL_i)$ es la asociabilidad de un TL y su resultado con su IL correspondiente en el ensayo $t$; $H_{MAX}$ es la asociabilidad máxima; $\delta$ es la proporción de asociabilidad obtenida de ensayo a ensayo ($1-\delta$ es la proporción en la cual la asociabilidad decae por ensayo) cuando el valor absoluto de TL RPE está debajo del umbral $\theta$ de decaimiento de asociabilidad; y $H_i(TL_i)=H_{MAX}$ al comienzo del entrenamiento y cuando $TL RPE \geq \theta; 0 \leq \theta, \delta \leq 1$. El parámetro $\theta$ es el grado de certeza requerido para que la asociabilidad decaiga. Cuando $\theta$ es pequeña, se requiere más certeza para que decaiga (menores valores absolutos de TL RPE).
 
 Dado este mecanismo de decaimiento de asociabilidad, el aprendizaje de IL se modifica de esta forma:
 $$
@@ -95,25 +96,25 @@ En casi todos los estudios de palomas $\beta > \alpha$, lo que sugiere que las p
 
 El modelo describió adecuadamente los datos de Stagner et al. (2011) [probabilidades], Laude et al. (2014) [magnitudes], Stagner y Zentall (2010) y Zentall y Stagner (2011) [que volvieron no-discriminativa a la alternativa discriminativa].
 
-La dinámica del cambio indicada por el modelo sugiere que, con el entrenamiento, $V_t(TL_{+r})$ y $V_t(TL_{-g})$ dejan de actualizar el valor de IL$_{info}$, pero $V_t(TL{0{.}5y})$ y $V_t(TL_{0{.}5b})$ continuan manteniendo bajo el valor de IL$_{noninfo}$. Además, reducir la discriminabilidad de TL$_{+r}$ y TL$_{-g}$ recupera su asociabilidad y les permite reducir el valor de IL$_{info}$.
+La dinámica del cambio indicada por el modelo sugiere que, con el entrenamiento, $V_t(TL_{+r})$ y $V_t(TL_{-g})$ dejan de actualizar el valor de IL$_{info}$, pero $V_t(TL_{0{.}5y})$ y $V_t(TL_{0{.}5b})$ continúan manteniendo bajo el valor de IL$_{noninfo}$. Además, reducir la discriminabilidad de TL$_{+r}$ y TL$_{-g}$ recupera su asociabilidad y les permite reducir el valor de IL$_{info}$.
 
-El modelo también fue ajustado a los experimentos que probaron los efectos de (1) diferencias individuales en impulsividad, (2) privación de comida, y (3) enriquecimiento ambiental. En cada experimento hicieron una comparación entre los grupos experimentales y control, permitiendo que un solo parámetro variara entre los grupos. Eligieron como parámetro libre a quel que llevaba a un mejor ajuste en los datos. Sus ajustes sugieren que (1) las palomas impulsivas descuentan {\slshape más despacio} que las no impulsivas (wtf), (2) que el decaimiento de asociabilidad es más rápido para las palomas hambrientas, y que (3) las palomas enriquecidas requieren de menor certeza para que la asociabilidad comience a decaer.
+El modelo también fue ajustado a los experimentos que probaron los efectos de (1) diferencias individuales en impulsividad, (2) privación de comida, y (3) enriquecimiento ambiental. En cada experimento hicieron una comparación entre los grupos experimentales y control, permitiendo que un solo parámetro variara entre los grupos. Eligieron como parámetro libre a aquel que llevaba a un mejor ajuste en los datos. Sus ajustes sugieren que (1) las palomas impulsivas descuentan {\slshape más despacio} que las no impulsivas (wtf), (2) que el decaimiento de asociabilidad es más rápido para las palomas hambrientas, y que (3) las palomas enriquecidas requieren de menor certeza para que la asociabilidad comience a decaer.
 
 {\scshape Ratas}
 
-Se ajustó el modelo a los datos de ratas. Los parámetros indican que para las ratas, el peso de recompensa y no-recompensa dependen de la longitud de IL. El parámetro $\tau$ fue grande, indicando poco ruido en la elección de IL. Los parámetros $\theta,\delta \mbox{ y } \gamma$ indican que, al contrario de las palomas, no se requiere de decaimiento de la asociabilidad para explicar los resultados de las ratas. Un ajuste que realizaron para adecuarse al hallazgo de que, al incrementar la longitud de TL de 10 a 30s, la preferencia por IL$_{info}$ disminuye, indicó que, cuando los TL se alargan, las ratas descuentan más las recompensas y se vuelven más sensibles a la no-recompensa.
+Se ajustó el modelo a los datos de ratas. Los parámetros indican que para las ratas, el peso de recompensa y no-recompensa dependen de la longitud de IL. El parámetro $\tau$ fue grande, indicando poco ruido en la elección de IL. Los parámetros $\theta,\delta \mbox{ y } \gamma$ indican que, al contrario de las palomas, no se requiere de decaimiento de la asociabilidad para explicar los resultados de las ratas. Un ajuste que realizaron para adecuarse al hallazgo de que, al incrementar la longitud de TL de 10 a 30s, la preferencia por IL$_{info}$ disminuye indicó que, cuando los TL se alargan, las ratas descuentan más las recompensas y se vuelven más sensibles a la no-recompensa.
 
 {\scshape\bfseries Discusión}
 
-El modelo ADM supone que el decaimiento de la asociabilidad esta inversamente relacionado con la atribución de inhibición condicionada, y que el decaimiento depende de la certeza del animal sobre la consecuencia esperada. La actualización del valor de IL depende de la asociabilidad de cada TL, que decae a cieta tasa una vez que el error de predicción de recompensa (RPE) abosluto cae debajo de cierto umbral.
+El modelo ADM supone que el decaimiento de la asociabilidad esta inversamente relacionado con la atribución de inhibición condicionada, y que el decaimiento depende de la certeza del animal sobre la consecuencia esperada. La actualización del valor de IL depende de la asociabilidad de cada TL, que decae a cieta tasa una vez que el error de predicción de recompensa (RPE) absoluto cae debajo de cierto umbral.
 
-tros modelos (Vasconcelos, Iigaya, Zhu) explican los mismos datos que ADM, pero presuponiendo que la asociabilidad es estática o no indicando cómo cambia ensayo por ensayo, de modo que no especifican cómo surgen la diferencias en pesos asociativos.
+Otros modelos (Vasconcelos, Iigaya, Zhu) explican los mismos datos que ADM, pero presuponiendo que la asociabilidad es estática o no indicando cómo cambia ensayo por ensayo, de modo que no especifican cómo surgen la diferencias en pesos asociativos.
 
 La explicación ofrecida por el ADM es la siguiente: {\bfseries la elección sistemática de IL$_{info}$ en elección subóptima se debe a que, primero, el TL$_{-g}$ predice con certeza la ausencia de recompensa, de modo que las palomas aprenden a ignorarlo, lo que evita que el IL$_{info}$ pierda valor. Después, las palomas aprenden a atender a los TLs que predicen probabilísticamente la recompensa, lo que reduce el valor de IL$_{noninfo}$ relativo al valor de IL$_{info}$. Finalmente, las palomas aprenden a ignorar cualquier otro TL que prediga con certeza las consecuencias finales.}
 
 Parece que ADM también explica los efectos de el enriquecimiento y la privación de comida. Argumentan que los cambios en los parámetros son consistentes con la noción de que la atención por las recompensas y los estímulos condicionados es una función de la motivación y el enriquecimiento social.
 
-Sin embargo, la dinámica de la asociabilidad no parece explicar la relación de la elección con las diferencias e impulsividad. En lugar de ello, la explicación parece estar en el factor de descuento $\gamma$.
+Sin embargo, la dinámica de la asociabilidad no parece explicar la relación de la elección con las diferencias en impulsividad. En lugar de ello, la explicación parece estar en el factor de descuento $\gamma$.
 
 El modelo ADM hace una predicción contraria a otros modelos: dada la relación entre la certeza y la asociabilidad, cuando incrementa la duración de TL, debería incrementar la preferencia por IL$_{info}$ en la variante de probabilidades, pero debería decrementar en la de magnitudes. Además, una vez que la asociabilidad ya ha decaído para un TL, debería ser insensible a las manipulaciones futuras, a menos que la manipulación induzca un TL RPE muy grande.
 
@@ -125,7 +126,7 @@ Aun así, la duda que prevalece es por qué, en una sola modalidad sensorial, la
 
 {\scshape\bfseries Limitaciones}
 
-Dado que no había datos ensayo por ensayo disponibles, no se pudo ajustar los modelos usando máxima verosimilitud o estimación jerárquica bayesiana. Por lo tanto, los parámetros estimados deben tomarse como aproximaciones y no como valores precisos. Además, la evaluación del ADM se limitó a estudios con datos de adquisición, así que no es posible tomar en cuenta fenómenos como el efecto de las demoras difernciales al inicio de TL tras la elección de IL$_{info}$.
+Dado que no había datos ensayo por ensayo disponibles, no se pudo ajustar los modelos usando máxima verosimilitud o estimación jerárquica bayesiana. Por lo tanto, los parámetros estimados deben tomarse como aproximaciones y no como valores precisos. Además, la evaluación del ADM se limitó a estudios con datos de adquisición, así que no es posible tomar en cuenta fenómenos como el efecto de las demoras diferenciales al inicio de TL tras la elección de IL$_{info}$.
 
 Aunque permite explicar la conducta de elección en ratas y palomas, el ADM actual no atiende a todas las diferencias entre ellas. Por ejemplo, las ratas, pero no las palomas, son sensibles a $P(TL_{+r})$. 
 
