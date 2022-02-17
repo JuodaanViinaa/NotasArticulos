@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage{anysize}
+\usepackage{graphicx}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+
+\title{Humans integrate visual and haptic information in a statistically optimal fashion}
+\author{Marc O. Ernst \and Martin S. Banks}
+\date{2002}
+
+\begin{document}
+{\scshape\bfseries \maketitle}
+
+La visión suele dominar el percepto integrado visual-háptico, pero en ocasiones el percepto es claramente influido por lo háptico. Se propone que un principio, que minimiza la varianza del estimado final, determina el grado de dominio de una propiedad sobre otra. El principio se realiza mediante estimación de máxima verosimilitud (MLE) para combinar los inputs. El modelo resultante se comporta de forma similar a los humanos.
+
+El estimado de una propiedad ambiental por un sistema sensorial puede representarse mediante
+\begin{equation}
+	\hat S_{i} = f_{i}(S)
+\end{equation}
+donde $S$ es la propiedad física a estimar y $f$ es la operación mediante la cual el sistema nervioso hace la estimación. El subíndice es la modalidad. Cada estimado $\hat S_{i}$ es afectado por el ruido. Si los ruidos son independientes y gaussianos con una varianza $\sigma_{i}^{2}$ y el prior bayesiano es uniforme, entonces el estimado de máxima verosimilitud para la propiedad ambiental estará dado por
+\begin{equation}
+	\hat S =
+	\sum_{i}w_{i}\hat S_{i}
+	\mbox{\ \ con\ \ }
+	w_{i} =
+	\frac{
+		\frac{1}{\sigma_{i}^{2}}
+	}{
+		\sum_{j}\frac{1}{\sigma_{j}^{2}}
+	}
+\end{equation}
+
+Así, la regla de máxima verosimilitud establece que el medio óptimo de estimación (el estimado de menos varianza) será agregar los estimados sensoriales ponderados por sus varianzas recíprocas normalizadas. Si la regla MLE se usa para combinar estimado visuales y hápticos, $\hat S_{V}$ y $\hat S_{H}$, la varianza del estimado final $\hat S$ será
+
+\begin{equation}
+	\sigma_{VH}^{2} =
+	\frac{
+		\sigma_{V}^{2}\sigma_{H}^{2}
+	}{
+		\sigma_{V}^{2} + \sigma_{H}^{2}
+	}
+\end{equation}
+
+El estimado final tendrá menor varianza que los individuales.
+
+Se evaluó la integración visual-háptica cuantitativamente para determinar si el desempeño humano es óptimo. Los observadores veían o sentían un borde y juzgaban su altura vertical. Inicialmente se hizo una tarea de discriminación en la cual los observadores indicaban cuál de dos bordes presentados secuencialmente era más alto con una sola modalidad sensorial.
+
+El estímulo era una barra horizontal elevada 3 cm sobre un plano, ambos perpendiculares a la línea de visión. 
+
+El estímulo háptico era generado usando dispositivos PHANToM {\itshape force feedback}, que simulan convincentemente propiedades hápticas como el tamaño, forma y dureza.
+
+El estímulo visual era un estereograma de puntos aleatorios que simulaba el plano de fondo y la barra. Las posiciones de los dedos fueron registradas mediante los PHANToM y se indicaban mediante marcadores tridimensionales que eran visibles hasta que la barra era tocada. Se agregó ruido al display visual para variar su confiabilidad. El ruido era una variación aleatoria de la profundidad de los puntos del estereograma.
+
+En ambas modalidades el estímulo estuvo presente durante 1 segundo (en el caso háptico, se contaba a partir del momento en que se hacía contacto con él).
+
+{\scshape\bfseries Procedimiento}
+
+Se trató de un procedimiento de discriminación secuencial. La labor de los sujetos era indicar cuál de los estímulos era más alto tras hacer contacto con él durante un segundo en las modalidades separadas. 
+
+Se presentaron ensayos con las dos modalidades conjuntas. Se presentaron ensayos con distintos conflictos entre la información dada por ambas modalidades en orden aleatorio para evitar la adaptación sensorial. 
+
+No se dio realimentación, y los sujetos declararon no haber notado los conflictos.
+
+El análisis de datos indica que según incrementó el ruido en la modalidad visual, disminuyó el peso que se le asigna. Esto sugiere que los humanos sí combinan la información háptica y visual de una forma similar a la integración MLE.
+
+Los juicios de altura fueron muy similares a los predichos por el integrador MLE, por lo que el sistema nervioso parece combinar la información visual y háptica de una forma similar a la regla MLE: los estimados visuales y hápticos son ponderados de acuerdo con sus varianzas recíprocas. 
+
+El fenómeno de ``captura visual'', en el que hay un domino marcado de la visión por encima de la sensación háptica, parece ocurrir solamente cuando el estimado visual de una propiedad tiene menos varianza que el estimado háptico.
+
+Cuando las fuentes de información son discordantes se hipotetiza que el sistema nervioso podría mostrar una conducta robusta en la cual se descuenta la fuente discrepante de información. En este experimento la diferencia entre los estimados visuales y hápticos nunca fue superior al 11\%. 
+
+\end{document}

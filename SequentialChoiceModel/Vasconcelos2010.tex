@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{anysize}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+%\usepackage[colorlinks, citecolor=blue]{hyperref}
+%\renewcommand{\refname}{Referencias}
+%\usepackage[backend=biber,style=apa]{biblatex}
+%\addbibresource{library.bib}
+
+\title{Choice in multi-alternative environments: A trial-by-trial implementation of the sequential choice model}
+\author{Marco Vasconcelos, Tiago Monteiro, Justine Aw,\\Alex Kacelnik}
+\date{16 November 2009}
+
+\begin{document}
+
+{\scshape\bfseries \maketitle}
+
+La elección suele verse como un proceso elaborativo que lleva mucho tiempo debido a la necesidad de considerar y comparar cada alternativa. Así, cuantas más opciones, más tiempo se debería tomar. Sin embargo, no siempre es así: hay situaciones en las cuales elegir entre dos alternativas toma menos tiempo que responder a solamente una. Para explicarlo, se desarrolla el modelo de elecciones secuenciales, que asume que cada alternativa produce una distribución de demoras posibles para responder en ella. Cuando se presentan dos alternativas, cada una produce una demora propia de su distribución e independiente de la otra alternativa, y aquella con la menor demora se manifiesta conductualmente, ``censurando'' a la otra. Así, no hay una comparación directa entre las alternativas, por lo que no hay tiempo adicional cuantas más alternativas se presentan.
+
+Este experimento busca probar más al modelo al evaluar a {\slshape starlings} en un entorno con cuatro alternativas, pero usando aun elecciones binarias para medir la preferencia (es decir, comparan la preferencia en los pares 1-2, 1-3, 1-4, 2-3, 2-4, y 3-4). Con este tipo de comparaciones se descarta la posibilidad de que los animales estén aprendiendo a responder siempre ante una alternativa y nunca ante otra. La hipótesis es que el mecanismo que subyace a la latencia de cada alternativa también dicta la elección en encuentros binarios.
+
+Para hacer una predicción local (ensayo por ensayo) en lugar de una global, usaron la latencia más reciente a cada alternativa como predictor de la preferencia durante los encuentros binarios. La opción con la latencia más breve en el ensayo más reciente era el ganador predicho. La idea es que esto captura mejor las fluctuaciones temporales en la preferencia.\\*
+Hacen medición general (fuerza de la preferencia) y local (proporción de elecciones individuales predichas con precisión).
+
+{\scshape\bfseries Procedimiento}
+
+Tres tipos de ensayo: de una opción, de pico, y binarios. Las cuatro alternativas diferían en el valor del IF que presentaban (3, 6, 12 o 24s). En ensayos de una opción se encendía la tecla central, y tras una respuesta se encendía una tecla lateral con su símbolo correspondiente. En ensayos de pico sucedía igual, pero la tecla lateral permanecía encendida por tres veces su duración normal y al final no se entregaba reforzamiento (con el fin de evaluar el ``conocimiento'' del animal sobre las demoras). En ensayos binarios se encendían las dos teclas laterales, y responder en una apagaba la otra además de iniciar el IF, de modo que era una respuesta de compromiso. Había 144 ensayos de una opción, 24 binarios y 8 de pico.
+
+{\scshape\bfseries Resultados}
+
+Los ensayos de pico mostraron que los animales discriminaban adecuadamente los IF de todas las alternativas.\\*
+Las latencias de respuesta incrementaron con el valor de IF, tal como se predecía. Al comparar las latencias entre pares de valores de IF, el valor de IF menor siempre estuvo asocaiado con una latencia menor.\\*
+Al elegir entre dos opciones, los sujetos escogían de forma casi exclusiva la de IF menor. La preferencia incrementó en función de la razón entre los IF: cuando la mejor alternativa era dos veces mejor que la peor, la preferencia era menor que cuando la mejor alternativa era cuatro veces mejor.\\*
+La preferencia extrema por la alternativa con menor IF impide saber si la latencia es menor en la opción no preferida al estar en una comparación binaria que al ser vista por sí misma. No había suficientes elecciones por la alternativa menos preferida para hacer un análisis.\\*
+La fuerza de la preferencia predicha por el modelo fue definida como la proporción de ensayos binarios para los cuales el modelo predecía una preferencia sobre otra. Las preferencias por el FI más corto fueron más extremas de lo predicho, pero siguieron el patrón general que se esperaba.\\*
+El indicador de precisión local del modelo fue la proporción de ensayos  en la que el modelo y las observaciones estuvieron de acuerdo. El modelo predijo correctamente el 84\% de las elecciones individuales.
+
+{\scshape\bfseries Discusión}
+
+El modelo SCM dice que la elección entre alternativas simultáneas está gobernada por el mismo mecanismo que controla la respuesta cuando las alternativas se encuentran por sí mismas. Las diferencias en las latencias dependen de la relación entre la alternativa y el resto del ambiente.\\*
+SCM puede predecir a nivel global la proporción de elección, pero eso ignora la distribución temporal de las elecciones. Se prefiere usar una predicción local, ensayo por ensayo.\\*
+Hacer las predicciones con base solo en la latencia más reciente podría estar ignorando información importante. Quizá sería mejor usar una media de varios ensayos. Al probarlo con un agregado ponderado en el que las latencias más recientes tenían un mayor peso, hubo un mejor ajuste con los datos. Pero eso hace que las predicciones no sean independientes, pues se usan las mismas latencias para predecir más de una elección.
+
+El experimento se incorpora al cuerpo de evidencia que indica que las latencias y la elección son expresiones conductuales de un mismo proceso de valoración que actúa de forma independiente sobre cada alternativa.
+
+%\printbibliography
+
+\end{document}

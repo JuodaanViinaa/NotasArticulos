@@ -1,0 +1,57 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{anysize}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+
+\title{The functional equivalence of two variants of the suboptimal choice task: choice proportion and response latency as measures of value}
+\author{Alejandro Macías, Valeria V. González,\\Armando Machado, Marco Vasconcelos}
+\date{30 July 2020}
+
+\begin{document}
+{\scshape\bfseries \maketitle}
+
+La introducción comienza con un argumento que me seviría: aunque en general los mecanismos de elección se someten a la selección natural, es bien sabido que su ajuste no es perfecto (e.g. McNamara 2014, Vasconcelos 2017).
+
+Numerosas propuestas apoyan la idea de que son las propiedades señalizadoras de los estímulos lo que determina la elección subóptima. Pero no hay consenso sobre las especificidades. Varias propuestas asumen que el $S^-$ debe ser ignorado para que haya elección subóptima. Cunningham y Shahan (2018) asumen además que $S^+$ debe dar más información temporal sobre el reforzamiento que $S^{\pm}_1$ y $S^{\pm}_2$.
+
+La hipótesis $\Delta\Sigma$ (González, 2020) indica que el contraste $\Delta$, definido como la diferencia en probabilidades de reforzamiento entre los eslabones terminales de una alternativa, y su probabilidad general de reforzamiento $\Sigma$, son los determinantes de la elección. Así, la alternativa discriminativa tiene contraste máximo ($p(food\mid S^+)-p(food\mid S^-)=1-0=1$) mientras la no-discriminativa tiene contraste nulo ($p(food\mid S^\pm_1)-p(food\mid S^\pm_2)=0.5-0.5=0$).
+
+Sin embargo, siempre se ha tomado como iguales a las dos versiones de la tarea: la que tiene $S^\pm_1$ y $S^\pm_2$ y la que tiene un solo $S^\pm$.
+
+Aunque el modelo de Cunningham y Shahan parece suponer que es indistinto si hay uno o dos $S^\pm$, podría suceder que la dinámica temporal de acumulación de valor por dos estímulos sea menor que la de un solo estímulo.
+
+Por otro lado, la hipótesis $\Delta\Sigma$ no puede adaptarse a la situación con un solo estímulo (pues no se puede computar el valor de $\Delta$), así que los autores asumen un valor de $\Delta=0$ en ese caso.
+
+Además, dado que los cambios sensoriales dependientes de la respuesta parecen ser reforzantes (e.g., Kish, 1966; Osborne, 1977), quizá la alternativa con dos estímulos sea inherentemente más reforzante que la que tiene solo uno.
+
+El procedimiento claśico parece generar mucha variabilidad individual en las preferencias, mientras que el estándar es más consistente.
+
+Así, proponen hacer una comparación directa de los dos procedimientos con los mismos parámetros, tanto para comparar las versiones de la tarea como para probar las presunsiones que hacen los modelos. Además, analizan las latencias de respuesta, pues se ha observado que están inversamente relacionadas con el valor de las alternativas en varios procedimientos.
+
+De acuerdo con el modelo de elecciones secuenciales (SCM), las latencias pueden indicar cómo se despliegan los mecanismos de valuación al tomar una decisión. Parte del supuesto de que en ambientes naturales, los organismos se enfrentan a la decisión de perseguir o no a una presa, en lugar de una elección entre dos presas. Las alternativas son evaluadas por sus propiedades, el estado del organismo y su riqueza relativa al ambiente. Las latencias reflejan esta valoración. Sin embargo, el modelo no hace supuestos sobre los mecanismos que la guían. Los modelos de información temporal y $\Delta\Sigma$ son propuestas para esos mecanismos. Al presentarse dos alternativas simultáneas, ambas inician procesos de valoración independientes con latencias independientes, y ``gana'' aquel con la latencia menor, y por los tanto se expresa conductualmente. No hay una competencia directa entre alternativas. Y dado que la latencia resultante tiene variabilidad, hay variabilidad en la elección.
+
+Consecuentemente a este modelo, se deben poder predecir las elecciones simultáneas con base en las latencias; y las latencias durante elecciones simultáneas deben ser menores, especialmente las de la alternativa menos preferida, debido a que se trata de distribuciones de latencias y solamente ``gana'' la más rápida. Sin embargo esto ha sido difícil de probar porque en el caso de la alternativa preferida, hay un efecto de piso; y en la menos preferida, la muestra es muy pequeña (la alternativa se elige muy pocas veces). Por ello, este estudio tiene una condición donde se busca equiparar el valor de las alternativas para observar ese acortamiento.
+
+{\scshape\bfseries Procedimiento}
+
+Tres grupos de palomas en tres condiciones: estándar (20\% vs 80\% en discriminativa, $S^\pm_1$ y $S^\pm_2$ en no-discriminativa), clásica (20\% vs 80\% en discriminativa, solo $S^\pm$ en no-discriminativa) e híbrida (las dos opciones eran las alternativas óptimas de los otros dos procedimientos, es decir $S^\pm_1$ y $S^\pm_2$ contra $S^\pm$). Había 80 ensayos secuenciales (solo una alternativa se enciende) y 40 simultáneos (se encienden ambas).
+
+{\scshape\bfseries Resultados}
+
+En estándar y clásico encontraron preferencia por la alternativa discriminativa; en híbrido, inidiferencia. En los tres casos las latencias son buenos predictores de la preferencia. En estándar y clásico las latencias a la alternativa subóptima pero preferida eran menores que a la alternativa no-discriminativa. En híbrido eran iguales.
+
+Para probar la hipótesis de la reducción en las latencias en elección simultánea compararon latencias entre elección secuencial y simultánea para cada grupo. La manera de lograrlo fue con pruebas de permutaciones: con base en los datos observados, se genera una distribución de datos simulados donde estos se asignan aleatoriamente a elección simultánea o a elección secuencial. Se obtiene la media de ambos tipos de ensayo en las 10,000 distribuciones simuladas y se hace una distribución con ellas. Luego, se obtiene la ubicación de la media observada en esa distribución y se determina qué tan probable es que forme parte de la distribución de hipótesis nula. \\*
+En estándar y clásico, había muy pocas elecciones de la alternativa no discriminativa, y las latencias de la alternativa discriminativa ya estaban en el suelo en los ensayos secuenciales, de modo que no podían disminuir más en los simultáneos. En el grupo híbrido sí se encontró el efecto de acortamiento de las latencias: como la preferencia era mediana, las latencias no estaban en el suelo, y había suficientes elecciones a cada alternativa para un buen análisis.
+
+{\scshape\bfseries Discusión}
+
+Sus resultados apoyan la noción de que las dos variantes del prodecimiento son equivalentes. En clásico y estándar se desarrolló la misma preferencia; y en el híbrido hubo indiferencia. Al menos no parece haber preferencia por la variedad en los estímulos. Alba et al (2018) habían sugerido la equivalencia de los procedimientos, pero en ratas.\\*
+Se da validez a los supuestos del modelo de información temporal y de $\Delta\Sigma$, es decir, que las versiones clásica y estándar son equivalentes.\\*
+Las predicciones de preferencias con base en las latencias fueron buenas. Como ya se ha visto, con ese modelo se predice levemente por debajo de los valores observados.\\*
+La predicción contraintuitiva de acortamiento de las demoras en elección simultánea se confirmó también en el procedimiento híbrido.
+
+Estos datos se oponen a la noción de que la elección es un proceso lento y cognitivamente demandante. Aquí parece algo mucho más automático y directo. Se critica la idea de que pasar más tiempo tomando una decisión lleva necesariamente a una mejor elección, pues incrementar el tiempo disminuye la utilidad ({\slshape profitability}) de la alternativa. ¿Para qué ser preciso si ser rápido funciona? El problema desaparece si asumimos que el proceso no es lento ni costoso, y que no implica comparación entre las alternativas. Sin embargo, humanos y otros primates sí se toman más tiempo para tomar decisiones ``difíciles'' (con menor diferencia entre las alternativas). Es una paradoja que queda sin resolver.
+
+\end{document}
