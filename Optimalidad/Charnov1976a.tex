@@ -1,0 +1,72 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage{anysize}
+\usepackage{graphicx}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+
+\title{Optimal Foraging: Attack Strategy of a Mantid}
+\author{Eric Charnov}
+\date{1976}
+
+\begin{document}
+{\scshape\bfseries \maketitle}
+
+Mucho trabajo en forrajeo óptimo se basa en el supuesto de que los animales so ``eficientes'' en sus forrajeo. Se presenta un modelo de amplitud de dieta para una situación de encuentros aleatorios. Las predicciones del modelo se comparan con la conducta predatoria de mantis ({\itshape hierodula crassa}). Los datos apoyan al modelo, aunque no se excluyen explicaciones alternativas.
+
+{\scshape\bfseries The model}
+
+Se parte de varios supuestos: (1) el depredador encuentra presas individuales cuyo valor se mide en calorías o gramos; (2) las presas se manipulan una a la vez, y no se puede encontrar una presa nueva en el tiempo de manipulación de la actual, el tiempo de manejo inicia cuando el depredador concentra su atención en una sola presa; (3) el depredador reconoce los tipos de presa al instante; (4) las presas no son tan grandes como para ser peligrosas para el depredador; (5) no hay diferencia en el riesgo de mortalidad del depredador en los componentes del proceso de forrajeo (búsqueda, persecución, comida); (6) durante el un período de forrajeo el depredador solo está involucrado en la búsqueda y manejo de presas (su meta es maximizar su ingesta en el período); (7) el costo energético para el animal es el mismo en todos los componentes del proceso de forrajeo (aunque en Vasconcelos, 2019, vimos que este tipo de simplificación puede llevar a errores sistemáticos de predicción).
+
+Una ecuación que describa la ingesta puede derivarse así: si $E$ es la energía ingerida en un período de ingesta de longitud $T$, formado de $T_{s}$ (tiempo buscando) y $T_{h}$ (tiempo de manejo de todos los items). La tasa neta de energía ($\frac{En}{T}$) es
+\[
+\frac{
+        En
+}{
+        T
+}
+=
+\frac{
+        E
+}{
+        T_{h} + T_{s}
+}
+\]
+
+Hay $k$ tipos de presa, y cada tipo $i$ tiene estas características: $\lambda_{i} =$ número de presas del tipo $i$ encontradas en una unidad de tiempo de búsqueda; $E_{i} =$ energía neta esperada por un item del tipo $i$ , $i$; $h_{i}^{*} =$ tiempo de manejo esperado para un item de tipo $i$; y $P_{i} =$ probabilidad de que el depredador persiga un item del tipo $i$ cuando lo encuentra (parámetro controlado por el sujeto). Se sigue que:
+
+\begin{eqnarray*}
+        E&=&\Sigma\, \lambda_{i}E_{i}^{*}T_{s}P_{i},\\
+        T_{h}&=&\Sigma\, \lambda_{i}h_{i}^{*}T_{s}P_{i},\\
+        \frac{En}{T}&=&\frac{
+                \Sigma\, \lambda_{i}E_{i}^{*}T_{s}P_{i}
+        }{
+                T_{s} + \Sigma\, \lambda_{i}h_{i}^{*}T_{s}P_{i}
+        },\, or\\
+        \frac{En}{T}&=&\frac{
+                \Sigma\, \lambda_{i}E_{i}^{*}P_{i}
+        }{
+                1 + \Sigma\, \lambda_{i}h_{i}^{*}P_{i}
+        }.
+\end{eqnarray*}
+
+En esta ecuación el depredador solo controla los valores de $P_{i}$---si perseguirá o no una presa tipo $i$. El teorema es como sigue: con relación a (1), $\frac{En}{T}$ se maximiza cuando: (1) $P_{i} = 0\ o\ 1 (i=1,2,\ldots, k)$. (2) Si las presas son jerarquizadas por la razón $\frac{E_{i}^{*}}{h_{i}^{*}}$, entonces la persecución de la presas $i$ es independiente de la abundancia del tipo $i$ ($\lambda_{i}$) y dependiente solo de la abundancia de las presas con jerarquía mayor.Cuando $En/t$ tenga el valor máximo, se escribirá como $En^{*}/T$. (3) El conjunto de presas por comer (conjunto óptimo) es aquel con jerarquía tal que:
+
+\[
+        E_{j}^{*}/h_{j}^{*} > En^{*}/T^{*}
+\].
+
+{\scshape\bfseries Prueba del teorema}
+
+Se prueba el modelo con un depredador que cumple con sus supuestos: las mantis. Si la conducta del depredador se ajusta al teorema se deberían sostener las siguientes predicciones: (1) el mántido debe tener un estimado de la tasa de ingesta, o si elección de presa se relaciona con esta tasa. Esto corresponde con conocimiento sobre $En/T$. (2) Los tipos de presa se añaden o eliminan de la dieta según la tasa de ingesta cambia. El orden de agregado o eliminación debe seguir a la jerarquía dada por la variable $E^{*}/h^{*}$. (3) U tipo de presa no elegido no se agregará a la dieta aunque sea abundante. (4) Un tipo de presa elegido no se eliminará por ser escaso, pero puede hacer que otro tipo de menor rango sea eliminado al incrementar la tasa de ingesta de comida.
+
+Los datos apoyan cualitativamente al modelo, pero no son capaces de rechazar explicaciones alternativas.
+
+Forrajeo óptimo no es una teoría sino un punto de vista---una forma de ganar información sobre la conducta de los organismos que forrajean. Como tal, debe ayudar a explicar datos, sugerir nuevos datos a recolectar, y señalar nuevas variables.
+
+Algunos animales se enfrentan a riesgos proveniente de sus presas, y otros buscan presas y pareja simultáneamente. Para ellos, las presunciones de maximización de energía proveerán poca información. Esto no debería impedirnos pensar sobre los animales en términos de su eficiencia en la recolección de recursos. Los fallos de un modelo de eficiencia para explicar la conducta pueden bien llevar a información sobre cómo otros factores últimos afectan la conducta.
+
+
+\end{document}
