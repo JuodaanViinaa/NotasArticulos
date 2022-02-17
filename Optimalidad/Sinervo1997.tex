@@ -1,0 +1,122 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage{anysize}
+\usepackage{graphicx}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+
+\title{Optimal foraging theory: constraints and cognitive processes}
+\author{Barry Sinervo}
+\date{1997}
+
+\begin{document}
+{\scshape\bfseries \maketitle}
+
+Si los animales sobreviven o mueren en función de la variación en sus estrategias de forrajeo entonces la selección natural ha seguido su camino.
+
+Es razonable suponer que la ganancia energética por unidad de tiempo es la moneda que los animales maximizan para garantizar su supervivencia y reproducción. La vida, la muerte y el éxito reproductivo a menudo se miden en calorías.
+
+Los animales toman decisiones de forrajeo en situaciones de incertidumbre. ¿En qué situaciones es conveniente apostar?
+
+Los animales también deciden en situaciones de restricción: hay restricciones temporales (el tiempo de encontrar y procesar una presa), energéticas (el costo metabólico de cada ciclo de forrajeo), y {\itshape cognitivas} (¿hay un límite para el aprendizaje y la memoria? ¿Eso limita la eficiencia de los animales?).
+
+El primer problema es la selección de una moneda que capture el valor de un item junto con el costo de adquirirlo:
+\[
+    \mbox{Redituabilidad de presa}=
+    \frac{
+        \mbox{Energía por item} - \mbox{Costo de adquisición}
+    }{
+    \mbox{Tiempo tomado para adquirirlo}
+    }
+\]
+
+El tamaño de las presas es una buena característica en la cual enfocarse. En general es mejor elegir presas más grandes hasta un umbral máximo dado por limitaciones en procesamiento de la comida. Por otro lado, el umbral mínimo depende de el tiempo de búsqueda y de manejo: presas pequeñas no valen el costo de oportunidad que representan. El tamaño mínimo que un depredador debe intentar consumir es un ejemplo de una regla de decisión óptima.
+
+Como ejemplo, los cuervos comunes forrajean para encontrar almejas en la playa. A pesar de que encontrar una almeja es costoso en tiempo y energía, los cuervos no intentan abrir todas las almejas que encuentran, sino solamente las más grandes. Esto se debe a la redituabilidad media de las almejas en función de su tamaño. Se puede comparar la redituabilidad de una almeja con otra por unidad de tiempo una vez que se descuentan las restricciones de energía y tiempo usando la ecuación
+\[
+\frac{Energia}{Tiempo} = 
+\frac{
+    \mbox{Energía en función del tamaño - (Costo de búsqueda + Costo de manejo)}
+}{
+\mbox{Costo de búsqueda + Costo de manejo}
+}
+\]
+
+La mayor ganancia energética se alcanza si un cuervo acepta solamente almejas más grandes que 28.5 mm y los cuervos parecen seguir cercanamente esta predicción. Reglas de decisión similares se han encontrado en gran variedad de animales.
+
+No todos los sistemas estudiados tienen el mismo ajuste con los datos. En los casos que no es así puede haber factores que no hayan sido tomados en cuenta. Aunque se asume que todos los animales maximizan una moneda, lo hacen bajo ciertas restricciones. Para construir un modelo de forrajeo óptimo se deben identificar tres parámetros:
+
+\begin{enumerate}
+    \item La moneda a maximizar. Puede incluir no solo las necesidades propias, sino también las de la descendencia o la colonia.
+    \item Restricciones. Temporales, energéticas, de manejo y otras. No identificarlas resultará en modelos con escaso poder predictivo. Puede ser un proceso iterativo en el que se agregan más limitaciones cada vez hasta encontrar un buen ajuste.
+    \item Regla de decisión. Un umbral de decisión, como el de aceptación de presas de acuerdo con su tamaño.
+\end{enumerate}
+
+Es común que los conductistas consideren primero los modelos más simples antes de aventurarse con explicaciones más complejas.
+
+Aun dentro de una misma población pueden encontrarse distintas estrategias de forrajeo que varían en eficacia. Además de ellos, la distribución de las presas puede cambiar estacionalmente, con lo que las estrategias seguidas por los individuos probablemente también deban ser flexibles.
+
+Las estrategias de forrajeo, además, pueden transmitirse de forma cultural. Los padres enseñan a sus hijos, por ejemplo, a abrir botellas de leche. De ese modo a menudo las estrategias de forrajeo pueden ser distintivas de poblaciones particulares. Por otro lado, también existen limitaciones genéticas para las estrategias de forrajeo: aves {\itshape Pyrenestes ostrinus} nacidas con picos grandes o pequeños se verán restringidas a estrategias diferentes. Sin embargo, aquellos con picos medianos no podrán alimentarse bien en ninguna situación y morirán.
+
+Además, algunas especies tienen la posibilidad de alterar tanto su comportamiento como su morfología en función de la disponibilidad de las presas en su entorno. Las larvas de sapos {\itshape Scaphiopus couchii} pueden metamorfosear en versiones carnívoras y omnívoras dependiendo de la abundancia de camarones. Estos eventos tempranos tienen un efecto a largo plazo en la eficiencia de la conducta de forrajeo en la adultez.
+
+{\scshape\bfseries Teorema de valor marginal}
+
+Una situación distinta es aquella en que las presas se encuentran distribuidas en cúmulos llamados {\itshape parches}. Un animal debe determinar cuánto tiempo permanecer en cada parche, y una de las soluciones más simples a ese problema es el {\bfseries teorema de valor marginal}. El teorema indica un {\itshape giving-up time} tras el cual un organismo debería abandonar el parche actual. El valor marginal de un parche, o la energía remanente en él, decae según es explotado. La ganancia energética, por tanto, cae hasta el punto en que no se puede obtener más del mismo parche.
+
+Se debe maximizar la tasa de ganancia energética incluyendo el tiempo de viaje entre parches:
+\[
+    \mbox{Tasa de ganancia} = \frac{Energia}{Tiempo} = 
+    \frac{
+        Ganancia\ energetica
+    }{
+        Tiempo\ de\ viaje + Tiempo\ de\ forrajeo
+    }
+\]
+Cuando el tiempo de viaje es breve los animales deberían abandonar un parche antes que cuando es largo.
+
+Los animales además enfrentan restricciones adicionales. Por ejemplo, para las abejas y los {\itshape starlings} es costoso viajar con una gran cantidad de néctar o de presas, de modo que es necesario hacer una mayor cantidad de viajes. Para las abejas, viajar con cargas mayores implica una vida reducida y una menor eficiencia en energía por trabajador, de modo que ellas no maximizan la energía por unidad de tiempo, sino la energía por abeja.
+
+La regla general parece ser que cuando la entrega de comida a la progenie o la colonia es restringida por un vuelo costoso que requiere de aprovisionamiento, los animales seguirán una regla de maximización de eficiencia. En cambio, cuando el aprovisionamiento no es costoso la estrategia óptima parece ser la maximización de tasa.
+
+{\scshape\bfseries Forrajeo en riesgo}
+
+Intuitivamente podemos pensar que los animales serán tan adversos al riesgo como los humanos. Los juncos, por ejemplo, prefieren una alternativa que entrega comida de forma constante por encima de otra que entrega en promedio la misma cantidad pero con variabilidad. Esta preferencia se mantiene incluso si la alternativa variable comienza a entregar más comida en promedio, y se requiere que entregue alrededor de el doble de comida que la alternativa estable tan solo para llegar a una preferencia del 50\%. Esto parece problemático para la teoría de forrajeo óptimo dado que a los juncos les iría mucho mejor si optaran por la alternativa variable.
+
+La tendencia al riesgo puede ser adaptativa en situaciones en que la amenaza de inanición es constante: cuando una fuente de comida constante no es suficiente para sobrevivir el día, es adecuado optar por una fuente que podría, probabilísticamente, entregar suficiente comida para sobrevivir. Animales que cambian su elección de alternativas riesgosas con base en su estado fisiológico son {\bfseries sensibles al riesgo}. De ese modo, los juncos en un régimen de comida poco denso o en un entorno frío tendrán una mayor tendencia a elegir la alternativa riesgosa.
+
+Los abejorros muestran una tendencia similar: quitar miel de sus colmenas lleva a la colonia entera a preferir flores con mayor variabilidad en energía aportada y una media mayor por encima de flores con menor variabilidad.
+
+{\scshape\bfseries Restricciones cognitivas}
+
+Los procesos cognitivos también pueden imponer restricciones sobre las elecciones óptimas que los animales pueden hacer. Los procesos cognitivos se definen en términos de tres procesos:
+\begin{enumerate}
+    \item Percepción. Una unidad de información del ambiente es almacenada en la memoria.
+    \item Manipulación de datos. Las unidades de información son analizadas según reglas computacionales en el sistema nervioso.
+    \item Formación de una representación del ambiente. El organismo basa su decisión en una imagen formada del procesamiento de la información.
+\end{enumerate}
+
+El forrajeo óptimo asume que los animales tienen conocimiento perfecto del ambiente, pero no es así. Sin embargo, sí poseen inteligencia y habilidades de resolución de problemas.
+
+A menudo una disparidad entre las predicciones de un modelo y los datos observados puede requerir de la inclusión de un proceso cognitivo.
+
+Una explicación cognitiva a la sensibilidad al riesgo indica que la aversión al riesgo podría ser impuesta mediante restricciones cognitivas en la memoria: si una abeja pudiese recordar solamente la última flor visitada y su recompensa, entonces al comparar una flor variable con una estable podría estar comparando subjetivamente una flor que sí da recompensa con una que no la da. Una memoria de un solo item podría ser más que una restricción: podría ser adaptativo en entornos predecibles en los cuales una flor provee información precisa sobre las flores cercanas.
+
+Sin embargo, esta perspectiva indica que la capacidad de memoria de las abejas debería cambiar de acuerdo con el estado nutricional. Podría ser posible que las abejas hambrientas recuerden dos o más items.
+
+{\scshape\bfseries Forrajeo óptimo e hipótesis adaptativas}
+
+Se presume que la selección natural es un proceso tan eficiente que los animales en la naturaleza invariablemente forrajearán de acuerdo con una regla óptima.
+
+Ha habido ataques al ``programa adaptacionista''. Un ataque en particular indica que los adaptacionistas siguen un proceso iterativo en el que, tras encontrar que una característica no optimiza una moneda en particular, vuelven sobre sus pasos y añaden factores no considerados antes hasta llegar al resultado deseado. Así, los adaptacionistas tienen garantía de confirmar su visión.
+
+Esta caricatura es injusta: todas las ciencias buscan inicialmente las soluciones más sencillas, y solo cuando estas fallan se incorporan explicaciones más complejas.
+
+El desarrollo de los modelos cognitivos de forrajeo creció con base en la necesidad de introducir las restricciones de la arquitectura neural en las decisiones tomadas por los animales.
+
+La naturaleza selecciona una cierta cantidad de apuesta dentro de la toma de decisiones de los animales cuando es necesario, es decir, cuando la probabilidad de inanición es alta.
+
+
+\end{document}

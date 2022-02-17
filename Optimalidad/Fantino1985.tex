@@ -1,0 +1,760 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage{anysize}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+
+\title{Choice, optimal foraging, and the delay-reduction hypothesis}
+\author{Edmund Fantino, Nureya Abarca}
+\date{1985}
+
+\begin{document}
+{\scshape\bfseries \maketitle}
+
+La psicología y la ecología conductual han mostrado gran interés paralelo en la elección, y han desarrollado sus propios modelos para explicarla. El análisis experimental del forrajeo parece un área rica para una aproximación interdisciplinaria. Este artículo pretende determinar si los principios encontrados en el laboratorio son consistentes con situaciones que comparten propiedades importantes con el forrajeo natural.
+
+La hipótesis de la reducción de la demora indica que aquellos estímulos correlacionados con una mayor reducción en el tiempo hasta la entrega de comida funcionarán como reforzadores condicionados más fuertes que aquellos correlacionados con una disminución menor. Un modelo de selección natural por eficiencia de forrajeo hace predicciones similares a las de la hipótesis de reducción de la demora.
+
+Específicamente, la hipótesis de reducción de la demora indica que la efectividad de un estímulo como reforzador condicionado puede ser predicha calculando la reducción en la longitud del tiempo hasta el reforzamiento primario correlacionada con el encendido del estímulo en cuestión relativa a la longitud del tiempo hasta el reforzamiento primario medida desde el encendido del estímulo anterior. La forma más simple de la hipótesis libre de parámetros es
+\begin{equation}
+\mbox{Reinforcing strength of stimulus A}=f\left(\frac{T-t_A}{T}\right)
+\end{equation}
+donde $t_A$ es el intervalo de tiempo entre el encendido del estímulo A y el reforzamiento primario, $T$ es el tiempo total entre presentaciones de reforzadores, y la función es continua y de incremento monotónico pero inespecificada. La hipótesis fue inicialmente propuesta para explicar la elección entre dos programas de intervalo variable en un procedimiento de cadenas concurrentes.
+
+Supóngase que un sujeto escoge entre dos posibles recompensas, una con demora promedio de $t_{2L}$ segundos y otra de $t_{2R}$ segundos (pueden pensarse como tiempos de manejo). El sujeto puede producir las consecuencias respondiendo en el estado de búsqueda (dos teclas blancas concurrentes). Estas respuestas llevan al encendido de las teclas de color asociadas con $t_{2L}$ y $t_{2R}$ de acuerdo con un programa de intervalo variable. La variable independiente suele ser la diferencia en las demoras o en la magnitud de los reforzadores; y la dependiente, la tasa relativa de respuestas a cada alternativa durante el encendido de las luces blancas.
+
+Estudios han mostrado que la preferencia cambia en función de la longitud de la fase de elección o de búsqueda. Esto se sigue de la hipótesis de reducción de la demora. Se debe calcular cuán lejos se está del reforzamiento primario durante la fase de elección (pues ya se sabe cuán lejos se está cuando se entra a los TL: $t_{2R}$ y $t_{2L}$). Si $T$ es el tiempo promedio al reforzamiento primario, la reducción en la demora correlacionada con el encendido de $t_{2L}$ es igual a $(T-t_{2L})$, y lo mismo para la otra alternativa. Fantino hipotetizó que esta ecuación debería describir la elección:
+\begin{equation}
+	\begin{array}{lcl}
+		\frac{R_L}{R_L+R_R}&=&\frac{T-t_{2L}}{(T-t_{2L})+(T-t_{2R})} (\mbox{cuando }t_{2L} < T, t_{2R}<T)\\
+				   &=&1(\mbox{cuando } t_{2L}<T,t_{2R}>T)\\
+				   &=&0(\mbox{cuando } t_{2L}>T,t_{2R}<T)
+	\end{array}
+\end{equation}
+Cuando el resultado representa un incremento en la demora promedio al reforzamiento (cuando $t_{2L}>T$ o $t_{2R}>T$), la ecuación predice preferencia exclusiva por la otra alternativa.
+Cuanto más larga la fase de elección, más grande es $T$, y mientras $T$ se vuelve infinitamente larga, $\frac{R_L}{R_L+R_R}$ se aproxima a 0.5. Además, la preferencia por la alternativa favorecida incrementa según aumentan las demoras o tiempos de manejo ($t_{2L}$ y $t_{2R}$) mientras se mantenga una tasa constante entre ellas. Así, incrementar la duración de los TL, mientrsa estos mantengan la misma razón entre sí, tiene el mismo efecto que disminuir la duración de la fase de elección relativa a aquella de la fase de resultados: la preferencia por la alternativa favorecida debería incrementar.
+
+Dado que el forrajeo implica elección, la hipótesis de reducción de la demora podría extenderse para describir aspectos de la conducta de forrajeo. Una pregunta central es: ¿Los principios evolucionados desde el estudio de la toma de decisiones en el laboratorio son consistentes con la toma de decisiones en situaciones que comparten propiedades importantes con el forrajeo?
+
+{\scshape\bfseries Operant analogues to foraging: Rationale, backgrounds, and problems}
+
+Mucho trabajo en forrajeo se centra en la idea de que la selección natural ha favorecido los patrones de forrajeo más económicos, aunque la optimalidad no es la única aproximación.
+
+Han habido varias simulaciones exitosas de forrajeo en ambientes de laboratorio. Estos estudios, si limitados, son convenientes dado el control que permiten tener sobre las variables procedimentales.
+
+Al llevar un experimento desde el ambiente natural al laboratorio, uno está utilizando investigación manipulativa esperando incrementar la validez interna de las conclusiones. Se ha argumentado sobre los méritos de la investigación manipulativa con respecto a la no manipulativa (corresponden burdamente a investigación experimental y de campo). La investigación manipulativa facilita la identificación de las variables que controlan la conducta, las cuales ya están presentes en el ambiente natural. Sin embargo, la validez interna que provee es irrelevante sin validez externa. Del mismo modo, la validez externa que provee la investigación no manipulativa es insignificante si no hay validez interna.
+
+En el análisis de la conducta se busca maximizar la validez interna, aun al costo de la validez externa. En este artículo se compararán las predicciones del modelo de selección de presas de Charnov con las de la hipótesis de reducción de la demora.
+
+El trabajo de Charnov sobre el {\itshape marginal value theorem} indica que un depredador debería abandonar un parche en el que se encuentra cuando la tasa marginal de captura de éste cae hasta la tasa de captura promedio del ambiente completo. En principio la hipótesis de reducción de la demora hace una predicción similar, aunque no hay experimentos relevantes en esa línea. Charnov propuso un modelo de encuentros aleatorios que parte del supuesto de que los animales tienen información completa sobre el ambiente. Pocos modelos actuales siguen esa presunción (aunque es una idea más válida en el laboratorio, en donde los animales experimentan miles de ensayos), pero aun así se utilizará este modelo simple junto con la hipótesis de reducción de la demora para sugerir análogos experimentales.
+
+Primero, el tiempo $T$ de forrajeo está formado de $T_s$ (tiempo de búsqueda) y $T_h$ (tiempo de manejo). Una tasa neta de ingesta de energía $\frac{E}{T}$ es
+$$
+\frac{E}{T} = \frac{E}{(T_s+T_h)}
+$$
+Mientras un depredador busca, se encuentra el tipo $i$ de comida a una tasa $\lambda_i$, y la probabilidad $P_i$ es la probabilidad de que el depredador busque y consuma un item del tipo $i$ cuando lo encuentra (no se considera el escape de los items). $P$ está bajo el control del forrajeador, y la tasa de ingesta de energía $\frac{E}{T}$ se maximiza al elegir $P$, que debe ser siempre de 0 o 1 para ser óptima. Si $E_i$ es la ganancia neta de energía y $h_i$ es el tiempo de manejo para el tipo $i$ de item, la ganancia total de energía $E$ en el tiempo $T$ esta dada por
+$$
+E=T_s\sum^n_{i=1}\lambda_i E_i P_i
+$$
+y el tiempo total de manejo $T_h$ por
+$$
+T_h = T_s \sum^n_{i=1} \lambda_i h_i P_i
+$$
+
+La tasa de ingesta de energía está dada por
+$$
+\frac{E}{T} = \frac{T_s\displaystyle\sum_{i=1}^n\lambda_iE_iP_i}{T_s+T_s\displaystyle\sum_{i=1}^n\lambda_ih_iP_i} = \frac{\displaystyle\sum_{i=1}^n\lambda_iE_iP_i}{1+\displaystyle\sum_{i=1}^n\lambda_ih_iP_i}
+$$
+
+Si dos tipos de comida $L$ y $R$ están disponibles y se cumple que
+$$
+\frac{\lambda_R E_R}{1+\lambda_R h_R}> \frac{\lambda_R E_R + \lambda_L E_L}{1+\lambda_R h_R + \lambda_L h_L}
+$$
+se predice preferencia exclusiva por $R$. Esto se puede acomodar para resultar en 
+\begin{equation}
+	\frac{1}{\lambda_R} < \frac{E_R}{E_L}h_L-h_R
+\end{equation}
+
+La misma desigualdad se puede derivar de la ecuación (2): con ella se predice preferencia exclusiva por $R$ cuando
+\begin{equation}
+	t_{1R} < t_{2L} - t_{2R}
+\end{equation}
+Si esta desigualdad se escribe como
+$$
+t_{1R} + t_{2R} < t_{2L}
+$$
+la interpretación biológica es simple: si $L$, la presa menos preferida, es encontrada, debería rechazarse si toma más tiempo manejarla ($t_{2L}$) que encontrar ($t_{1R}$) y manejar ($t_{2R}$) una presa del tipo $R$. Lo importante es que ambos modelos predicen preferencia exclusiva bajo las mismas condiciones.
+
+Los modelos convergen en otras predicciones. Sin embargo se pueden distinguir. Parecen diferir en el efecto predicho de variar la densidad de las presas menos preferidas en la distribución de presas. Además, difieren en que la hipótesis de reducción de la demora predice una violación del axioma de Luke según el cual añadir alternativas irrelevantes no debería influir en la elección. En una situación con dos alternativas de distinto valor pero aceptables, la introducción de una tercera alternativa inaceptable no influye en la preferencia original de acuerdo con la teoría de optimalidad; pero resulta en una convergencia de las distribuciones de elección para las dos alternativas aceptables de acuerdo con una versión de tres alternativas de la hipótesis de reducción de la demora. Las predicciones de la hipótesis de reducción de la demora han recibido soporte empírico a este respecto.
+
+Sin embargo, lo impresionante no son sus diferencias sino la similitud de las predicciones que hacen en múltiples situaciones. Los modelos se complementan: la optimalidad asume que la selección natural dio forma a los organismos para maximizar la ingesta por unidad de tiempo. La hipótesis de reducción de la demora sugiere un principio general mediante el cual esto se puede lograr: elección de eventos correlacionados con disminución del tiempo al siguiente reforzador. Se especula que los sujetos serían más sensibles a cambios en la demora que a otras variables como la tasa de ingesta energética. Lo interesante es que un modelo de selección natural de estrategias de forrajeo hace predicciones consistentes con una hipótesis de un fenómeno más proximal.
+
+La desigualdad (3) deriva en que un tipo de presa debería ser ignorado si su adición a la dieta disminuye la tasa de ganancia de energía. La densidad global de presas debería afectar la selectividad de los tipos de presa más preferidos: cuanto más abundante el tipo de presa preferido, más selectivo el forrajeador (es decir, menos frecuencia de aceptación de otros tipos de presa). Esta predicción fue probada por Lea (1979) y por Abarca y Fantino (1982). En sus experimentos, incrementar la longitud del estado de búsqueda (disminuyendo así la densidad global de presas) tuvo como efecto un decremento en la selectividad de los animales, es decir, una mayor aceptación de la alternativa menos preferida, aunque las predicciones de la hipótesis de reducción de la demora parecen más precisas al utilizar VI en lugar de FI en la etapa de búsqueda. Esto significa que el incremento en selectividad en función de la densidad de presas fue confirmado en un análogo operante de una situación de forrajeo. Esto muestra que los estudios de laboratorio pueden ser útiles no solo para medir los efectos de las variables del forrajeo, sino también para hacer pruebas justas de las predicciones teóricas dada la gran base de datos empíricos en procedimientos comparables.
+
+¿Cuánta validez externa pueden tener los resultados del laboratorio? Hay aspectos muy poco naturales en las simulaciones de laboratorio, por ejemplo, el acceso a la comida es muy distinto de las situaciones naturales en las que la comida se encuentra un grano a la vez y no se accede a ella por tiempo; entregar la comida por tiempo permite hacer comparaciones con el cuerpo de datos experimentales previo, pero puede mellar la validez externa. Otra diferencia está en el uso de sesiones de duración fija en lugar de sesiones continuas, que se asemejarían más a los encontrado en la naturaleza. Se ha argumentado que la privación de alimento es un estado raro ``de emergencia'' en la naturaleza, de modo que al usar sesiones de una hora con privación de 24 horas nos estamos enfocando en la conducta de emergencia de los organismos. Esto se relaciona con el problema del uso de economías abiertas y cerradas. Finalmente, una limitación más está en la evaluación del forrajeo en condiciones que se parecen a aquellas de la conducta {\itshape within-meal} en lugar de {\itshape between-meal}. Tradicionalmente utilizamos porciones de alimentos en lugar de alimentos completos como reforzadores. Por ello es importante determinar la generalidad de las conclusiones cuando los reforzadores son alimentos completos. Sin embargo, en cuanto a las palomas y otras aves se refiere, probablemente las porciones sean suficientemente válidas.
+
+Baum señala tres ``artificialidades'' de la caja operante:
+\begin{enumerate}
+	\item Ocurre en una caja y no en el exterior.
+	\item Ocupa una pequeña porción de las horas activas del organismo.
+	\item Presenta la comida en un programa que se parece poco a la ocurrencia de comida en la naturaleza.
+\end{enumerate}
+Aunque él mismo señala las similitudes entre los resultados dentro y fuera de la caja, y en sesiones de 1 y 24 horas. Además presenta su propia investigación que hace a los animales moverse dentro de la caja para simular la búsqueda de comida. Esto además aborda una limitación adicional de las cajas operantes, que es la falta de separación espacial.
+
+Debe ejercerse cuidado al moverse desde los procedimientos bien establecidos del condicionamiento operante hacia otros que reflejen mejor las condiciones naturales. Esto permitirá incrementar la validez externa sin comprometer la integridad de los resultados ya bien estudiados. Además, solo alterando gradualmente los procedimientos se puede conocer qué variables son responsables del cambio en los resultados.
+
+{\scshape\bfseries Operant analogues to foraging: Some research issues}
+
+Se examinan dos tipos de preguntas: uno de ellos tiene que ver con el efecto de manipular parámetros que se piensa que afectan al forrajeo en análogos operantes. El otro se relaciona con determinar si el efecto de las manipulaciones dependen del contexto {\slshape económico} en el que se hacen las elecciones.
+
+Además del tiempo de búsqueda manipulado en un experimento mencionado antes, que cambió la selectividad de los organismos, se puede modificar el tiempo de viaje: el tiempo para moverse de un parche de comida a otro, o de pasar de responder en un programa a otro. La hipótesis de reducción de la demora no dice nada explícito sobre el tiempo de viaje, pero si este afecta al tiempo de búsqueda o procuración,se predecirán cambios en la preferencia. Al aumentar el tiempo de viaje en la fase de búsqueda (o elección) debería disminuir la selectividad (haciendo que los sujetos acepten la alternativa menos preferida más a menudo). Así, la demora de cambio es similar al tiempo de viaje o búsqueda.
+
+Tanto la optimalidad como la ecuación (2) indican que cambiar la disponibilidad de la presa más preferida debería tener un mayor efecto en la elección que cambiar la disponibilidad de la menos preferida, pero solo la ecuación (2) predice que esto último debería tener un efecto, por pequeño que sea. Esas predicciones se evalúan. Otros experimentos varían la probabilidad de entrega de comida de las alternativas, dado que ambas hipótesis predicen que esto modulará la preferencia. Otros mantienen constantes los tiempos $t_{2L}$ y $t_{2R}$ mientras se varía la cantidad de comida entregada. ¿La preferencia por la recompensa grande es una función inversa del tiempo de búsqueda pero directa del tiempo de manejo, como predicen ambas teorías?
+
+Otros experimentos evalúan el efecto de economías abiertas (en las que los organismos reciben comida fuera de la sesión para mantener su peso) y cerradas (en las que toda la comida se recibe en la sesión). Se han encontrado diferencias en las tasas de respuesta evocadas entre ratas en economías cerradas y palomas en abiertas. Se ha argumentado que en una economía cerrada en la que se trabaja las 24 horas, es necesario que las tasas de respuestas incrementen según disminuye la densidad de la comida entregada por el programa para mantener un nivel adecuado de consumo; mientras que en economías abiertas, dado que de cualquier modo habrá comida disponible al finalizar una sesión, las respuestas no necesitan incrementar según el programa se adelgaza. Se argumenta que existen ambientes naturales que se asemejan más a una economía abierta y otros a una cerrada, por lo que la mayoría de los experimentos descritos se llevarán a cabo con la mitad de los sujetos asignados a cada tipo de economía.
+
+{\scshape\bfseries Operant analogues to foraging: Other theoretical viewpoints}
+
+La optimalidad y la hipótesis de reducción de la demora no necesariamente proveerán de explicaciones exhaustivas. La optimalidad fue elegida por su simplicidad, que le permite ser sometida a prueba; la hipótesis de reducción de la demora, porque ha guiado la investigación de ese grupo sobre la elección por años. Otras explicaciones, como las proveídas por Gibbon y Balsam (1981) o Jenkins y col. (1981) hacen predicciones similares a aquellas que hace la hipótesis de reducción de la demora, aunque fueron desarrolladas en el campo del condicionamiento pavloviano. Además, Gibbon y Balsam buscan explicar la adquisición de la conducta más que sus valores en estado estable.
+
+Rachlin, Battalio, Kagel, y Green (1981) han desarrollado la teoría de maximización para describir la conducta en estado estable. En esta aproximación la conducta se ve como el resultado de la interacción entre la respuesta operante, el reforzador y otras actividades como el ocio. Aunque no siempre es claro cómo se puede aplicar en el dominio de los experimentos presentes.
+
+Staddon (1983) ha desarrollado trabajo sobre aprendizaje que hace contacto con el forrajeo y que lidia con la elección en el procedimiento de cadenas concurrentes. Staddon considera que la optimalidad es útil para entender el forrajeo y en situaciones consideradas no análogas a éste. Staddon desarrolla una desigualdad similar a la (4). Esta ecuación predice lo que debería pasar cuando se varía la duración de la búsqueda o el manejo. Las predicciones son idénticas a las de la aproximación presente. Staddon señala que su análisis no es aplicable cuando ambas alternativas son aceptables (cuando la desigualdad 4 no se satisface), pero nota que el modelo de Fantino es aplicable. Así, la postura de Staddon no es relevante en el experimento que varía la disponibilidad de recompensas más y menos preferidas.
+
+La teoría de incentivo de Killeen se ha extendido para lidiar con elección en cadenas concurrentes, por lo que es aplicable a los experimentos presentes.
+\begin{equation}
+	S = R(P + C)
+\end{equation}
+donde $S$ es la ``fuerza'' de un programa, $R$ es la tasa de {\itshape arousal} que motiva a las respuestas, $P$ es el efecto direccional primario de un reforzador, y $C$ es el efecto direccional de un reforzador condicionado.  $R$ es la tasa global de reforzamiento de una tecla, $P$ decrece exponencialmente con la demora de reforzamiento, y $C$ es una función de la inmediatez del reforzador primario señalado por el encendido del TL. Al aplicar las ecuaciones de Pilleen obtenemos que (1) la preferencia debería disminuir cuanto más larga es la fase de búsqueda, (2) la preferencia debería incrementar con la duración del manejo si se mantiene una razón constante entre los tiempos de manejo (o mientras tiempos de manejo iguales son incrementados con cantidades de reforzamiento desiguales), (3) los efectos de variar separadamente la disponibilidad de consecuencias más y menos preferidos deberían ser simétricos. Esta última predicción distingue la teoría de Pilleen de la optimalidad y la hipótesis de reducción de la demora. De acuerdo con la optimalidad, solo la disponibilidad de las consecuencias más preferidas debería afectar la elección. De acuerdo con la reducción de la demora, la disponibilidad de ambas consecuencias debería afectar la elección, pero la más preferida debería tener un efecto mayor. De acuerdo con Killeen, la disponibilidad de ambas consecuencias debería afectar igualmente a la elección.
+
+{\scshape\bfseries Operant analogues to foraging: Procedure, data, and implications}
+
+{\bfseries Efectos del tiempo de viaje.}  Según Baum, el tiempo de viaje entre alternativas debería desalentar el cambio de un parche a otro. La demora de cambio simula el tiempo de viaje. Se midió el efecto de variar la densidad de las presas manipulando la longitud de la demora de cambio. Las dos teorías en cuestión predicen que mayor tiempo de búsqueda se traducirá en mayor indiferencia entre las alternativas. Otros estudios que varían la duración del estado de búsqueda en tareas de elección sucesiva han confirmado las predicciones de los dos modelos. Sin embargo no se varió el tiempo de viaje (la demora de cambio). 
+
+Otros estudios que sí manipulan la demora de cambio han mostrado que mientras incrementa el tiempo de viaje, el tiempo pasado en una alternativa (``patch residence'') también incrementa en una forma que resulta en una preferencia incrementada por la alternativa preferida. Estos resultados coinciden con la predicción del {\itshape marginal value theorem} que indica que un forrajeador debería permanecer más en un parche mientras el tiempo de viaje entre parches incrementa. Sin embargo, cuando incrementa el tiempo de viaje en la fase de búsqueda, la preferencia por la alternativa preferida debería disminuir de acuerdo con los modelos de dieta óptima (Charnov). Así, incrementar el tiempo de búsqueda puede incrementar el tiempo pasado en un parche en programas concurrentes simples, pero puede decrementar la selectividad cuando se buscan parches en la fase de búsqueda de programas de cadenas concurrentes.
+
+Para ver el efecto de cambiar el requisito de demora de cambio se usó un programa de cadenas concurrentes modificado en el que solo una alternativa estaba disponible en cualquier momento dado y un requerimiento de demora de cambio FI $x$ seg debía satisfacerse para pasar de una alternativa a otra. El cambio era controlado mediante una tecla. Una respuesta en ella apagaba la tecla activa, y otra respuesta tras $x$ segundos encendía la tecla alternativa. Se realizaron dos experimentos, cada uno con versión de economía abierta y cerrada. En el primero, la condición de economía cerrada tenía una mayor duración de reforzamiento. En el segundo, la condición de economía cerrada tenía sesiones más largas. Ambos métodos cumplían los requisitos de las economías cerradas: los sujetos recibían comida suficiente en las sesiones para no necesitar extra. Estos experimentos también diferían en la duración de las fases de consecuencias (VI5 vs VI20 en un experimento; VI30 vs VI60 en el otro). Ambos experimentos examinaban el efecto de variar la longitud del requisito de demora de cambio en programas de cadenas concurrentes. Los valores de FI usados fueron de 0, 4 y 16 segundos.
+
+En ambos experimentos la preferencia por la alternativa preferida disminuyó mientras incrementó el tiempo de viaje, es decir, los sujetos se volvieron menos selectivos. El tipo de economía fue inconsecuente.
+
+La probabilidad de permanecer en presencia del estímulo que llevaba a la alternativa menos preferida también variaba en función de la duración del FI usado como requisito de demora de cambio. Según incrementó el requisito de FI, incrementó la probabilidad de permanecer en la alternativa menos preferida cuando esta era presentada (disminuyó la cantidad de cambios). Es decir, los sujetos fueron más indiferentes entre las alternativas. 
+
+Estos resultados son consistentes con ambos modelos. Según la reducción de la demora, requisitos de cambio mayores incrementan la demora promedio $T$ al reforzamiento primario, por lo que se esperaría una tendencia hacia la indiferencia en las proporciones de elección. La teoría de optimalidad predice menos selectividad cuando incrementa el tiempo de búsqueda. Como resultado de la depleción las ganancias de permanecer en un parche decrementan hasta que es mejor cambiar. Sin embargo, si el tiempo de viaje entre parches incrementa, será más redituable permanecer más tiempo en el parche actual.
+
+{\bfseries Efectos asimétricos de accesibilidad.}
+
+Si uno de los programas desiguales es variado en cadenas concurrentes, la ecuación (2) requiere de una distinta tasa de cambio en las proporciones de elección dependiendo de si la fase de elección del programa cambiado llevó a la fase de consecuencias más larga o más corta. Cambiar la disponibilidad de cualquier alternativa debería afectar a la elección dado que se altera $T$ en ambos casos. Sin embargo, cambiar la disponibilidad de la alternativa menos preferida  debería tener un efecto menor dado que $T$ cambia menos con cambios en el programa que lleva a la consecuencia de más duración que con un cambio comparable en el programa que lleva a la consecuencia de menor duración. La teoría de optimalidad hace una predicción comparable, pero a diferencia de la ecuación 2, dice que la tasa de cambio de la disponibilidad del tipo de presa menos preferido no debería tener efecto en la elección. La {\itshape teoría incentiva} de Killeen hace una tercera predicción: la tasa de disponibilidad de la presa menos preferida debería tener el mismo efecto que la tasa de disponibilidad de la más preferida. 
+
+En estos experimentos se varió la longitud de tiempo de uno solo de los IL. De acuerdo con las tres teorías, variar la longitud del IL que lleva al programa corto (preferido) debería producir un cambio en la proporción de elección, y variar el IL complementario debería tener un efecto igual ({\itshape teoría incentiva}), menor (reducción de la demora) o ninguno (optimalidad). Se evaluó con un programa de cadenas concurrentes, pero solo uno de los programas estaba disponible a la vez. El cambio (``viaje'') de una alternativa a otra requería de completar un FI4s en la tecla de cambio (central). Completar el VI en alguna de las teclas laterales llevaba al TL, lo que iniciaba la etapa de manejo, en la que se apagaba la tecla central y comenzaba un VI en el que la otra tecla no estaba disponible (se asume en teoría de optimalidad que al manejar una presa, otras presas dejan de estar disponibles). Al completar el VI se daba acceso a la comida. La mitad de los animales fueron mantenidos en una economía abierta y la mitad en una cerrada (de la que había dos tipos).
+
+La variable independiente fue la duración de las fases de elección: en la línea base, VI60; en una segunda condición, VI120 para el programa corto, y luego para el largo; y en la tercera condición, VI30 para el corto y luego para el largo.
+
+(1) No se encontraron diferencias entre los sujetos en economías abiertas y cerradas. (2) Cambiar la accesibilidad a la consecuencia preferida tuvo un mayor efecto en la elección que cambiar la accesibilidad a la alternativa menos preferida. (3) Las proporciones de elección en cada condición no diferían de los valores requeridos por la hipótesis de reducción de la demora.
+
+Estos resultados prueban el efecto de alterar la tasa de encuentros con la alternativa preferida sobre la proporción de elección, pero el efecto de cambiar la tasa de encuentro de la alternativa no preferida es menos consistente. Custard (1977) y Lea (1979) encontraron resultados similares. Los resultados de este y otros estudios son quizá más consistentes con la hipótesis de reducción de la demora que con la teoría de optimalidad en el sentido de que variar la frecuencia de la presa menos preferida a veces afecta la distribución de las presas seleccionadas. No parece haber soporte para la sugerencia de Killeen de que el cambio en la disponibilidad de ambos tipos de presa debería cambiar igualmente la elección.
+
+{\bfseries Variando los tiempos de búsqueda y de manejo con distintas cantidades de comida.} Hasta ahora la función de recompensa ha sido constante para todo sujeto dado y se han manipulado otras variables. En los experimentos de Masato Ito se evaluó el efecto de variar la accesibilidad a distintas cantidades de comida, además de variar el tiempo de manejo.
+
+La sesión comenzaba con el encendido de la tecla izquierda en blanco, lo que iniciaba la fase de búsqueda. Tras un programa VIx iniciaba la fase de elección, en la que se iluminaban ambas teclas: la izquierda en blanco y la derecha en rojo o verde. Si la paloma completaba tres respuestas en la tecla derecha comenzaba la fase de manejo. Si dejaba de responder por 30s o completaba 3 respuestas en la tecla izquierda, volvía a comenzar la fase de búsqueda. En la fase de manejo la tecla izquierda se apagaba y comenzaba un programa VI. Responder en la tecla derecha entregaba comida de acuerdo con el VI. Cuando se entregaba la comida, la tecla se apagaba durante 6 segundos. Después de la recompensa, la luz izquierda se encendía de nuevo y comenzaba otro ciclo. 
+
+La variable independiente era la duración de los VI en las fases de búsqueda y de manejo. Los valores usados en la fase de búsqueda fueron de 5, 15, y 30 segundos. En la fase de manejo fueron de 5 y 20 segundos. 
+
+Mientras incrementa el VI en la fase de búsqueda, los sujetos deberían volverse menos selectivos y aceptar la recompensa menor en mayor medida. Esta predicción se sigue de la ecuación 2 cuando se modifica para dar cuenta de la elección entre distintas magnitudes de reforzamiento. También se sigue de la teoría de optimalidad: la desigualdad análoga a la desigualdad (3) puede derivarse de la teoría de optimalidad para tiempos de manejo iguales y recompensas desiguales ($E_{R}>E_{L}$):
+\begin{equation}
+	\frac{
+	1
+	}{
+	\lambda_{R}
+	}
+	<
+	\frac{
+	E_{R}
+	}{
+	E_{L}
+	}
+	\left[
+		\frac{
+		h
+		}{
+		1 + \lambda_{R}h
+		}
+	\right]
+\end{equation}
+
+Incrementar la densidad de la presa preferida (mayor $\lambda_{R}$) o incrementar el tiempo de manejo común hace más probable la especialización.
+
+Los sujetos en el experimento de Ito se hicieron más selectivos cuando las duraciones de las recompensas eran de 2 vs 6 segundos, comparados con la condición de 3 vs 6. Es decir, la selectividad incrementa con mayores tiempos de búsqueda.
+
+Ito varió también la duración de los tiempos d manejo iguales cuando las duraciones de las recompensas eran desiguales. El VI en la fase de búsqueda se mantuvo en 5 segundos, y las duraciones de recompensas fueron de 3 y 6 segundos. Los que varió entre condiciones fue la duración de los tiempos de manejo iguales de VI20 a VI5 a VI20 de nuevo. La ecuación (2) requiere que los animales se inclinen a la indiferencia (menos selectividad) cuando el tiempo de manejo decrece. Una predicción comparable se hace desde las teorías de optimalidad y de Killeen. Esa predicción se confirmó en todos los sujetos.
+
+En el contexto de estos análogos operantes de forrajeo, estas hipótesis parecen consistentes con los efectos de las variaciones en tiempos de búsqueda y de manejo.
+
+{\bfseries Efectos de recompensa porcentual.} En la naturaleza varía la probabilidad de encontrar comida en cada parche. En ocasiones un ``buen'' parche o presa es difícil de obtener. La mayoría de los modelos de forrajeo asumen que los animales jerarquizan las recompensas con base en promedios, con lo que se elimina toda sensibilidad a la variación ambiental. Esto implicaría que los animales no tienen preferencia entre una recompensa variable y la misma recompensa promedio entregada con certeza. Aunque ciertos resultados ponen esta noción en duda.
+
+Los estudios siguientes variaron la probabilidad de reforzamiento de la alternativa preferida en una simulación de forrajeo en el laboratorio. Los programas de las fases de manejo fueron VI5s y VI20s, que inicialmente llevaban a comida en todos los ensayos. En condiciones posteriores la probabilidad de reforzamiento de la alternativa preferida (VI5s) disminuyó. Había interés en determinar si habría un punto de indiferencia (en el que VI5s y VI20s se aceptaran con la misma frecuencia) cuando la probabilidad de recompensa de VI5s fuese de .25. Basándose en Kendall (1974) y Fantino (1979) se esperaría que el punto de indiferencia ocurriese cuando la probabilidad de reforzamiento para VI5s fuese menor que 0.25. 
+
+La variable independiente fue la probabilidad de reforzamiento de VI5s. Las probabilidades empleadas fueron de 1.0, 0.1, 0.25, 0.63, 0.25 y 0.1 en ese orden. La mitad de los sujetos se mantuvo en una economía abierta y la mitad en cerrada. Las medidas de elección fueron las probabilidades de aceptar VI5 y VI20 cuando cada uno estaba disponible.
+
+Las preferencias cambiaron en función de la probabilidad de reforzamiento del VI más corto para todos los sujetos. Aunque los sujetos fueron sensibles a la probabilidad de reforzamiento, siempre prefirieron la alternativa con la mayor tasa de recompensa. Cuando la probabilidad era de .25, ambas alternativas entregaban en promedio un reforzador cada 20 segundos y eran aceptadas en una magnitud comparable. Si acaso, los sujetos preferían la recompensa con certeza (VI20s), lo ocntrario de lo que se predeciría.
+
+{\bfseries Efectos del contexto económico.} En todos excepto, quizás, en un experimento no se encontró diferencia entre las economías abiertas y cerradas, por lo que la generalidad de las relaciones funcionales encontradas no parece depender del contexto económico, al menos cuando los procedimientos involucran elecciones {\itshape simultáneas} y no {\itshape secuenciales}. 
+
+En el procedimiento de recompensa porcentual anterior, que fue el primero en involucrar elección sucesiva y sujetos en los dos tipos de economías, se encontró cierta diferencia entre los sujetos de distintas economías. La probabilidad de aceptar el tiempo largo de manejo (VI20s) es mayor para los sujetos en economía cerrada. Este efecto es mínimo en los mismos sujetos para la probabilidad de aceptar el tiempo corto. Esto es consistente con los efectos de la privación en la toma de riesgos en los juncos.
+
+Caraco ha mostrado que cuando la ingesta de los sujetos es mayor que el mínimo requerido para sobrevivir, prefieren fuentes más constantes de comida. Pero cuando su ingesta es menor, prefieren fuentes con mayor variabilidad. En las palomas de estos experimentos parece ocurrir algo similar: sujetos en economías cerradas deberían tener mayor aversión al riesgo.
+
+{\scshape\bfseries Direcciones futuras}
+
+Los resultados de Caraco que indican que algunas aves prefieren recompensas fijas contradicen estudios operantes con palomas. ¿Qué diferencias en procedimientos explican los resultados distintos? Primero se evalúa la hipótesis de aversión al riesgo de Caraco. Dado que los sujetos en estudios operantes se mantenían en economías abiertas, es posible que estuviesen lo bastante privados para ser adversos al riesgo. 
+
+Otras variables deben evaluarse para entender la relación entre reforzamiento porcentual y el contexto económico. Por ejemplo, ¿las diferencias seguirían ocurriendo si sujetos en ambos tipos de economías fuesen mantenidos en pesos similares? ¿O si se mantuviese constante el tipo de economía pero se variase el peso? Otro aspecto interesante está en la diferencia entre procedimientos de elección sucesiva y simultánea. En estos experimentos los sujetos en economías cerradas tenían más probabilidad de aceptar la alternativa con el mayor tiempo de manejo pero con recompensa segura, e lugar de arriesgarse a regresar al estado de búsqueda. Los sujetos más privados tenían más probabilidad de elegir el riesgo y rechazar la recompensa segura pero pobre. No se sabe si el efecto del tipo de economía en el experimento de recompensa probabilística se debió a la recompensa probabilística o al procedimiento de elección sucesiva.
+
+Se espera conducir análogos operantes al forrajeo con procedimientos que se asemejen a ciertos aspectos naturales. Pasar lentamente de los principios bien establecidos de procedimientos operantes hacia condiciones naturales. Se pretende también distinguir mejor teórica y empíricamente entre la teoría de optimalidad y la hipótesis de reducción de la demora. Aunque se quiere diferenciar, poco interesa elegir entre ellas, porque ninguna parece contar la historia completa. Se espera que ambas otorguen pistas que guíen la investigación experimental sobre elección y forrajeo.
+
+Estos experimentos fueron guiados por la teoría de optimalidad y la hipótesis de reducción de la demora. Los resultados de experimentos que variaron la duración de la fase de búsqueda, la duración del tiempo de viaje, la duración del manejo, la probabilidad de recompensa y la tasa de accesibilidad están contempladas en la hipótesis de reducción de la demora, y también son en general consistentes con la teoría de optimalidad. Se espera que la tecnología del laboratorio dé paso a estudios fructíferos en forrajeo.
+
+\newpage
+
+{\Large\scshape\bfseries Open Peer Commentary}
+
+{\scshape\bfseries Skinner box ecology: Rules to forage by}
+
+{\scshape C. J. Bernard}
+
+Es un acierto pensar que la hipótesis de reducción de la demora y la teoría de optimalidad no son alternativas. La teoría de optimalidad habla sobre cómo la selección natural puede moldear las decisiones de forrajeo, mientras que la hipótesis de la reducción de la demora provee un mecanismo posible mediante el cuál se puede aproximar una solución óptima. Es lo que lo ecólogos conductuales llamarían una útil regla de dedo. 
+
+Sin embargo la selección natural no necesariamente producirá soluciones perfectas. A menudo hay soluciones aproximadas debido a que el producto solo puede ser tan bueno como permiten las materias primas (mutación e historia filogenética) y las limitaciones presentes. La hipótesis de reducción de la demora es justo lo que esperaríamos de un forrajeador moldeado por la selección natural y no por un ingeniero.
+
+La aproximación operante da técnicas experimentales convenientes para distinguir entre obtención aproximada y absoluta de soluciones óptimas. Las instancias en las cuales la hipótesis de reducción de la demora y la optimalidad son contradictorias son informativas. Por ejemplo, la hipótesis de reducción de la demora provee de una explicación para situaciones en que los forrajeadores eligen la presa menos preferida, lo que es contradictorio con la teoría de optimalidad. Se suele explicar como parte del tradeoff entre exploración y explotación. Pero el uso de una regla simple de gratificación a corto plazo como la hipótesis de reducción de la demora tiene el mismo efecto, aunque, por supuesto, siempre será difícil distinguir entre ambas perspectivas.
+
+Aun dentro de los paradigmas experimentales presentados, está claro que la hipótesis de reducción de la demora no es la historia completa. En ocasiones los resultados contradicen tanto a la teoría como al forrajeo óptimo``perfecto''. En uno de sus experimentos tanto la optimalidad perfecta como la aproximada predicen un cambio por pasos en la elección mientras el FI en la fase de búsqueda incrementa, peo el cambio observado es continuo. Herrnstein y Vaughan han dicho que este tipo de cambio gradual se esperaría si los animales siguen una regla simple de mejoramiento ({\itshape melioration}): cambiar a la alternativa con la tasa local de recompensa más alta.
+
+Las técnicas operantes además dan una herramienta para investigar el forrajeo sensible al riesgo. Se suele investigar el riesgo en un contexto en el que los depredadores no cumplen sus necesidades energéticas. Pero los resultados citados por Fantino sugieren otros factores que pueden afectar a la sensibilidad al riesgo. La tendencia al riesgo en una economía abierta sí podría ser debida a un déficit energético, pero también podría deberse a la predictabilidad a largo plazo reducida de la comida en economías abiertas. Se ha mostrado que las musarañas responden ante competidores incrementando su tendencia al riesgo. La competencia reduce la predictabilidad de la comida. Como regla general, puede ser benéfico para los animales minimizar el riesgo de tener malos resultados si están cumpliendo con sus requerimientos energéticos, pero ser indiferentes al riesgo cuando no es así.
+
+Hay  problemas de analogía al comparar las técnicas operantes con los entornos naturales, como las definiciones de lo que compone tiempos de búsqueda, viaje o manejo, y la confusión entre calidades de presa y de parche en la caja de Skinner, pero aun así es un área prometedora la dada por la conjunción de la psicología operante y la ecología conductual. Pero debe ser claro que la teoría de aprendizaje y sus modelos ofrecen un mecanismo y no una alternativa para el forrajeo óptimo. Fantino y Abarca se acercan mucho a perder esa perspectiva en ocasiones.
+
+{\scshape\bfseries The adaptive fitness of randomness in choice and foraging behavior}
+
+{\scshape Pierre Bovet}
+
+Fantino y Abarca no enfatizan un aspecto crucial: la significancia biológica de la variabilidad intrínseca a las elecciones de los sujetos. El control que dan las condiciones de laboratorio hace que esta aproximación sea útil para el estudio de la importancia de la irreductibilidad de la variabilidad conductual.
+
+Los animales se enfrentan a un ambiente contingente, pero no muestran estrategias óptimas. En una situación de dos alternativas con probabilidades de reforzamiento desiguales, tienden a igualar sus respuestas a las probabilidades de reforzamiento en lugar de elegir solamente la alternativa más ventajosa. Así, parece que los animales responden a la aleatoriedad del ambiente con aleatoriedad en su conducta en lugar de con conducta sistemática que resulte óptima a la larga. La aleatorización es un proceso simple y efectivo para resolver ciertos problemas complejos, como la difusión genética o la búsqueda de información.
+
+``Muestrear es una necesidad implícita de los modelos de forrajeo óptimo'', pero su función no se limita a una fase previa a la explotación, sino que muestreo y explotación están íntimamente ligados. Las funciones de ingesta de información y de ingesta de energía deben optimizarse, y quizá en ambas el mecanismo de optimización sea la reducción de la demora.
+
+Algunos modelos de forrajeo que toman en cuenta la variabilidad del ambiente toman a las estrategias mixtas como óptimas, mientras que los modelos deterministas presumen que los organismos deberían asignar toda su conducta al mejor recurso.
+
+La conducta tiene una aleatoriedad intrínseca irreductible a la que no se le ha prestado la suficiente atención.
+
+{\scshape\bfseries Preference for a hypothesis: Is the case ``closed''?}
+
+{\scshape Marc N. Branch}
+
+Fantino y Abarca aplicaron la hipótesis de reducción de la demora al forrajeo. Notan que hace predicciones similares a la teoría de forrajeo óptimo, por lo que sugieren que la reducción de la demora podría ser un mecanismo mediante el cual emergen actividades que parecen óptimas. Con base en esto diseñan tareas de laboratorio que pretenden emular ciertas características del forrajeo para determinar el grado en el que se podrían relacionar la hipótesis de reducción de la demora con la teoría de forrajeo óptimo.
+
+Ambas perspectivas presentan explicaciones al nivel del análisis, en lugar de explicaciones con base en referencias a eventos que ocurren en otra dimensión. Por lo tanto, es posible estudiar directamente las interrelaciones entre ambas aproximaciones teóricas y al hacerlo intentar extender la generalidad de la hipótesis de reducción de la demora.
+
+Una evaluación completa requiere no solo encontrar nuevas situaciones en las cuáles aplicar la ley, sino también evaluar sus limitaciones. En esto fallan ocasionalmente Fantino y Abarca. Al describir sus resultados de 1982, notan que la relación obtenida no es una función ``en pasos'' como requiere la hipótesis de reducción de la demora, sino gradual. ¿La hipótesis se sostiene aun así? ¿Permanece libre de parámetros solo si sacrifica el ajuste con los datos?
+
+En otro caso argumentan que no se encontraron diferencias significativas entre economías abiertas y cerradas. Sin embargo, la inspección de los datos indica que sí podrían haberlas. Parece que Fantino y Abarca tomaron ese resultado por ser conveniente y cesaron sus análisis. No parecen estar buscando los límites de la hipótesis, solo sus aciertos.
+
+Otro problema viene del hecho de que las definiciones usadas de ``economía abierta'' y ``economía cerrada'' no se relacionan fácilmente con las condiciones naturales. En la naturaleza los animales pueden forrajear en cualquier momento, mientras que en el trabajo de laboratorio solo se permite una vez por día. Fantino y Abarca dicen no ver cómo estudiar en condiciones con sesiones de 24 horas podría producir resultados distintos de los obtenidos con la economía cerrada. Quizá deberían considerar el tiempos sin oportunidad de comer como una variable motivacional importante. Si se pretende emular las condiciones naturales, hay muchas variables que se deben incluir como parte de una economía ``cerrada''. No todas las economías abiertas ni cerradas son iguales.
+
+{\scshape\bfseries Pavlovian factors in choice behavior}
+
+{\scshape Bruce L. Brown}
+
+Se comenta sobre una aproximación distinta de la hipótesis de reducción de la demora y de la optimalidad, una basada en mecanismos Pavlovianos.
+
+Análisis Pavlovianos actuales se enfocan en el papel de las relaciones entre eventos ambientales, sin contar las consecuencias de las respuestas, en el control de la conducta. Estos análisis se encuentran en gran medida ausentes en el estudio de la elección. Se ha analizado el papel del condicionamiento clásico en procedimientos de aversión al sabor o de automoldeamiento.
+
+Una aproximación más explícita a la elección viene de un experimento en el que se presentaron teclas encendidas a palomas asociadas con tres probabilidades o con tres duraciones de reforzamiento. Para probar la elección, se presentaban simultáneamente las tres luces y se registraba la primera respuesta. En ambos experimentos la elección se relacionaba monotónicamente con la variable independiente, mientras que medidas más convencionales como la tasa de respuesta, no. Esto indica que las pruebas de elección aportan datos que siguen leyes y que son sensibles en procedimientos de automoldeamiento. Esto sugiere que la conducta de elección en procedimientos operantes puede reflejar la influencia de relaciones Pavlovianas anidadas. La hipótesis de reducción de la demora tiene por blanco relaciones temporales entre componentes de un programa de cadenas concurrentes y reforzamiento como determinantes de la elección. Dado que las relaciones temporales entre estímulos y reforzadores tienen gran control sobre la conducta de picar la tecla en automoldeamiento, es posible que tales efectos fuesen revelados por la conducta de elección. 
+
+{\scshape\bfseries Encounter processes, prey densities, and efficient diets}
+
+{\scshape Thomas Caraco}
+
+El artículo se enfoca en una sola teoría de elección de dieta: el modelo ``estándar'' de dieta de Pulliam y Charnov. Se compara con la hipótesis de reducción de la demora, y las predicciones de los modelos se evalúan con algunos análisis experimentales. Otras teorías de selección de dieta abarcan un mayor rango de predicciones que aquellas deducidas del modelo estándar. Las diferencias en predicciones suelen derivarse de distintas presunciones con respecto al encuentro con items de comida.
+
+Asumiendo que en un ambiente un forrajeador se encuentra con dos tipos de presas, los valores energéticos esperados serán $e_{1}$ y $e_{2}$; los tiempos esperados de manejo serán $h_{1}$ y $h_{2}$. Presúmase que $\frac{e_{1}}{h_{1}}$ excede a $\frac{e_{2}}{h_{2}}$, y que las densidades de las presas son proporcionales a las constantes $\lambda_{1}$ y $\lambda_{2}$. Para distintos procesos de encuentros se analiza la relación ente $\lambda_{2}$ y una elección eficiente de dieta. Se consideran solo modelos en los cuales la presa se encuentra con probabilidad positiva en cada fase de búsqueda.
+
+{\bfseries 1. El modelo estándar: encuentros sucesivos, aleatorios, e independientes.} El ciclo de forraje consiste en fases de búsqueda y manejo separadas. El forrajeador busca simultáneamente ambos tipos de presa espacialmente separados, pero encuentra solo uno a la vez. Cada encuentro es aleatorio y se asume que es independiente. Los items del tipo de presa $i (i=1,2)$ se encuentran a una tasa probabilística constante $\lambda_{i}$, y la probabilidad de que el forrajeador descubra un item tel tipo $i$ es $\frac{\lambda_{i}}{\lambda_{1}+\lambda_{2}}$ independientemente de los encuentros pasados. Con estos supuestos, el criterio para maximizar la ingesta de energía no involucra a $\lambda_{2}$. La elección entre consumir exclusivamente el tipo 1 (especializarse en el tipo con mayor $\frac{e}{h}$) y consumir ambos tipos no depende de la densidad del tipo 2. Esta predicción no se puede probar con los procedimientos de Fantino dado que describen encuentros simultáneos con dos o tres distintos programas de reforzamiento.
+
+Incluso en encuentros sucesivos aleatorios e independientes, $\lambda_{2}$ puede influir en la elección de dieta. Se puede incorporar el tiempo de reconocimiento (para determinar el tipo de un item descubierto) entre el tiempo de búsqueda y la aceptación o rechazo de un item. La maximización de la ganancia de energía esperada por ciclo de forrajeo, ya sea por especialización o generalización, depende tanto de $\lambda_{1}$ como de $\lambda_{2}$.
+
+{\bfseries 2. Encuentros sucesivos, dependientes.} En encuentro sucesivos en los que el tiempo de búsqueda es aleatorio pero dependiente, McNair asume que la densidad de probabilidad del tiempo pasado en la fase de búsqueda depende del tipo del último item manejado. Es una presunción razonable cuando la presas se acumulan según su tipo, o cuando las habilidades perceptuales del forrajeador varían con la experiencia reciente. Tanto la generalización como la especialización de cualquiera de los dos tipos de presa puede ser lo más eficiente según los valores de los parámetros del modelo. En este caso, las densidades de ambos tipos de presa influyen en la composición de la dieta óptima. En este caso la variación de la densidad de la presa con menor $\frac{e}{h}$ debería tener un efecto mayor en las proporciones de dieta que cuando los encuentros son eventos independientes.
+
+{\bfseries 3. Encuentros simultáneos.} Las presas están espacialmente dispersas de forma aleatoria e independiente, pero lo bastante cerca para un encuentro simultáneo. Waddington y Holden asumen que el forrajeador se mueve siempre hacia el item con mayor tasa de recompensa inmediata (molecular). La elección depende de los valores energéticos, tiempos de manejo, y tiempos de viaje de los dos items. La densidad de la presa influirá el tiempo esperado para moverse de un item de tipo dado. Por lo tanto, las densidades de los dos tipos de presa afectan a las proporciones de dieta predichas por el período de forrajeo completo. Esta es otra situación en la cual la hipótesis de reducción de la demora y un modelo ecológico relevante tienen predicciones cualitativamente similares.
+
+{\scshape\bfseries Studies of food choice: The nutritional challenge}
+
+{\scshape Thomas W. Castonguay}
+
+La base de las conclusiones de Fantino y Abarca está en que los animales pueden obtener lo mejor aun de ambientes de gran escasez. Los datos indican que palomas privadas de comida se comportarán de modo que ganen alimento de la manera más rápida posible. Una especulación sin discutir en su revisión es que esta tendencia que opera en condiciones muy específicas también opera entre comidas. Otra presunción más importante sin probar es que la misma tendencia (ganar todo lo posible) se sobrepone a factores que influyen en la elección de items de dieta basada en la percepción de la paloma sobre su calidad.
+
+Aun se sabe poco del control de la elección de dieta. No se sabe si las estrategias intra comida también aplican entre comidas, ni cómo los animales controlan la calidad de su dieta. 
+
+¿Qué variables determinan la elección de la comida? Una de ellas es la cantidad (calorías), aunque la calidad dietaria también es un determinante importante. Suponer que solo la cantidad es importante, como hacen Fantino y Abarca, sería engañoso.
+
+En estos estudios falta la manipulación de variables sobre la calidad de la dieta (como la disponibilidad de macronutrientes). Es difícil estudiar la calidad dado que los requerimientos nutricionales cambian a lo largo de la vida. Por ello tanto la hipótesis de reducción de la demora como la teoría de forrajeo óptimo no logran dar cuenta completamente de las elecciones de animales reales. Se necesita introducir variable biológicas como metabolismo, edad, sexo, y estado nutricional.
+
+{\scshape\bfseries Foraging for a science of behavior}
+
+{\scshape Michael Davison}
+
+No debería ser necesario mostrar que la investigación de laboratorio es pertinente al forrajeo natural, pero lo es. Los motivos parecen estar en el nivel de los datos. Los biólogos argumentarán probablemente que la caja de Skinner es un ambiente artificial para el cual los organismos no están adaptados.
+
+Este argumento existe en todas las ciencias. Se dice que la investigación de laboratorio ignora que los sistemas y sustancias han evolucionado mediante su interacción con el ambiente, y su forma observable es una adaptación óptima a las limitaciones impuestas por las adaptaciones óptimas de otros agentes. Así, toda investigación de laboratorio sería inútil. Pero se espera que pocos sean tan radicales.
+
+La validez interna de una teoría de la conducta siempre depende de cómo lidia con los valores extremos o limitantes de variables y con una gran variedad de variables cualitativamente distintas. Es cuestión de validez externa que la experimentación del laboratorio nos dé información sobre el forrajeo natural, pero solo si se acepta antes una {\itshape dicotomía} entre natural y no-natural. Tal dicotomía quizá no existe. El laboratorio y el ``mundo real'' difieren solamente como puntos de un plano multidimensional de variables que afectan a la conducta.
+
+El punto en que Davison no está de acuerdo es en el intento de Fantino y Abarca de establecer un enlace entre las disciplinas sobre la base de que teorías de ambas hacen predicciones similares. La base de datos existente en cadenas concurrentes es pobre, aunque la consistencia de los datos entre estudios de laboratorio y naturales es impresionante y convincente. 
+
+Davison mismo ha evaluado algunos modelos de cadenas concurrentes sin encontrar alguna satisfactorio. Las teorías existentes parecen componer solo modelos ordinales basados más en el sentido común que en datos. Al forrajear en busca de una teoría óptima, la medida apropiada es la tasa de energía puesta en la investigación empírica dividida entre la cantidad de tiempo que los datos disponibles han sido manejados por los teóricos. Esta tasa es pequeña actualmente, por lo que se sugiere continuar forrajeando por más datos.
+
+Sobre los efectos del tipo de economía, Elliffe y Davison evaluaron a palomas en programas múltiples de intervalos variable (es decir, situaciones de elección sucesiva). Cuando las palomas se encontraban en su peso normal, las razones de las tasas de respuesta componentes siempre sobre-igualaban las razones de las tasas de reforzamiento componentes. Estos datos contrastan con los datos normales de ``short session plus deprivation''. Algo es distinto entre los procedimientos convencionales y continuos que no es explicable por los niveles de privación. Variar la privación a un 75\% del peso de los sujetos mediante un cambio general de la tasa de entrega de comida no afectó a esta sobreigualación, pero variarla mediante el acortamiento de la sesión sí incrementó los valores de sensibilidad. Parece ser que la longitud de la sesión afecta a la elección sucesiva, y que la privación afecta la elección sucesiva solo cuando las sesiones son cortas.
+
+F \& A produjeron economías cerradas de dos formas: incrementando la duración de los reforzadores, e incrementando la duración de las sesiones. Sus resultados parecen ir en la dirección contraria de los de Davison. La duración de la sesión quizá se traduce en la proporción del día en la cual las presas están disponibles. Quizá cuanto más tiempo están disponibles, más selectiva será la elección sucesiva, lo que podría ser consistente con el hallazgo de que incrementar el eslabón terminal (manejo) incrementa la selectividad. Esto se ajustaría a la hipótesis de reducción de la demora solamente si el tiempo en que las presas no están disponibles no se toma como contribuyente a $T$ en la ecuación 2, que se define como el tiempo total entre reforzadores. $T$ debería redefinirse como el tiempo total entre reforzadores durante el forrajeo. Por lo tanto, la aplicación de los hallazgos del laboratorio al campo aun es materia dubitativa. La elección sucesiva es una característica del forrajeo en al menos algunas especies, mientras que la elección simultánea parece una característica de otras. Se sabe que ni la privación ni la duración de la sesión afectan a la elección simultánea, por lo que algunas especies pueden diferir en la selectividad de acuerdo con la disponibilidad de presas, mientras que otras no.
+
+No podemos permitirnos decir que la observación naturalista sea el método principal, o siquiera uno mayor, dentro de la ciencia de la conducta.
+
+{\scshape\bfseries The integrative power of the CS-US interval in other contexts}
+
+{\scshape James A. Dinsmoor}
+
+La hipótesis de reducción de la demora predice el valor relativo de reforzamiento de dos estímulos en cadenas concurrentes con base en tres intervalos de tiempos: (1) del encendido del estímulo que señala el eslabón inicial hasta la entrega de la comida, (2) del encendido del estímulo del lado izquierdo hasta la entrega de comida, y (3) del encendido del estímulo del lado derecho a la entrega de comida. Es útil considerar a cada uno de estos intervalos como análogos al intervalo entre el encendido del estímulo condicionado y la entrega de uno incondicionado en condicionamiento pavloviano. 
+
+Un hallazgo bien establecido en el condicionamiento operante es que el poder reforzante de un estímulo pareado con un reforzador primario se conforma con el poder elicitador de un estímulo que ha sido pareado con un estímulo incondicionado. La única diferencia entre ambos procesos es que en el primer caso la propiedad conductual transmitida es el poder para reforzar, mientras que en el segundo caso es el poder para evocar una conducta.
+
+Si el análisis de Fantino y Abarca es general para todo el reforzamiento condicionado, como indica la ecuación (1), sería posible generar una fórmula que prediga los efectos cuantitativos de procedimientos más simples en los cuales se usa solamente una alternativa. En tal caso solo se compararían dos intervalos: el eslabón terminal (del inicio del estímulo que adquirirá las propiedades de reforzamiento a la entrega del reforzador), y el tiempo total entre reforzadores (del inicio de cada ciclo a la entrega del reforzador); es decir, los tiempos considerados serían el intervalo entre estímulos (CS-US) y entre reforzadores. Nótese que el intervalo entre reforzadores es el recíproco de la tasa de reforzamiento.
+
+Se podría decir que este cambio constituiría solamente uno cosmético, pues las propiedades cuantitativas de la hipótesis de reducción de la demora permanecerían iguales. Pero la conducta de los científicos depende del lenguaje que utilizan. Usar lenguaje pavloviano podría implicar un ingreso de la literatura pavloviana en análisis de forrajeo.
+
+El mismo análisis en términos de intervalo CS-US podría aplicarse en el condicionamiento de evitación y el castigo. Las señales de alerta serían CSs.
+
+{\scshape\bfseries Reaching an integrated science of behavior}
+
+{\scshape Clifton Lee Gass}
+
+La hipótesis de reducción de la demora y otras hipótesis basadas en la teoría de forrajeo óptimo son como manzanas y fruta. Aunque ambas lidian con conducta de ingesta, se basan en distintas tradiciones conceptuales metodológicas y lingüísticas.
+
+Las teorías en ambos dominios se han mantenido relativamente aisladas. El forrajeo óptimo parte de la selección natural y asume que los organismos han sido seleccionados para obtener los máximos beneficios posibles del ambiente. La hipótesis de reducción de la demora se basa en el condicionamiento clásico, y parte la presunción explícita de que los animales no esperarán más de lo necesario para recibir reforzamiento.
+
+No es sorprendente que las teorías hagan predicciones similares. ¿No deberían ser compatibles todas las hipótesis sobre el forrajeo? Sin embargo, el artículo además de ofrecer evidencia que favorece a la hipótesis de reducción de la demora también ofrece evidencia en contra de la hipótesis incentiva. Sirve para los biólogos tener en cuenta que el desempeño de forrajeo requiere de mecanismos conductuales y que estos pueden desarrollarse mediante la experiencia.
+
+La aproximación de Fantino y Abarca es cuidadosa y lenta, y esto es intencional, pues ellos prefieren mantener una alta validez interna aun a expensas de la validez externa. Pero quizá la ecología conductual se beneficiaría de una inclusión más rápida de los métodos del análisis de la conducta.
+
+Hay problemas con el método de Fantino y Abarca: 
+\begin{itemize}
+	\item Se controla el tiempo pero no la cantidad
+	\item Se analiza el desempeño promedio después de miles de ensayos, pero no hay forma de evaluar la adquisición de la habilidad de forrajeo. Quizá la conducta en estado estable componga un fenómeno distinto de la conducta más variable en ambientes cambiantes. 
+	\item No se incluye una forma de evaluar el efecto de la distribución espacial cuando se ha encontrado que es una variable importante en el forrajeo.
+	\item Fantino y Abarca presumen que solo la investigación de laboratorio es manipulativa, lo cual no es cierto. La investigación de campo también puede tener manipulaciones controladas.
+\end{itemize}
+
+{\scshape\bfseries An interdisciplinary approach to foraging}
+
+{\scshape Richard F. Green}
+
+Es necesaria una teoría más cuantitativa sobre el forrajeo que pueda ser probada en el laboratorio.
+
+La teoría de forrajeo óptimo se deriva matemáticamente de principios a priori. La hipótesis de reducción de la demora, no. Se trata de una descripción derivada empíricamente de ciertas conductas de elección.
+
+Las predicciones de la teoría de forrajeo óptimo son sumamente vagas, de modo que difícilmente pueden fallar. Por ejemplo, ``incrementar la selectividad cuando la tasa de encuentro de presas buenas es mayor'' o ``tener menor tendencia a abandonar un parche cuando la densidad global de presas es menor o cuando el tiempo de viaje es muy grande''.
+
+Dos problemas más de un forrajeador son: (1) ¿qué regla usar para decidir cuándo abandonar un parche?, y (2) ¿cómo se debería mover entre parches un forrajeador? 
+
+Una aproximación interdisciplinaria al forrajeo debería incluir la distribución de la comida en el ambiente. Esto rara vez se hace, incluso por ecólogos. Se ha señalado cómo la estrategia óptima de forrajeo depende de la distribución de presas. 
+
+Finalmente, se deben considerar las consecuencias de la conducta de forrajeo para la ecología comunitaria. Hasta ahora el trabajo teórico en la estabilidad comunitaria depredador-presa ha tratado a la teoría de forrajeo de forma casual solamente. 
+
+Se logrará un progreso real cuando los biólogos usen la teoría de forrajeo óptimo para derivar predicciones cuantitativas probables y no triviales, y cuando los psicólogos ideen experimentos de laboratorio para probar esas predicciones.
+
+{\scshape\bfseries On the nature of support for optimal foraging theory}
+
+{\scshape John Hanson}
+
+No ha habido suficientes pruebas para la teoría de forrajeo óptimo. Quizá no haya en la naturaleza una situación tan simple como la considerada por las suposiciones de la teoría: sus fallos se han atribuido usualmente a la ``complejidad del mundo''. Y aun así se acepta casi ciegamente. Pero el laboratorio da un campo propicio para probar sus suposiciones. Fantino y Abarca hacen un buen esfuerzo en este sentido y reconocen la artificialidad del ambiente de laboratorio. 
+
+Esto no significa que los datos del análisis de la conducta puedan explicar la conducta de forrajeo. Más bien, las pruebas simplificadas de laboratorio pueden apoyar a la validez interna de la teoría de forrajeo óptimo. Aunque las contingencias pueden arreglarse para parecerse a una situación natural, no hay que perder de vista que se trata de un análogo.
+
+Un problema al hacer análogos del forrajeo son las definiciones. ¿Qué constituye una presa, un parche, una comida, o un ambiente? ¿Difiere el costo de búsqueda del costo de viaje? ¿El manejo y el procuramiento son distintos? Es difícil definir los límites de los conceptos: ¿cuáles son los límites de un parche? Para entender cómo la complejidad de los ambientes afecta a la conducta, primero se debe tener un entendimiento adecuado de sistemas simples.
+
+Algunos de los conceptos de la teoría de forrajeo óptimo son intercambiables en ciertos contextos. Por ejemplo, elección de dieta y de parche pueden tomarse como sinónimos. 
+
+La aproximación experimental de Fantino y Abarca es valiosa. El forrajeo óptimo puede probarse rigurosamente en el ambiente simplificado del laboratorio.
+
+{\scshape\bfseries Choice and preference - you can't always want what you get}
+
+{\scshape Alasdair I. Houston}
+
+Hay algunas preocupaciones que deja el artículo. Una de ellas es la discusión del tiempo de viaje. En un programa concurrente de intervalo variable no hay una depleción suave, de modo que el teorema del valor marginal no se puede aplicar.
+
+La hipótesis de reducción de la demora fue creada para dar cuenta de las respuestas relativa en los eslabones iniciales del programa de cadenas concurrentes. Por otro lado, la teoría de forrajeo óptimo se centra  en la clase de items que un forrajeador decide comer, es decir, la selección de dieta. En estudios de forrajeo, o aquellos de condicionamiento operante que los simulan, los organismos se encuentran con las presas sucesivamente y la elección es aceptar o rechazar. El diseño experimental no permite al animal mostrar su preferencia de forma independiente a sus elecciones. La teoría clásica de forrajeo óptimo indica cómo deberían elegir los animales si se busca maximizar la tasa de ganancia energética. Según esta visión, la elección debería ser todo o nada.
+
+En el procedimiento de cadenas concurrentes los animales se ven casi obligados a tomar aquél item que obtienen, de modo que el rechazo de un item se vería como una preferencia de cero o uno. Es decir, ambas teorías hacen las mismas predicciones sobre la selección de dieta. Siendo así, ¿cómo distinguen Fantino y Abarca entre los dos? No pueden. En sus ejemplos la medida crucial es la preferencia, sobre la cuál la teoría clásica de forrajeo óptimo no dice nada. Y en cuanto a la selección de dieta, ambos hacen las mismas predicciones. Las teorías se distinguen comparando las predicciones sobre la preferencia con las predicciones sobre la selección de dieta, pero Fantino y Abarca parecen confundir los dos conceptos: se comparan experimentos reportados en términos de preferencia de eslabón terminal con experimentos que involucran la selección de dieta.
+
+La preferencia medida por elección simultánea es lógicamente distinta de la elección de presa medida en encuentros sucesivos ({\itshape\bfseries ¿pero cómo?}). Los autores intentan discutir las diferencias entre los procedimientos, pero comparan las medidas en esencia incompatibles. También, el autor de esta crítica argumenta que ambos modelos hacen las mismas predicciones sobre la elección de dieta: ambos predicen elección de todo o nada.
+
+Aun así, la hipótesis de reducción de la demora y la teoría clásica de forrajeo óptimo son ayudas útiles para entender la conducta de forrajeo.
+
+{\scshape\bfseries Rate of reinforcement matters in optimal foraging theory}
+
+{\scshape Alejandro Kacelnik \& John R. Krebs}
+
+El artículo muestra lo fructífera que es la unión de los dos campos, y también señala algunas de las dificultades que ésta trae consigo.
+
+{\bfseries a. Fallo en ser explícitos sobre la moneda de cambio en los modelos de forrajeo óptimo.} Las elecciones en los modelos de forrajeo influyen en la tasa global de ingesta del animal, mientras que las preferencias del procedimiento de cadenas concurrentes no tienen virtualmente ningún efecto en la tasa global de reforzamiento (salvo por el caso extremo de la preferencia exclusiva). Incluso en este procedimiento la tasa local de reforzamiento experimentada difiere de acuerdo con qué estímulo se obtiene en la fase de elección. Si los animales son sensibles a esta diferencia, se esperaría encontrar una diferencia entre las tasas de respuesta durante el eslabón terminal entre los ciclos verde y rojo, pero el artículo no reporta esa observación.
+
+{\bfseries Analogías inapropiadas entre simulaciones operantes y modelos de forrajeo.} No se aclara la distinción entre los parches en los que hay depresión de recursos (aquellos que corresponderían a un programa de razón o intervalo progresivo) de aquellos en los que no. Algunos de los efectos citados son dependientes de la depresión de recursos y algunos no. No se discute la hipótesis de reducción de la demora con relación a las decisiones de dejar un parche cuando hay depresión intra-parche. Otro ejemplo está en la analogía entre el tiempo de manejo de los modelos de dieta óptima y algunos componentes de la situación operante: en una instancia se toma a los 4 segundos que un animal espera tras rechazar una alternativa como parte del tiempo de viaje, pero parecen más similares al de manejo. Si se incluye el tiempo de rechazo en el modelo de dieta clásica, la predicción de que la disponibilidad de la presa más beneficiosa (pero no de la menos) debería afectar la elección ya no se sostiene, de modo que los resultados del experimento no necesariamente contradicen a la teoría de forrajeo.
+
+A menudo es más fácil construir un modelo de optimización de una simulación operante desde cero en lugar de ajustar las elecciones que se enfrenta un animal en un procedimiento de cadenas concurrentes al molde de un modelo de forrajeo clásico.
+
+{\bfseries Fallo en calcular las predicciones precisas de modelos de optimización.} Se plantea un modelo de forrajeo adicional que plantea la redituabilidad de estrategias especialistas y generalistas, y determina un punto de corte en el cual la estrategia más beneficiosa es una u otra. Al aplicar el modelo a uno de los experimentos de Fantino se realiza la predicción de que la frecuencia de los encuentros con la alternativa menos redituable sí debería influir en la elección. Sin embargo, los datos críticos necesarios para el modelo no son provistos por Fantino.
+
+En conclusión, se elogia el espíritu del artículo, pero se critica que la unión entre trabajo operante y ecológico no se llevó más lejos mediante el uso cuidadoso de modelos de forrajeo óptimo.
+
+{\scshape\bfseries Delay reduction: A field guide for optimal foragers}
+
+{\scshape Peter R. Killeen}
+
+Al trasladar los estudios de campo al laboratorio, ¿cómo sabemos que ya tenemos todas las variables relevantes? La solución de Fantino es usar la teoría (la hipótesis de reducción de la demora) para identificar las variables relevantes, y luego validar ese supuesto notando que las predicciones tienen patrones consistentes con las teorías de forrajeo óptimo. Sería mejor comparar con datos de campo y no con otra teoría, pero no hay muchos estudios en los que los datos sean pertinentes, y la validación cruzada de teorías también es valiosa en sí misma. 
+El modelo de Fantino no es realmente libre de parámetros, ni es deseable que lo sea. Tiene una tasa de reforzamiento elevada a 0.5 sin justificar, de modo que sí hay un parámetro. La ausencia de parámetros no es deseable dado que los animales tienen desempeño distinto y es útil que haya parámetros que reflejen esas diferencias. 
+
+La hipótesis de reducción de la demora es sorprendentemente robusta, aunque una debilidad que tiene es que a menudo permite solamente predicciones cualitativas, lo que es exacerbado cuando las alternativas tienen recompensas probabilísticas. Si el animal elige una alternativa, entonces las variables controladoras no son independientes de él y no se pueden especificar a priori. Se pueden medir después, pero eso utiliza los grados de libertad de los datos.
+
+Las predicciones exactas hechas en el artículo son cualitativamente similares a aquellas del modelo incentivo de Killeen. Según esta teoría, las respuestas son guiadas por los efectos directos de reforzamiento primario y secundario; para programas IV éstos son aproximadamente iguales a $\frac{1}{q'^*T+1}$, donde $T$ es la media del programa VI del eslabón terminal, y $q'$ es un parámetro libre que indica la pendiente del gradiente de demora de reforzamiento. La tasa de respuesta es modulada por la tasa de reforzamiento para la alternativa: en este caso el recíproco del eslabón inicial (I) más el terminal. Se sigue que la fuerza de la alternativa derecha es
+$$
+S_{R}
+=
+\frac{
+1
+}{
+(q'^*T_{R}+1)/(I_{R}+T_{R})
+}
+$$
+
+La fuerza del lado izquierdo se deriva de forma simétrica.
+
+Dado que sus predicciones son tan similares a las de la teoría incentiva, Killeen predice que en algún momento podría demostrarse que una es un caso especial de la otra.
+
+{\scshape\bfseries Alternative approaches to the psychology of foraging}
+
+{\scshape John M. Kruse}
+
+La hipótesis de reducción de la demora es muy buena, y tiene sentido buscar validez externa para ella.
+
+En el pasado se han dado a los animales alternativas con distintos requisitos de tiempo o de número de respuestas. Sus resultados corresponden bien con las predicciones de modelos de dieta óptima. 
+
+La perspectiva ecológica nos motiva a estudiar los nichos de los animales en cuestión y sus características morfológicas, lo que limita los tipos de presa a analizar. 
+
+Además de las limitaciones biológicas, el aprendizaje también afecta a la selección de comida (como en la aversión condicionada al sabor). 
+
+La habilidad de medir el tiempo de manejo debe proveer ventajas para los forrajeadores que la poseen. Es probable que los tiempos de procuramiento y manejo tengan un papel importante cuando las alternativas son cualitativamente similares.
+
+Otro problema de los forrajeadores es cuánto tiempo permanecer en un parche en el que las ganancias disminuyen con el tiempo. Debería tomarse en cuenta la riqueza del ambiente general, en especial la del pasado reciente: cuanto mejores sean lo parches previos, menos persistente debería ser un animal en el parche actual.
+
+El tiempo desde la última recompensa o hasta la próxima podría ser más relevante para el problema de la explotación óptima de parches que para la composición óptima de dieta. Pero además del tiempo, se podría obtener una medida distinta de la eficacia del forrajeo.
+
+Una variable relevante es la intermitencia del reforzamiento: un depredador sería más persistente en un parche de dada calidad si sus esfuerzos recientes han sido relativamente poco exitosos. 
+
+Las teorías asociativas y cognitivas llevan por su naturaleza al desarrollo de constructos hipotéticos, como el {\itshape behavioral inhibition system} de Gray (1982). Quizá estas teorías pueden actuar como puente entre la conducta de forrajeo y el estudio reduccionista de la conducta. 
+
+Esta discusión se preocupa más sobre el mecanismo, y no con la forma en que se derivan principios desde la teoría evolutiva. 
+
+El estudio de la conducta de forrajeo puede lograr que los empiricistas se confronten con el pensamiento evolutivo moderno.
+
+{\scshape\bfseries Optimality: Sequences, variability, learning}
+
+{\scshape S. E. G. Lea}
+
+Dos elementos clave en Fantino y Abarca: (1) alta validez interna de laboratorio mezclada con alta validez externa de estudios de campo, y (2) proposición de principios de la teoría de programas como mecanismos proximales para servir al imperativo de supervivencia de la elección óptima. 
+
+Fantino declara que, en consenso con Caraco, mayor privación en sus aves llevó a mayor tendencia al riesgo, todo con base en la observación de que las aves en la economía cerrada (menos privadas) tenían menor tendencia a aceptar el VI largo, que llevaba a recompensa segura. Sin embargo, esta preferencia fue más marcada cuando la probabilidad de recompensa del VI corto era de 100\%, es decir, cuando ambos programas llevaban a recompensa segura. Por lo tanto se puede presumir que hay otro factor distinto de la tendencia al riesgo que media la preferencia. Visto de otro modo, los sujetos de la economía abierta era adversos al riesgo.
+
+Fantino y Abarca preguntan si la teoría de optimalidad y la hipótesis de reducción de la demora pueden distinguirse. Pero hay un problema de términos: ¿Qué se quiere decir por ``teoría de optimalidad''? ¿Es la proposición general de que los animales se comportarán de forma óptima, o las deducciones específicas que se pueden realizar para una situación específica? Fantino y Abarca se refieren al segundo caso, en lo que se llamaría más adecuadamente ``teoría de dieta óptima''.
+
+Los organismos son más sensibles a variables moleculares, como la reducción de la demora, que a molares, como la tasa global de reforzamiento, y esto puede llevar a separaciones de la optimalidad. 
+
+Ambas teorías tratan con conducta en ambientes estables, pero Fantino y Abarca discuten con referencia a la necesidad de los forrajeadores de aprender sobre la disponibilidad de presas. La explicación de la conducta de elección y forrajeo estará incompleta hasta que las teoría de elección puedan suplementarse de las teorías de aprendizaje.
+
+{\scshape\bfseries Optimal foraging for operant conditioners}
+
+{\scshape James N. McNair}
+
+¿Cuán útil es la tecnología operante para los problemas de forrajeo? Eso dependerá de los vicios y las virtudes particulares de la técnica misma y en las metas en las que se ancle. Quizá la meta de Fantino de distinguir la hipótesis de reducción de la demora de la teoría de forrajeo óptimo parte de un malentendido sobre qué es la teoría de forrajeo óptimo y qué puede limitar la contribución de la caja operante a la conducta de forrajeo.
+
+La hipótesis de reducción de la demora es una hipótesis falseable mediante la experimentación; la teoría de forrajeo óptimo, por otro lado, no es una hipótesis sino un punto de vista. Es la presunción de que el forrajeo es una actividad adaptativa bien ajustada.
+
+Para sacar conclusiones de este punto de vista se deben pasar varios pasos: (1) Elegir una medida plausible de adaptación (como la tasa de ingesta energética). (2) Construir un modelo del proceso de forrajeo que resulta en una fórmula matemática para la tasa de ingesta energética. (3) Se asume una clase de estrategias de forrajeo admisibles. (4) Se usan técnicas matemáticas para localizar un máximo de la fórmula, lo que resulta en una ``estrategia óptima''. Solo entonces se pueden hacer predicciones comprobables.
+
+Con estos pasos se puede construir una infinidad de modelos que hacen predicciones distintas, por lo que no es posible probar la teoría de forrajeo óptimo {\itshape en bloc}. Un experimento solo puede falsear modelos específicos, pero no al punto de vista completo. Por ejemplo, Fantino y Abarca argumentan que tres supuestos son implícitos a la teoría de forrajeo óptimo: siempre aceptar un item del tipo que tiene la mejor razón de energía a tiempo de manejo $\frac{e}{h}$; para $\frac{e}{h}$ fijos, que un item sea aceptado depende solo de la abundancia de otros items de mayor $\frac{e}{h}$ y no de su propia abundancia; y un incremento en la abundancia total de comida no puede ampliar la dieta óptima. Sin embargo hay modelos propuestos dentro del punto de vista de forrajeo óptimo que violan una o varias de estas reglas. Por lo tanto solo se puede probar que los modelos específicos son deficientes, y no la teoría completa de forrajeo óptimo. {\bfseries\itshape Este argumento me sirve: lo que se puede desacreditar mediante experimentos son los modelos específicos basados en la teoría de forrajeo óptimo, pero no la teoría en sí misma.}.
+
+Fantino y Abarca se centran en las predicciones del modelo de dieta óptima y de {\itshape optimal patch-use} debido a que, a diferencia de otros modelos más sofisticados, se pueden probar empíricamente con virtualmente total ignorancia de los mecanismos conductuales subyacentes. Pero Fantino y Abarca parecen pensar que si un mecanismo simple que dé lugar a un patrón de forrajeo se puede demostrar, entonces se habrá dado un golpe a la teoría de forrajeo óptimo. En realidad lo opuesto es verdad: los mecanismos conductuales específicos no son inconsistentes con la teoría de forrajeo óptimo, sino que son parte fundamental de ella, pues constituyen la maquinaria cuya optimalidad se asume.
+
+{\itshape\bfseries Cualquier predicción derivada de la hipótesis de reducción de la demora podría ser duplicada por modelos construidos desde el punto de vista del forrajeo óptimo. Por lo tanto no parece algo bien guiado intentar construir un programa de investigación tratando de distinguir una hipótesis específica, como la hipótesis de reducción de la demora, y el punto de vista de la teoría de forrajeo óptimo.}
+
+Lo más urgente en el campo del forrajeo es encontrar los mecanismos conductuales que subyacen a la elección de dieta y el uso de parches. Es en esto que ayudará la caja operante, y el resultado no será antagonista de la teoría de forrajeo óptimo, sino que será su ayuda.
+
+{\scshape\bfseries Outcome and mechanism in foraging}
+
+{\scshape Roger L. Mellgren}
+
+La selección natural se ocupa de los resultados; la psicología, de los mecanismos. Por ejemplo, suponiendo que entre presas A y B, A sea preferible y siempre sea óptimo perseguirla por encima de B, la selección natural (y la teoría de forrajeo óptimo) predice que si A ocurre con suficiente frecuencia, B será ignorada, pero no indica el mecanismo por el que será así. Podría ser un mecanismo perceptual o d elección. Poco importa, pero de un modo u otro resultará en una solución óptima al problema de selección de dieta. Descubrir las soluciones óptimas ha sido meta de los biólogos, y descubrir los mecanismos mediante los cuáles estas se implementan ha sido meta de los psicólogos. El forrajeo borra la línea que separa ambas disciplinas.
+
+Fantino y Abarca comparan a la hipótesis de reducción de la demora con la teoría de forrajeo óptimo. Sin embargo, estas teorías representan diferentes niveles de discurso y por lo tanto no se pueden probar como explicaciones alternativas. La hipótesis de reducción de la demora es un mecanismo que especifica qué elección debería hacerse dado que un sujeto tenga información sobre el tiempo hasta el siguiente reforzador. El forrajeo óptimo es una perspectiva para la cual hay muchos modelos. Un modelo basado en forrajeo óptimo especifica un resultado, pero no los mecanismos que lo producen.
+
+Es tradición en psicología comparar teorías encontrando situaciones en las que hagan predicciones distintas. En este caso eso no funciona porque las ``teorías'' son complementarias y no  adversariales. 
+
+Fantino y Abarca toman a la investigación de laboratorio como inherentemente manipulativa y con validez interna, y lo contrario para la de campo. Pero omiten dos puntos importantes: La investigación de campo manipulativa existe y mezcla lo mejor de ambas aproximaciones; y la investigación manipulativa es una forma de {\itshape aislar mecanismos}, mientras que la no manipulativa es una forma de {\itshape descubrir mecanismos}. La investigación de campo nos puede decir qué problemas enfrenta un organismo y cuál es su solución, mientras que la de laboratorio puede determinar las relaciones causales que produjeron la solución observada. La distinción entre validez interna y externa no es realmente la distinción entre procedimientos manipulativos y no manipulativos.
+
+{\scshape\bfseries Foraging and feeding in operant simulations}
+
+{\scshape Blaine F. Peden}
+
+Fantino y Abarca mostraron que el proceso de selección natural, que moldea a los organismos para maximizar la energía consumida por unidad de tiempo, es complementado por un proceso más proximal. También identificaron una situación en la cual la hipótesis de reducción de la demora y la teoría de forrajeo óptimo hacen predicciones distintas. 
+
+El autor comenta dos problemas relacionados:
+
+{\bfseries Open vs closed economy.} Aunque el procedimiento de Fantino y Abarca es técnicamente correcto, no simula adecuadamente una economía cerrada. Las palomas en la naturaleza no se ven limitadas a un número arbitrario de recompensas en un día. El procedimiento de los autores minimiza las potenciales diferencias entre una economía abierta y una cerrada, por lo que la pregunta sobre si acaso la economía afecta a la conducta permanece abierta.
+
+{\bfseries Foraging and feeding.} Ninguna de las dos teorías probadas hace predicciones sobre la relación entre los componentes de forrajeo y alimentación. 
+
+Otros procedimientos sí han buscado establecer esta relación, por ejemplo, Baum (1983) y el mismo Peden. En el experimento de Peden y Rohe (1984) se encontró que la elección relativa del item de alto costo de procuramiento era afectado por el costo de búsqueda, lo que es consistente con Fantino e indica que no hay necesidad de limitar arbitrariamente el número de reforzadores en la sesión. También se encontró que el número de búsquedas disminuyó cuando incrementó el costo de búsqueda, resultado que permanece oculto en Fantino dado que el número de ciclos de forrajeo se mantuvo constante. Finalmente, se encontró que las palomas mantenían su alimentación de línea base mediante picar más frecuentemente y comer más eficientemente, por lo que obtenían la misma comida a pesar de haber menos presentaciones de reforzadores. Esto muestra que se pueden resolver los problemas de la simulación de forrajeo de dos formas: ajustando la táctica de forrajeo y la de alimentación. 
+
+Está bien querer hacer un puente entre las áreas, pero una teoría integral de forrajeo y alimentación debe hacer predicciones sobre el tiempo absoluto y el esfuerzo que un depredador gastará forrajeando. Deben unirse muchas literaturas independientes antes de que se pueda formar una teoría que prediga tanto las decisiones momento a momento sobre procurar un item de comida, como decisiones sobre cesar de forrajear definitivamente.
+
+{\scshape\bfseries Of rats and men}
+
+{\scshape Neil Rowland}
+
+Fantino y Abarca describen cómo se pueden alterar las estrategias de forrajeo cambiando la disponibilidad del reforzador primario, pero se enfoca en granívoros. ¿Qué pasa con los omnívoros?
+
+La única situación de certeza del contenido nutricional de la comida en las ratas viene cuando maman al ser jóvenes, y curiosamente entonces muestran una conducta similar al forrajeo.
+
+Al ser adultas, las ratas deben escoger qué y dónde comer. El qué es determinado por sus necesidades nutricionales, y es posible argumentar que las ratas en libertad no tienen las mismas necesidades que las ratas de laboratorio. 
+
+La extensión de los hallazgos de Fantino y Abarca a otros animales dependerá del entendimiento de las estrategias naturales de forrajeo en omnívoros, de qué eventos internos y externos constituyen un reforzador primario, u el grado en que los reforzadores secundarios están implicados.
+
+{\scshape\bfseries Is simulated foraging similar to natural foraging?}
+
+{\scshape Masaya Sato \& Takayuki Sakagami}
+
+Hay cinco criterios a cumplir para incrementar la plausibilidad de experimentos que simulan el forrajeo: (1) similitud de condiciones ambientales, (2) similaridad topográfica, (3) similaridad funcional, (4) similaridad de {\itshape settings}, y (5) similaridad ontogénica y filogénica.
+
+Para (1), se simula el movimiento espacial simplemente con el paso del tiempo, el valor de los programas que simulan el tiempo de búsqueda es pequeño, y los programas de razón no se usan en el tiempo de manejo. La similaridad de condiciones ambientales no es buena.
+
+Para (2), la búsqueda y manejo se simulan con picotazos. Tampoco muy bueno.
+
+(3) sí parece llenarse.
+
+Sobre (4), el método de este estudio solo tiene parte de las condiciones de una economía cerrada: que los sujetos reciban toda su comida dentro de la sesión.
+
+Sobre (5), se podría incrementar la similitud ontogénica contrastando las observaciones de conducta en ambientes naturales y de laboratorio.
+
+Quizá el criterio más importante para la simulación sea el (5). 
+
+La significancia de este artículo está en incrementar la generalidad de la hipótesis de reducción de la demora prediciendo la conducta en un contexto que simula el forrajeo.
+
+{\scshape\bfseries Questions about foraging}
+
+{\scshape Sara J. Shettleworth}
+
+Forrajeo es el nuevo tren para psicólogos del aprendizaje. Todo se puede racionalizar mediante forrajeo. El trabajo de Fantino y Abarca es un intento de una interacción más productiva entre las disciplinas. Proveen evidencia de que un modelo operante puede proveer un mecanismo para explicar el forrajeo óptimo. Además, las predicciones discrepantes entre aproximaciones son de esperarse si asumimos que la hipótesis de reducción de la demora es una regla de dedo para aproximar las soluciones óptimas.
+
+Aunque la aproximación puede dar comparaciones funcionales y mecanísticas, hay pocas en este artículo. Aún así, es un buen ejemplo de cómo pueden interactuar la psicología y la teoría de forrajeo. Aun así, aparecerán problemas al querer buscar la validez externa de la explicación de la hipótesis de reducción de la demora del forrajeo debido a que la especie usada se tomó más por conveniencia que por conocimiento de su habilidad para forrajear óptimamente. Por ejemplo, las palomas eligen óptimamente comiendo una mezcla homogénea y variando el tiempo de manejo, pero en la realidad su alimento varía en aporte energético y tiene tiempos de manejo uniformemente despreciables. 
+
+No está del todo claro si las demoras de reforzamiento señaladas son psicológicamente iguales a los tiempos de manejo. Hay razones para esperar que no sea así. Por ejemplo, hay preferencia en ratas por semillas de girasol con cáscara en lugar de semillas ya peladas entregadas tras una demora que simula el tiempo de manejo.
+
+¿Qué nos pueden decir las simulaciones de problemas de forrajeo? Parece que solo nos pueden hablar sobre las variables específicas integradas en la simulación. La equivalencia formal ({\itshape e.g.,} entre tiempo de manejo y demora) no garantiza equivalencia psicológica. Para entender los mecanismos proximales de forrajeo será necesario comenzar con la conducta natural de forrajeo.
+
+{\scshape\bfseries Levels of explanation}
+
+{\scshape Mark Snyderman}
+
+Es un esfuerzo loable el de Fantino y Abarca. Extienden el poder explicativo tanto de las explicaciones operantes como las de forrajeo óptimo. 
+
+El artículo tiene mucho énfasis en las preguntas procedimentales, y muy poco en el problema de los niveles de explicación. Houston explica bien en ``Godzilla vs. the Creature from the Black Lagoon'' que las diferencias entre explicaciones psicológicas y etológicas van más allá del lenguaje de campo y el de laboratorio o las metodologías. Las disciplinas buscan distintos niveles de explicación: la teoría de forrajeo óptimo representa una aproximación descriptiva. Cuando se aplica el principio de ``la conducta ha evolucionado para incrementar la adecuación inclusiva'' al mundo real, se proponen variables más proximales como controladoras de la conducta y se acerca a una explicación de mecanismos conductuales. Es una aproximación Top-down. En contraste, las investigación operante comienza identificando las variables ambientales con control inmediato de la conducta, como la demora o la magnitud. Estos modelos tienen una base más empírica que teórica. Lo que pierde al no tener principios que la guíen, lo gana al describir con precisión la conducta.
+
+Fantino y Abarca le dan poco énfasis a la diferencia en niveles de explicación. Lo único que dicen al respecto es ``aunque ambas aproximaciones son explicaciones funcionales de la conducta, especulamos que los sujetos tendrán mayor sensibilidad a la reducción de la demora que a variables como la tasa global de ingesta de energía o la tasa de reforzamiento''. Este punto merece mayor explicación, no solo un comentario pasajero. 
+
+Después hacen demasiado énfasis en la superioridad de la hipótesis de reducción de la demora sobre el forrajeo óptimo dado que se tratan como explicaciones equivalentes de la conducta cuando no lo son. 
+
+En lugar de comparar la hipótesis de reducción de la demora con un modelo particular de forrajeo no diseñado para cadenas concurrentes, los autores debieron probar la noción general de optimalidad calculando la conducta óptima para su procedimiento. Los autores mellan a la teoría de forrajeo óptimo al aplicar un modelo que aun los teóricos del forrajeo considerarían inapropiado. Este error refleja un mal entendimiento de la estrategia fundamental del análisis de optimalidad.
+
+{\scshape\bfseries Genetic aspects to differences in foraging behavior}
+
+{\scshape Marla B. Sokolowski}
+
+Ningún estudio hasta ahora cuantifica ni controla la variación genética en la conducta de forrajeo. Esto limita las conclusiones que podemos sacar de las funciones proximales y últimas de la conducta.
+
+La teoría de forrajeo óptimo relaciona la adecuación Darwiniana con el forrajeo. Una se maximiza si se maximiza la tasa de ingesta energética, y se asume que hay una base genética para las diferencias en conducta de forrajeo.
+
+Para que una conducta evolucione por selección natural se deben cumplir tres condiciones. (1) Variación fenotípica intra-poblacional de la característica, (2) la variación debe tener una base genética, y (3) debe haber correlación entre el fenotipo conductual y el éxito reproductivo. 
+
+Ya se ha mostrado que la conducta de alimentación en algunas especies tiene polimorfismos que son heredables, pero los estudios genéticos del forrajeo son raros. 
+
+Tanto la genética como la experiencia afectan la conducta de forrajeo, pero los psicólogos se han concentrado históricamente en la experiencia. La genética de los sujetos es desconocida porque son criados descuidadamente. 
+
+Fantino y Abarca buscan maximizar su validez interna, pero fallan en controlar la variación genética. Por ejemplo, se ha encontrado que la capacidad de condicionamiento tiene un componente genético.
+
+Antes de que se puedan probar modelos de selección natural de la conducta de forrajeo será necesario analizar las contribuciones que tiene la genética y el ambiente, tanto en el laboratorio como en el campo.
+
+{\scshape\bfseries The validation problem}
+
+{\scshape Donald M. Wilkie}
+
+La simulación de los fenómenos naturales en el laboratorio es una empresa nueva y trae problemas. 
+
+Una componente crítico de una simulación es la {\itshape validación} (que el modelo se ajuste a el proceso del mundo real). Para tener una simulación válida del forrajeo deberían conocerse de inicio conductas básicas del forrajeador y las circunstancias en que ocurren, además de reglas que especifiquen cómo traducir conductas del mundo real en componentes de la simulación, y los criterios para comparar la simulación con la realidad. Además la simulación quizá deba ajustarse individualmente al tipo de forrajeador. Una simulación que aplique a todos los forrajeadores parece inverosímil. 
+
+La validez de la simulación de Fantino y Abarca es insustancial. Uno de sus hallazgos es que cuando las palomas del laboratorio pasan más tiempo buscando o viajando entre fuentes de comida se vuelven menos selectivas. ¿Hay evidencia de esto en palomas salvajes? A los autores no parecen interesarles los datos de campo, sino que solo aceptan que los animales salvajes se comportan de una forma óptima y racional. No se incorporan hallazgos sobre palomas salvajes en la simulación, por ejemplo, que comen en grupos o que las aves dominantes pican más y pasan menos tiempo buscando. No habrá buenas simulaciones de laboratorio hasta que el problema de la validación sea tomado en serio.
+
+Este problema será especialmente difícil para las palomas dado lo poco que se sabe de su forrajeo. Se sabe acerca de ciertas conductas, como su alimentación y bebida, de modo que quizá la causa detrás de lo poco que se sabe de su forrajeo sea que éste es amorfo. En contraste con otras aves como el colibrí, el forrajeo de las palomas parece sumamente flexible, lo que no es sorprendente dado lo oportunistas que son.
+
+Fantino y Abarca han descuidado la validación de sus simulaciones, y se han puesto una tarea aún más difícil al utilizar una especie cuya conducta de forrajeo es amorfa y se ha estudiado poco.
+
+\newpage
+
+{\Large\scshape\bfseries Author's Response}
+
+{\scshape\bfseries The delay-reduction hypothesis: A choice solution}
+
+{\scshape Edmund Fantino \& Nureya Abarca}
+
+Se abordarán aspectos de los procedimientos que han causado confusión y preocupación, también los problemas de la relevancia del condicionamiento Pavloviano y la contigüidad entre respuesta y reforzador, y finalmente tres tipos de problemas presentados por los críticos.
+
+El primer problema es la analogía entre el laboratorio y el ambiente, junto con la discusión sobre economías abiertas y cerradas. El segundo tipo involucra la complejidad de la conducta de forrajeo, pues la simulación solo toca algunos de sus aspectos. El tercer tipo concierne a la relación entre la teoría de forrajeo óptimo y la hipótesis de reducción de la demora. Se intentará dar énfasis a su complementariedad.
+
+{\scshape\bfseries General aims and specific issues}
+
+El propósito del artículo era medir ``si los principios que evolucionaron del estudio de la toma de decisiones en el laboratorio de condicionamiento operante son consistentes con la toma de decisiones en situaciones que comparten propiedades importantes con el forrajeo natural''. Antes de abordar el tema de lleno se responden algunos problemas planteados por los críticos.
+
+{\bfseries Pavlovian factors.} Brown y Dinsmoor señalan la relevancia de los factores Pavlovianos. Brown nota la similitud formal entre la hipótesis de reducción de la demora y los modelos de condicionamiento Pavloviano. Dinsmoor menciona que, si la ecuación (1) es general para todo el reforzamiento condicionado, entonces debería predecir las tasas de respuesta no solamente en procedimientos de elección, sino también en procedimientos más simples de un solo estímulo. Fantino y Abarca están de acuerdo con ambas posturas dada evidencia que indica que las respuestas en presencia del estímulo condicionado incrementan cuando incrementa el intervalo entre reforzamiento. 
+
+{\bfseries The role of contiguity.} Kruse nota que el condicionamiento operante enfatiza las variables ({\itshape e.g.,} comida/tiempo, respuestas/tiempo), mientras que la teoría de aprendizaje enfatiza la contigüidad. La contigüidad no parece ser suficiente para explicar el aprendizaje, pero es importante enfatizarla dado que es central para la hipótesis de reducción de la demora, que dice que el valor como reforzador condicionado de un estímulo no se basa directamente en la contigüidad con reforzamiento primario, sino en el grado de {\itshape mejora}, en términos de contigüidad con el reforzamiento primario, correlacionado con el encendido del estímulo ($\frac{T-t_{A}}T{}$). Es decir, la contribución de la contigüidad a la fuerza de la respuesta se considera en el contexto de cuán remoto sería el reforzamiento primario en ausencia del estímulo. Así, un estímulo debería ser mejor como reforzador condicionado si es precedido por un período de 60s sin reforzamiento que por uno de 5s. 
+
+Recientemente Dunn y Fantino (1982) se preguntaron si el papel de la demora absoluta ({\itshape e.g.,} $t_{A}$ en la ecuación 1, o $t_{2L}$ y $t_{2R}$ en la ecuación 2) podría encontrarse si las demoras relativas se variaban mientras las reducciones relativas en la demora ($T-t_{2L}$ y $T-t_{2R}$) se mantenían constantes. Se encontró que la elección no varió con el tamaño relativo de las demoras de reforzamiento (la razón entre $t_{2L}$ y $t_{2R}$) mientras la reducción relativa en el tiempo global al reforzamiento asociada con el encendido de $t_{2L}$ y $t_{2R}$ se mantuviese constante. Se mostró que la elección de las palomas era sensible a cambios en las reducciones relativas de la demora correlacionadas con $t_{2L}$ y $t_{2R}$. Estos resultados sugieren que la tasa relativa (o inmediatez) de reforzamiento no tiene efecto en la elección independientemente de su efecto en la reducción relativa de la demora.
+
+{\bfseries Procedural clarifications.} Se mostrará un ejemplo simple de la ecuación (2) antes de aclarar otros aspectos del procedimiento. 
+
+Los primeros estudios en cadenas concurrentes sugerían que las elecciones de los sujetos en los IL igualaban las tasas de reforzamiento (o la inmediatez relativa de reforzamiento) en los TL. La relación de igualación se podría escribir como
+\begin{equation}
+\frac{
+R_{L}
+}{
+R_{L} + R_{R}
+}
+=
+\frac{
+	\frac{1}{t_{2L}}
+}{
+	\frac{1}{t_{2L}}
+	+
+	\frac{1}{t_{2R}}
+}
+\end{equation}
+con todos los términos definidos como en la ecuación (1). Como ya se dijo, la elección no depende directamente de la tasa relativa (o inmediatez) del reforzamiento durante las dos consecuencias, sino que depende de la reducción relativa de la demora correlacionada con cada consecuencia, como resume la ecuación (2). El primer estudio que da soporte a la ecuación (2) intentó medir la elección de TLs de VI30s y VI90s mientras se manipulaban los VI idénticos de los eslabones iniciales en valores de 40, 120 o 600s. 
+
+Para aplicar la ecuación (2) se debe calcular solamente $T$ (dado que $t_{2L}$ es igual a 30s, y $t_{2R}$ es igual a 90s). $T$ es igual al tiempo promedio en la fase de elección más el tiempo promedio en la fase de consecuencias (y no incluye el tiempo en el que los programas no están en efecto). Cuando los VI idénticos en la fase de elección son VI120s, la media de tiempo en la dase de elección es de 60s (dado que los dos VI120 operan simultáneamente). El tiempo promedio en la fase de consecuencias también es igual a 60s (la media de 20 y 90). Así, $T$ es igual a 120s y la ecuación (2) resulta en una proporción de elección de 0.75 (dado que $T-t_{2L} = 90,\ T-t_{2R} = 30,\ \mbox{ y } \frac{90}{90+30} = 0{.}75$). Esta es la misma proporción de elección predicha por la ecuación (7). Con VIs más largos o cortos, la ecuación (7) continúa prediciendo una proporción de 0.75, mientras que las proporciones predichas por la ecuación (2) varían sistemáticamente. Así, cuando los VIs idénticos son de 600s, $T$ es igual a 300+60, y la proporción de elección predicha es de 0.55. Cuando los VIs son de 40s, $T$ es igual a 20+60 y la proporción de elección predicha es de 1 (dado que $t_{2R > T}$, el resultado de la derecha resulta en un {\itshape incremento}; solamente $t_{2L}$ representa una reducción). Los datos apoyaron estas predicciones.
+
+En los procedimientos de cadenas concurrentes la elección puede variar en un rango amplio sin que esto afecte significativamente la tasa de reforzamiento recibida por los individuos. Kacelnik y Krebs ven esto como una limitación a la analogía del forrajeo natural, y Killeen lo ve como una fortaleza metodológica. Además Killeen señala que el procedimiento de Lea tiene más contacto con el forrajeo natural, con el costo de permitir que las elecciones de los sujetos afecten el grado en que se encuentran con las distintas consecuencias.
+
+{\scshape\bfseries Problems of analogy between the field and laboratory}
+
+Muchos criticaron la correspondencia de los procedimientos de laboratorio y sus supuestas analogías con la naturaleza. La estrategia de Fantino y Abarca es maximizar la validez interna aun al costo de la externa. A pesar de su ``descuido'' del problema de la validación, sus resultados indican que los principios operantes son consistentes con situaciones que comparten características importantes con el forrajeo natural. Hay gran consistencia entre las predicciones del modelo de dieta óptima, la hipótesis de reducción de la demora, y los datos. Esto aun así podría no tener nada que ver con la conducta en la naturaleza, o bien, podría ser que los principios que subyacen a ambas hipótesis son muy robustos. 
+
+Fantino y Abarca están de acuerdo con la crítica que indica que solo satisfacen algunos de los criterios para tener simulaciones plausibles.
+
+Algunos conceptos en la literatura de forrajeo tienen significados ``amorfos'', lo que hace difícil construir un análogo satisfactorio, y los procedimientos usados en este artículo no se ``mapean'' claramente a los problemas convencionales de forrajeo. Y aún cuando hay equivalencias formales razonables, no necesariamente hay ``equivalencias psicológicas adecuadas''. 
+
+Kacelnik y Krebs notan correctamente que no se discute la hipótesis de reducción de la demora cuando hay depresión de los parches. También señalan que la demora de cambio corresponde más al tiempo de manejo o de rechazo que al de viaje, y en esto Fantino y Abarca no están de acuerdo: Sus sujetos no están rechazando recompensas, sino que responder en la demora de cambio simplemente les permite dejar de responder durante la fase de búsqueda de una alternativa y moverse a la fase de búsqueda de la otra. Pero esto muestra que es muy difícil establecer qué constituye una analogía válida para las características naturales.
+
+En general, la posición de Fantino y Abarca es que en la mayor parte de los casos tuvieron éxito en modificar el programa de cadenas concurrentes de modo que les permitiera responder su pregunta central. Aunque hay un salto entre ``compartir propiedades importantes'' y ``tener equivalencia psicológica''. 
+
+{\bfseries Manipulative versus nonmanipulative research.} Aceptan que la investigación de campo también puede ser experimental. La regaron al implicar que no.
+
+{\bfseries Open versus closed economies.} Se comenzaron las economías abiertas con sesiones breves para mantenerlas similares a las condiciones de las economías abiertas, pero se acepta que deben probar un rango mayor de variantes. Algunos autores se preguntan si los organismos ``detienen su reloj'' cuando se acicalan o hacen otras actividades. Algunos resultados indican que la elección es insensible al ``tiempo muerto''. Es decir, la alocación de tiempo a actividades distintas del forrajeo en sesiones de 24 horas infla los valores de $T$ pero no parece afectar la preferencia.
+
+Se criticó su confianza en la estadística para sacar conclusiones argumentando que quizá la siguieron porque se ajustaba a lo que esperaban. Fantino y Abarca dicen que no es el caso.
+
+Otro comentario indicó que no es fácil decidir la duración óptima de una sesión para hacer un análogo de una economía cerrada. Quizá un animal con acceso a comida las 24 horas sea un invento del laboratorio.
+
+{\scshape\bfseries Problems of complexity}
+
+Quizá el comentario más popular era sobre la complejidad de la conducta de forrajeo contrastada con la simplicidad de los procedimientos usados. No se abordaron las variables de magnitud de reforzamiento, patrón y distribución de reforzadores, aspectos espaciales de forrajeo, tiempo y esfuerzo gastados alimentándose y forrajeando, adquisición o aprendizaje, estrategias naturales de forrajeo, genética, y generalidad entre especies. Son áreas importantes y una explicación integral del forrajeo las habrá de incluir, pero eso no quita el mérito de esta investigación.
+
+{\bfseries Risk aversion.} Otra área de complejidad son las fuentes variables de comida. Lea criticó que los resultados de uno de los experimentos de Fantino y Abarca fueran tomados como consistentes con los de Caraco. Sin embargo, se dijo que las diferencias encontradas eran solo ``sugestivas'' y no significativas.
+
+Barnard especula que los sujetos {\itshape deberían} ser adversos o indiferentes al riesgo, aunque no se sabe si ``deber'' se refiere a un sujeto óptimo o a uno típico. Pero se ha observado que las palomas prefieren los programas variables a los constantes con las mismas recompensas en economías abiertas. Aunque es de notarse que las preferencias por fuentes de comida variables sobre fijas no aparece cuando se varía la cantidad y no la tasa de reforzamiento.
+
+{\bfseries The relation between optimal foraging theory, the optimal diet model, and the delay reduction hypothesis.} Las pruebas de la teoría de forrajeo óptimo en realidad eran pruebas de una versión de la teoría: el modelo de dieta óptima. Y este modelo y la hipótesis de reducción de la demora son complementarios. 
+
+Fantino y Abarca notaron que la hipótesis de reducción de la demora hace las mismas predicciones que un modelo de eficiencia de forrajeo mediante fenómenos más proximales, y señalaron la correspondencia de la hipótesis de reducción de la demora con mecanismos desarrollados para explicar la conducta en procedimientos pavlovianos, lo que le da aun más plausibilidad. No piensan que hipótesis de reducción de la demora ni el modelo de dieta óptima den una historia completa por sí mismos.
+
+A diferencia de lo dicho por Snyderman, solo se reportó ``la superioridad de la hipótesis de reducción de la demora'' en un experimento. El punto del artículo es que los modelos hacen predicciones comparables. Tampoco piensan lo que dice McNair: que si se demuestra que explicaciones mecanísticas dan cuenta del forrajeo, entonces la teoría del forrajeo óptimo ha recibido un golpe. Al contrario, se da soporte a la teoría, y se intenta resucitar al modelo de dieta óptima, no enterrarlo. 
+
+{\bfseries The delay reduction hypothesis: Some specific issues.} Aunque, como dice Lea, se pueden detectar los efectos de los reforzadores después del primero, Fantino y Abarca argumentan que estos efectos son ínfimos.
+
+Branch señala una limitación de la hipótesis de reducción de la demora: en uno de los experimentos reportados, tanto el modelo de dieta óptima como la hipótesis de reducción de la demora predicen funciones que incrementen en pasos, cuando los datos tienen un incremento gradual. Esto es ciertamente una limitación, pero no una fatal.
+
+Killeen señala que el modelo no es libre de parámetros dado que se eleva la tasa de reforzamiento a la potencia 0.5. Sin, embargo, Fantino y Abarca no proponen tomarlo como parámetro libre y optimizarlo, sino que lo ven como una constante. Killeen piensa que los parámetros no son indeseables, pero Fantino y Abarca piensan que sí lo son dado que sin ellos se puede predecir la conducta {\itshape a priori}. 
+
+{\bfseries Simultaneous versus successive choice.} Varios críticos señalan que el procedimiento usado por Fantino y Abarca sobre los efectos simétricos de la accesibilidad es una prueba inapropiada del tipo de encuentro sucesivo para el cual se desarrolló el modelo de dieta óptima. Esta debilidad es reconocida por el propio Fantino en el reporte original. También señala que sería de interés explorar la correspondencia entre elección simultánea y sucesiva en el mismo procedimiento y con los mismos sujetos. 
+
+Killeen tiene razón al decir que los resultados no permiten diferenciar el modelo incentivo y la hipótesis de reducción de la demora. Sin embargo, sí son distinguibles: según la teoría incentiva, incrementar la frecuencia de los encuentros con la consecuencia más pobre debería hacerla más popular de acuerdo con una función monotónica, cuando la frecuencia se vuelve lo bastante alta la hipótesis de reducción de la demora requiere un cambio en la preferencia que aleje de la consecuencia más pobre. 
+
+{\bfseries Further development of optimal foraging theory.} Kacelnik y Krebs señalan que hay dificultades para aplicar el modelo de dieta óptima en estos procedimientos por lo que sería preferible construir modelos desde cero para cada uno, y para ilustrar su punto proponen un modelo. Sin embargo, se puede demostrar que su modelo es esencialmente idéntico a la hipótesis de reducción de la demora. La desigualdad de su modelo (modelo KKM), $p < 1 - \frac{X-t+C}{Y}$, es idéntica a la desigualdad de la hipótesis de reducción de la demora en la misma situación. Para $t=0$, su valor en estos estudios, la desigualdad se reduce a
+
+$$
+\frac{
+	X + C
+}{
+	1 - p
+}
+<
+Y
+$$
+
+En términos de la hipótesis de reducción de la demora, $Y=t_{2}$ y $X + \frac{C}{1-p}$ es equivalente a $t_{1R}$, lo que resulta en $t_{1R} < t_{2}$. Pero $t_{1R} < t_{2}$ representa la desigualdad equivalente derivada de la hipótesis de reducción de la demora. Para la hipótesis de reducción de la demora,
+
+$$
+t_{1R}
+<
+\frac{
+	E_{R}
+}{
+	E_{L}
+}
+t_{2L} - t_{2R}
+$$
+o, dado que $E_{R} = 2E_{L}$, y $t_{2L} = t_{2R} = t_{2}$ en este ejemplo,
+
+$$
+t_{1R} < t_{2}
+$$
+
+Y la misma desigualdad se puede derivar del modelo de dieta óptima.
+
+Aun así, la elegancia del análisis de Kacelnik y Krebs permite mostrar la equivalencia de su solución para la teoría de forrajeo óptimo y la hipótesis de reducción de la demora. Parece que la solución encontrada por ecólogos conductuales es igual a la solución encontrada por psicólogos operantes. 
+
+Fantino y Abarca están de acuerdo con varios de los críticos al señalar que un fallo del modelo de dieta óptima no implica un fallo de la teoría de forrajeo óptimo.
+
+{\scshape\bfseries Conclussion}
+
+Este artículo refleja un intento para integrar las perspectivas operante y ecológica, y señalar algunas de las trampas ante tales intentos. Vale la pena mencionar tres problemas, al menos:
+\begin{itemize}
+	\item Las explicaciones de la optimalidad en la ecología conductual a menudo tienen un nivel de explicación que no es compatible con las explicaciones más mecanísticas de la psicología operante.
+	\item Donde las predicciones coinciden ostensiblemente, las variables dependientes a menudo son distintas para las explicaciones ecológicas y conductuales.
+	\item Los modelos de cada disciplina están bajo debate y pueden no proveer una explicación suficientemente precisa de la conducta.
+\end{itemize}
+
+A pesar de estos problemas se ha intentado demostrar una correspondencia entre las explicaciones de forrajeo óptimo y la hipótesis de reducción de la demora. Esperan haber logrado el objetivo de mostrar que un principio evolucionado en el contexto del laboratorio operante es consistente con la toma de decisiones en situaciones que comparten características importantes con el forrajeo natural. También se espera haber mostrado que la hipótesis de reducción de la demora genera soluciones óptimas en procedimientos que involucran elecciones simultáneas o secuenciales. El siguiente paso será medir más aún si las soluciones conductuales reflejan las teóricamente óptimas.
+
+
+
+
+\end{document}
