@@ -49,7 +49,8 @@ donde $p_{reward}$ es la probabilidad de recompensa dada por el promedio pondera
 
 Cuando los animales adoptan la estrategia especialista y rechazan el estímulo negativo solamente, las duraciones tomadas en cuenta dependen del estímulo presentado: si es el estímulo negativo, solo la duración del ITI ($s$)debe tomarse en cuenta; si se presenta el positivo, solo la duración del TL ($t$) se toma en cuenta. Así, la tasa de ingesta está dada por
 $$
-R_{reject}=\frac{p_{reward}}{t + p_{reward} \times h}=\frac{1}{\frac{t}{p_{reward}}+h}
+R_{reject}=\frac{p_{reward}}{p_{bad-news}\times s + (1-p_{bad-news}) \times t + p_{reward}\times h}
+% R_{reject}=\frac{p_{reward}}{t + p_{reward} \times h}=\frac{1}{\frac{t}{p_{reward}}+h}
 $$
 De estas ecuaciones se predice que los animales deberían escapar del estímulo negativo cuando 
 $$
@@ -138,7 +139,7 @@ Para probar la última predicción se comparó la proporción de escapes con el 
 
 Las latencias de escape al estímulo negativo deberían agregarse al $s$ del denominador del modelo, lo que reduciría $R_{reject}$. Los datos indican que la latencia debería excluirse del análisis, pero el problema es meritorio de más investigación.
 
-El hecho de que los animales escaparon del estímulo negativo indica que el estímulo no se ignoraba en el sentido de que los animales estuviesen subjetivamente en una situación sin él. La preferencia por la alternativa informativa sugiere que quizá los animales no le atribuyen el estímulo negativo a esa alternativa. Esto en conjunto indica que el estímulo es ignorado en el sentido de que los animales no lo asocian con la alternativa informativa. Esto explica por qué incrementar su duración a 200s no tuvo ningún efecto en la preferencia (Fortes, 2016).
+El hecho de que los animales escaparon del estímulo negativo indica que el estímulo no se ignoraba en el sentido de que los animales estuviesesn subjetivamente en una situación sin él. La preferencia por la alternativa informativa sugiere que quizá los animales no le atribuyen el estímulo negativo a esa alternativa. Esto en conjunto indica que el estímulo es ignorado en el sentido de que los animales no lo asocian con la alternativa informativa. Esto explica por qué incrementar su duración a 200s no tuvo ningún efecto en la preferencia (Fortes, 2016).
 
 En conclusión, se adaptó una tarea de elección para hacerla más similar a una situación natural de forrajeo, haciendo útil a la información. Los resultados se ajustan al RRM. Los experimentos además muestran que los animales sí le prestan atención al estímulo negativo, pues se alejan y escapan de él, pero el estímulo no se asocia con la alternativa informativa.
 
