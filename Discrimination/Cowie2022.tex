@@ -35,7 +35,32 @@ Se utilizará una aproximación cuantitativa dado que permite formalizar las rel
 
 \section{The generalization-over-dimensions model}
 
+Esta aproximación usa reforzadores pasados para predecir la conducta futura---una traducción directa en lugar de basarse en propiedades estimadas de los estímulos encontrados. Los reforzadores obtenidos son desplazados a través de dimensiones de los estímulos para modelar el proceso de generalización. La tasa de reforzadores después de la generalización determina la estructura detectada. Se asume que la conducta iguala estrictamente a la tasa de reforzadores {\itshape percibida}.
 
+\vspace{2mm}
+{\centering\fbox{\parbox{0.95\textwidth}{%
+            Supuestos del modelo:
+
+            \begin{itemize}
+                \item Reforzadores obtenidos ante un estímulo se generalizan a otros en esa dimensión según su distancia y la cantidad de reforzadores obtenidos.
+                \item La generalización ocurre en todas las dimensiones relevantes.
+                \item Los reforzadores aparentes ante cualquier combinación estímulo-respuesta son la suma de todos los reforzadores generalizados actuando sobre ella.
+                \item La elección es igual a la suma de todos los reforzadores aparentes para las dos alternativas de una condición de estímulo.
+            \end{itemize}
+}}}
+\vspace{2mm}
+
+Si hay una diferencia constante entre cualquier par de estímulos, se asume que la generalización mutua es constante también. Así, si $m$ es la probabilidad de detectar correctamente los dos estímulos:
+\[
+    \log\frac{B_1}{B_2} = \log\frac{R'_1}{R'_2} = \log \left(\frac{
+            mR_1 + (1 - m) R_2
+        }{
+            mR_2 + (1 - m) R_1
+    }\right) + \log c
+,\]
+de modo que una proporción constante de reforzadores $R$ obtenida para cada respuesta 1 y 2 es reasignada a la respuesta alternativa. $B$ se refiere a los conteos de respuestas a ambas alternativas, y $R'$ a los números aparentes de reforzadores tras la generalización. $\log c$ es el sesgo en las respuestas como en igualación generalizada. Se asume en este caso que la generalización entre $B_1$ y $B_2$ es simétrica.
+
+En dimensiones continuas como el tiempo se usa un proceso de redistribución Gaussiano donde la desviación estándar varía dependiendo de la posición del reforzador a lo largo de una dimensión.
 
 
 \end{document}
