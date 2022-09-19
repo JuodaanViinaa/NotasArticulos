@@ -62,5 +62,31 @@ de modo que una proporción constante de reforzadores $R$ obtenida para cada res
 
 En dimensiones continuas como el tiempo se usa un proceso de redistribución Gaussiano donde la desviación estándar varía dependiendo de la posición del reforzador a lo largo de una dimensión.
 
+Esta aproximación transforma la estructura experimentada en una recordada para predecir la conducta mediante la redistribución de reforzadores a través de las dimensiones relevantes.
+
+Esta aproximación es similar a los gradientes excitatorios e inhibitorios de Spence, con la diferencia de que la generalización resulta de la dispersión de reforzadores a través de contextos similares, y no de la dispersión de la excitación o inhibición.
+
+Se utiliza el mismo principio para generalizar a través de todas las dimensiones relevantes, cuales quiera que sean, lo que resulta parsimonioso. Los mismos supuestos se usan ya sea que la generalización sea capturada por la desviación de una distribución Gaussiana o por una proporción.
+
+Los reforzadores deben tener el mayor efecto en el contexto en el cual realmente ocurrieron, e impacto disminuido al alejarse de él. El grado de generalización depende de la desviación estándar de la distribución Gaussian: mayor desviación implica mayor generalización.
+
+Dado que la cantidad de reforzadores dada es la misma, el área bajo a función de densidad de probabilidad que representa el proceso de generalización permanece igual, es decir, según incrementa la desviación estándar, la altura del pico de la distribución Gaussiana disminuye. Esto puede cambiar al integrar los reforzadores de fondo que se generalicen a conducta frontal, o reforzadores frontales que se generalicen a conducta de fondo, pero es complicado y aun no se investiga.
+
+Se asume que dado el proceso de generalización, según incrementa la tasa de reforzamiento también debería incrementar el traslape entre las distribuciones, por lo que la generalización deberá ser más amplia con tasas de reforzamiento más altas. Aunque es contraintuitivo, se ha encontrado evidencia apoyando esta noción.
+
+Cuando el tiempo es una dimensión relevante, se ha encontrado que la generalización puede modelarse con una desviación que incrementa según aumenta el tiempo desde un evento marcador, lo que refleja condiciones incrementalmente menos claras en tiempos más tardíos en el ensayo. Esto debido a que la evidencia indica que eventos más distantes en el tiempo son más difíciles de diferenciar, además de que para duraciones mayores hay mayor probabilidad de que el tiempo sea llenado con otros eventos similares---y, por lo tanto, generalizables---que causen interferencia.
+
+Sumando las últimas ideas, se obtiene que variaciones en el número de reforzadores obtenidos en tiempos más tempranos o más tardíos tendrá efectos asimétricos en la elección.
+
+El modelo captura bien situaciones en que el tiempo es una variable relevante, al igual que situaciones de generalización en dimensiones no-temporales. La aproximación parece ser buena para transformar reforzadores experimentados a través del tiempo en un output organísmico.
+
+\subsection{Generalization: where to from here?}
+
+El modelo parece dar cuanta del comportamiento de ratas, palomas e incluso humanos. Aunque esta en progreso, parece robusto. Se señalan algunas direcciones posibles para la aproximación de {\itshape generalization-over-dimensions}.
+
+\subsection{Generalization across wider ranges of events}
+
+
+
 
 \end{document}
