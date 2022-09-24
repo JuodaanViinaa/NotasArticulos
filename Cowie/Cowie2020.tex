@@ -56,7 +56,9 @@ Los reforzadores se entregaron con base en un programa de intervalo variable par
 
 Al inicio de cada sesión y tras cualquier reforzador, el programa determinaba al azar si el siguiente reforzador ocurriría antes o después de la reversión de acuerdo con una probabilidad que variaba a través de condiciones. Después, los tiempos de reforzamiento se escogían al azar sin reemplazo de dos listas de tiempos de 1 segundo para reforzadores antes o después de la reversión.
 
-La lista pre-reversión tenía tiempos de 1 a 19 segundos en pasos de 1s; la post-reversión tenía tiempos de 10 a 60 en pasos de 1s.
+La lista pre-reversión tenía tiempos de 1 a 19 segundos en pasos de 1s; la post-reversión tenía tiempos de 10 a 60 en pasos de 1s. Tras elegir el reforzador, éste se asignaba a la tecla de mayor probabilidad con 90\% de probabilidad. Así, siempre había mayor probabilidad de reforzamiento en esa tecla, pero la localización (izquierda o derecha) dependía de si el reforzador estaba programado antes o después de la reversión de probabilidades.
+
+La probabilidad de reforzamiento permaneció en .9 y .1 todo el experimento, pero se manipuló la proporción de reforzadores obtenidos antes de la reversión de 5\% a 95\% en una tecla con relación a la otra.
 
 
 \end{document}
