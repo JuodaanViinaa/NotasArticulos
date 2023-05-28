@@ -23,7 +23,36 @@ Los primeros reportes de conducta subóptima mostraron que se podía propiciar c
 Un intento temprano para explicar la elección subóptima fue el modelo de Signal for Good News. Sus supuestos son que en programas de cadenas concurrentes probabilísticas la elección es dirigida por las diferencias en las tasas de reforzamiento primario (comida) y secundario (entrada en los eslabones terminales de la cadena); que un evento es un reforzador condicionado en función de la reducción de la demora a la comida;que los estímulos que predicen una reducción en la demora más allá por la señalada por la propia entrada al eslabón terminal son buenos reforzadores condicionados; y que las demoras señaladas a la omisión de comida tienen como única función crear un contexto de incertidumbre.
 El modelo da cuenta cualitativamente de los efectos de los parámetros temporales de la tarea y la relevancia de las señales.
 
-Otras explicaciones
+Otras explicaciones han aparecido: decaimiento hiperbólico, contraste, consideraciones de forrajeo, información temporal, diferencias en probabilidades de reforzamiento en eslabones terminales, decaimiento de asociabilidad, persecución de errores de predicción anticipados y búsqueda de información, y mecanismos evolutivos que enfatizan las señales confiables de comida.
+Algunos modelos han sido formalizados matemáticamente.
+Curiosamente, SiGN no lo ha sido a pesar de ser de las explicaciones más antiguas. Aquí se intenta formalizar.
+
+\section{Suboptimal concurrent-chains procedure and literature review}
+
+\subsection{Signaled 50\% versus 100\% food outcomes}
+
+Experimentos que comparan 50\% señalado contra 100\% suelen tener mucha variabilidad entre sujetos, lo que lleva a sospechar que las palomas son indiferentes y solo eligen debido a sesgos.
+Aunque aun la indiferencia entre las dos alternativas es en sí misma subóptima, la diferencia entre indiferencia y preferencia por la alternativa subóptima tiene implicaciones importantes para el modelamiento.
+
+Los hallazgos generales de experimentos con estas probabilidades, con una sola respuesta como requisito, y con longitudes iguales de eslabón terminal, indican que cuando las demoras son cortas (menos de 10s) las palomas tienden a preferir la alternativa óptima; pero al alargarlas incrementa la elección por la alternativa señalada.
+
+\subsection{Signaled 20\% versus 50\% food outcomes}
+
+Estos estudios tienen eslabones iniciales de FR 1; y terminales de FT 10s.
+Se ha encontrado una preferencia consistente por la alternativa subóptima.
+
+\subsection{Role of signals}
+
+Correlacionar los estímulos terminales con la comida en la alternativa subóptima incrementa la preferencia de las palomas por ella.
+Si no existe correlación, no se desarrolla la preferencia subóptima.
+
+También importa la contigüidad entre la respuesta y la presentación de la señal: al introducir un {\itshape gap} de 5 s entre la respuesta y el inicio del estímulo disminuyó sustancialmente la preferencia por la alternativa subóptima.
+Además, cuando el {\itshape gap} se inserta antes del encendido de la señal $S^{+}$ en la alternativa de 50\%, disminuyó en gran medida la elección subóptima, lo que no ocurrió si el {\itshape gap} se insertaba antes de la señal $S^{-}$, o antes de la señal de la alternativa de 100\%.
+Esto sugiere que el encendido de la señal de comida en un contexto de incertidumbre es importante para la elección subóptima, pero la señal no discriminativa no lo es.
+
+\subsection{Role of partial signals}
+
+Fortes mostró que agregar entregas de comida después de algunas de las presentaciones de $S^{-}$ tenía poco efecto en la elección, pero parecía devaluar la alternativa subóptima al evaluar con un procedimiento de ajuste de demora. González {\itshape et al.} manipularon la probabilidad de comida tras un estímulo específico manteniendo la probabilidad global de las alternativas constante, y encontraron que el grado en que los distintos estímulos predicen la comida se correlaciona directamente con la preferencia.
 
 
 \end{document}
