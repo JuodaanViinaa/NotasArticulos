@@ -155,5 +155,32 @@ El papel que tienen lo IL y TL indica que factores temporales también están im
 Las hipótesis de un solo mecanismo no parecen explicar la elección subóptima, por lo que muchas teorías apelan a más de un proceso.
 El modelo SiGN asume que la elección es determinada por la interacción entre el reforzamiento primario y el condicionado provisto por la reducción de la demora.
 
+\section{The SiGN model}
+
+\subsection{Assumptions and formalization}
+
+Se asume que la elección es determinada por la competencia entre reforzamiento primario y condicionado con base en la teoría de reducción de la demora.
+La hipótesis se formaliza así:
+\[
+\begin{array}{rlr}
+    \frac{
+        R_{a}
+    }{
+        R_{a} + R_{b}
+    }=&
+    \frac{
+        r_{a}(T - t_{a})
+    }{
+        r_{a}(T - t_{a}) + r_{b}(T - t_{b})
+    } &\mbox{ when }t_{a} < T, t_{b} < T\\
+    =& 1 &\mbox{ when } t_{a} < T, t_{b} > T\\
+    =& 0 & \mbox{ when } t_{a} > T, t_{b} < T
+\end{array}
+\]
+donde $R$ son las respuestas por alternativa, $r$ son las tasas de reforzamiento primario, y $(T - t)$ son las reducciones en la demora, donde $T$ es el tiempo medio global programado hasta el reforzamiento primario desde el inicio del eslabón inicial (sin contar ITI), y $t$ son los tiempos al reforzamiento primario desde el inicio de los eslabones terminales respectivos.
+En este y otros modelos se hacen los cálculos con los valores programados y no los obtenidos.
+
+Esta ecuación solo puede ajustarse a situaciones donde todo eslabón inicial es seguido de un solo eslabón terminal que siempre lleva a reforzamiento, pero el principio es generalizable.
+
 
 \end{document}
