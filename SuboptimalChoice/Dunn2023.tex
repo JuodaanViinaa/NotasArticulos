@@ -20,12 +20,14 @@ Pero el estudio de conducta aparentemente subóptima puede permitir entender las
 
 Los primeros reportes de conducta subóptima mostraron que se podía propiciar cuando el eslabón inicial requiere una sola respuesta, cuando hay gran demora entre la respuesta y la consecuencia (TL largos), y especialmente cuando la alternativa subóptima es informativa.
 
-Un intento temprano para explicar la elección subóptima fue el modelo de Signal for Good News. Sus supuestos son que en programas de cadenas concurrentes probabilísticas la elección es dirigida por las diferencias en las tasas de reforzamiento primario (comida) y secundario (entrada en los eslabones terminales de la cadena); que un evento es un reforzador condicionado en función de la reducción de la demora a la comida;que los estímulos que predicen una reducción en la demora más allá por la señalada por la propia entrada al eslabón terminal son buenos reforzadores condicionados; y que las demoras señaladas a la omisión de comida tienen como única función crear un contexto de incertidumbre.
+Un intento temprano para explicar la elección subóptima fue el modelo de Signal for Good News.
+Sus supuestos son que en programas de cadenas concurrentes probabilísticas la elección es dirigida por las diferencias en las tasas de reforzamiento primario (comida) y secundario (entrada en los eslabones terminales de la cadena); que un evento es un reforzador condicionado en función de la reducción de la demora a la comida;que los estímulos que predicen una reducción en la demora más allá por la señalada por la propia entrada al eslabón terminal son buenos reforzadores condicionados; y que las demoras señaladas a la omisión de comida tienen como única función crear un contexto de incertidumbre.
 El modelo da cuenta cualitativamente de los efectos de los parámetros temporales de la tarea y la relevancia de las señales.
 
 Otras explicaciones han aparecido: decaimiento hiperbólico, contraste, consideraciones de forrajeo, información temporal, diferencias en probabilidades de reforzamiento en eslabones terminales, decaimiento de asociabilidad, persecución de errores de predicción anticipados y búsqueda de información, y mecanismos evolutivos que enfatizan las señales confiables de comida.
 Algunos modelos han sido formalizados matemáticamente.
-Curiosamente, SiGN no lo ha sido a pesar de ser de las explicaciones más antiguas. Aquí se intenta formalizar.
+Curiosamente, SiGN no lo ha sido a pesar de ser de las explicaciones más antiguas.
+Aquí se intenta formalizar.
 
 \section{Suboptimal concurrent-chains procedure and literature review}
 
@@ -181,6 +183,42 @@ donde $R$ son las respuestas por alternativa, $r$ son las tasas de reforzamiento
 En este y otros modelos se hacen los cálculos con los valores programados y no los obtenidos.
 
 Esta ecuación solo puede ajustarse a situaciones donde todo eslabón inicial es seguido de un solo eslabón terminal que siempre lleva a reforzamiento, pero el principio es generalizable.
+Una aproximación de Dunn y Spetch lleva esa lógica a situaciones probabilísticas describiendo cómo la probabilidad afecta a la demora.
+El tiempo al reforzamiento primario desde el eslabón terminal no señalado está dado por la expresión $p_{a} \dot t_{a} + (1 - p_{a})(t_{a} + T)$, donde $p_{a}$ es la probabilidad de comida al final del eslabón, es decir, con probabilidad $(1 - p_{a})$ el tiempo incrementa en $T$ dado que la recompensa se omite.
+Así, la reducción promedio en demora señalada por los estímulos de una alternativa probabilística no señalada está dada por
+\[
+D_{avg} = T - (p_{a} \cdot t_{a} + (1 - p_{a})(t_{a} + T))
+,\]
+lo que se simplifica a
+\[
+D_{avg} = T \cdot p_{a} - t_{a}
+.\]
+Cuando una alternativa es no señalada, $p$ y $t$ son los valores promedio de la alternativa.
+Cuando los resultados son señalados, el estímulo con mayor probabilidad de reforzamiento relativa a su demora (i.e., $\frac{p}{t}$) provee una reducción de demora {\itshape bonus} ($D_{\mbox{bonus}}$) relativa al tiempo promedio señalada por el inicio del eslabón terminal.
+Este bonus son las ``buenas noticias''.
+Sin embargo, las ``buenas noticias'' se definen en términos de los parámetros experimentales y no se refieren a la ``información''.
+Es decir, se trata de una descripción funcional.
+
+Este modelo es especial porque incorpora la idea de que la reducción opera entre e intra alternativas (en el caso de eslabones señalados).
+Esas son las demoras promedio y {\itshape bonus} que llevan a la reducción {\itshape total} dentro de una alternativa.
+La reducción {\itshape bonus} del $S^{+}$ es la reducción promedio de un eslabón en esa alternativa menos la demora señalada por el $S^{+}$:
+\[
+D_{\mbox{bonus}} = T \cdot (p_{S^{+}} - p) - t_{S^{+}} + t
+.\]
+
+El modelo asume que el tiempo pasado en presencia de $S^{-}$ no tiene ningún efecto más allá del tiempo que lleva a los organismos percibir el estímulo (se asume alrededor de 1 s).
+Esto afecta solamente la tasa de reforzamiento primario $r$ y el tiempo promedio $T$ en la alternativa señalada.
+
+\section{Balance of conditioned and primary reinforcement}
+
+En elección subóptima los reforzamientos primario y condicionado compiten en función de la duración de los eslabones terminales.
+Incrementar la duración del TL reduce la eficacia del reforzamiento primario.
+
+La forma en que los TL afectan a la reducción promedio en la demora es capturada por
+\[
+\beta = \log_{10}\left(1 + \frac{t_{S^{+}}}{i}\right)
+.\]
+$\beta$ describe cómo el reforzamiento condicionado de una alternativa incrementa o disminuye con base en las duración de IL y TL en una alternativa señalada. TL largos incrementan el efecto de reforzamiento condicionado de la reducción {\itshape bonus}, mientras que IL largos lo disminuyen.
 
 
 \end{document}
