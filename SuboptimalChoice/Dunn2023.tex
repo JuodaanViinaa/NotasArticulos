@@ -164,20 +164,20 @@ El modelo SiGN asume que la elección es determinada por la interacción entre e
 Se asume que la elección es determinada por la competencia entre reforzamiento primario y condicionado con base en la teoría de reducción de la demora.
 La hipótesis se formaliza así:
 \[
-\begin{array}{rlr}
-    \frac{
-        R_{a}
-    }{
-        R_{a} + R_{b}
-    }=&
-    \frac{
-        r_{a}(T - t_{a})
-    }{
-        r_{a}(T - t_{a}) + r_{b}(T - t_{b})
-    } &\mbox{ when }t_{a} < T, t_{b} < T\\
-    =& 1 &\mbox{ when } t_{a} < T, t_{b} > T\\
-    =& 0 & \mbox{ when } t_{a} > T, t_{b} < T
-\end{array}
+    \begin{array}{rlr}
+        \frac{
+            R_{a}
+        }{
+            R_{a} + R_{b}
+        }=&
+        \frac{
+            r_{a}(T - t_{a})
+        }{
+            r_{a}(T - t_{a}) + r_{b}(T - t_{b})
+        } &\mbox{ when }t_{a} < T, t_{b} < T\\
+        =& 1 &\mbox{ when } t_{a} < T, t_{b} > T\\
+        =& 0 & \mbox{ when } t_{a} > T, t_{b} < T
+    \end{array}
 \]
 donde $R$ son las respuestas por alternativa, $r$ son las tasas de reforzamiento primario, y $(T - t)$ son las reducciones en la demora, donde $T$ es el tiempo medio global programado hasta el reforzamiento primario desde el inicio del eslabón inicial (sin contar ITI), y $t$ son los tiempos al reforzamiento primario desde el inicio de los eslabones terminales respectivos.
 En este y otros modelos se hacen los cálculos con los valores programados y no los obtenidos.
@@ -187,11 +187,11 @@ Una aproximación de Dunn y Spetch lleva esa lógica a situaciones probabilísti
 El tiempo al reforzamiento primario desde el eslabón terminal no señalado está dado por la expresión $p_{a} \dot t_{a} + (1 - p_{a})(t_{a} + T)$, donde $p_{a}$ es la probabilidad de comida al final del eslabón, es decir, con probabilidad $(1 - p_{a})$ el tiempo incrementa en $T$ dado que la recompensa se omite.
 Así, la reducción promedio en demora señalada por los estímulos de una alternativa probabilística no señalada está dada por
 \[
-D_{avg} = T - (p_{a} \cdot t_{a} + (1 - p_{a})(t_{a} + T))
+    D_{avg} = T - (p_{a} \cdot t_{a} + (1 - p_{a})(t_{a} + T))
 ,\]
 lo que se simplifica a
 \[
-D_{avg} = T \cdot p_{a} - t_{a}
+    D_{avg} = T \cdot p_{a} - t_{a}
 .\]
 Cuando una alternativa es no señalada, $p$ y $t$ son los valores promedio de la alternativa.
 Cuando los resultados son señalados, el estímulo con mayor probabilidad de reforzamiento relativa a su demora (i.e., $\frac{p}{t}$) provee una reducción de demora {\itshape bonus} ($D_{\mbox{bonus}}$) relativa al tiempo promedio señalada por el inicio del eslabón terminal.
@@ -203,7 +203,7 @@ Este modelo es especial porque incorpora la idea de que la reducción opera entr
 Esas son las demoras promedio y {\itshape bonus} que llevan a la reducción {\itshape total} dentro de una alternativa.
 La reducción {\itshape bonus} del $S^{+}$ es la reducción promedio de un eslabón en esa alternativa menos la demora señalada por el $S^{+}$:
 \[
-D_{\mbox{bonus}} = T \cdot (p_{S^{+}} - p) - t_{S^{+}} + t
+    D_{\mbox{bonus}} = T \cdot (p_{S^{+}} - p) - t_{S^{+}} + t
 .\]
 
 El modelo asume que el tiempo pasado en presencia de $S^{-}$ no tiene ningún efecto más allá del tiempo que lleva a los organismos percibir el estímulo (se asume alrededor de 1 s).
@@ -216,9 +216,31 @@ Incrementar la duración del TL reduce la eficacia del reforzamiento primario.
 
 La forma en que los TL afectan a la reducción promedio en la demora es capturada por
 \[
-\beta = \log_{10}\left(1 + \frac{t_{S^{+}}}{i}\right)
+    \beta = \log_{10}\left(1 + \frac{t_{S^{+}}}{i}\right)
 .\]
-$\beta$ describe cómo el reforzamiento condicionado de una alternativa incrementa o disminuye con base en las duración de IL y TL en una alternativa señalada. TL largos incrementan el efecto de reforzamiento condicionado de la reducción {\itshape bonus}, mientras que IL largos lo disminuyen.
+$\beta$ describe cómo el reforzamiento condicionado de una alternativa incrementa o disminuye con base en las duración de IL y TL en una alternativa señalada.
+TL largos incrementan el efecto de reforzamiento condicionado de la reducción {\itshape bonus}, mientras que IL largos lo disminuyen.
+Dado que no hay reducción bonus en alternativas no señaladas, $\beta$ no afecta las predicciones de la teoría de reducción de la demora, y mantiene la propiedad de ser temporalmente relativa: el contexto temporal relativo determina la preferencia, por lo que no importa la escala temporal específica.
+
+\section{Predicting choice proportions}
+
+El modelo SiGN puede declararse formalmente así:
+\[
+    \begin{array}{cccc}
+        \frac{R_a}{R_a+R_b} & =\frac{r_a \delta_a}{r_a \delta_a+r_b \delta_b} & & \mbox{ when } \delta_a>0, \delta_b>0 \\
+                            & =1 & & \mbox{ when } \delta_a>0, \delta_b<0 \\
+                            & =0 & & \mbox{ when } \delta_a<0, \delta_b>0,
+    \end{array}
+\]
+donde $\delta$ representa el reforzamiento condicionado de una alternativa determinado por la suma de la reducción promedio de demora, $D_{\mbox{avg}}$, y la reducción bonus, $D_{\mbox{bonus}}$, ajustada por $\beta$.
+ \[
+\delta = D_{\mbox{avg}} + \beta \cdot D_{\mbox{bonus}}
+.\]
+En esta forma el modelo puede cambiarse a una razón con parámetros de sesgo y sensibilidad.
+
+De forma general, la tasa de reforzamiento primario en una sola alternativa es $r = \frac{1}{IL + TL}$, donde IL y TL representan al tiempo promedio pasado en eslabones iniciales y terminales por reforzador primario, y el 1 representa a un solo reforzador. Por ejemplo, en la alternativa discriminativa de elección subóptima se asume que los animales responden en el IL en 1s. Dado que la probabilidad de reforzamiento es de .2, las palomas deben pasar en promedio 5 veces por el IL para obtener un reforzador, lo que es un total de 5s esperando por comida en el eslabón inicial.
+
+
 
 
 \end{document}
