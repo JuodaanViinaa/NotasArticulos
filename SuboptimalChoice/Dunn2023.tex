@@ -238,9 +238,26 @@ donde $\delta$ representa el reforzamiento condicionado de una alternativa deter
 .\]
 En esta forma el modelo puede cambiarse a una razón con parámetros de sesgo y sensibilidad.
 
-De forma general, la tasa de reforzamiento primario en una sola alternativa es $r = \frac{1}{IL + TL}$, donde IL y TL representan al tiempo promedio pasado en eslabones iniciales y terminales por reforzador primario, y el 1 representa a un solo reforzador. Por ejemplo, en la alternativa discriminativa de elección subóptima se asume que los animales responden en el IL en 1s. Dado que la probabilidad de reforzamiento es de .2, las palomas deben pasar en promedio 5 veces por el IL para obtener un reforzador, lo que es un total de 5s esperando por comida en el eslabón inicial.
+De forma general, la tasa de reforzamiento primario en una sola alternativa es $r = \frac{1}{IL + TL}$, donde IL y TL representan al tiempo promedio pasado en eslabones iniciales y terminales por reforzador primario, y el 1 representa a un solo reforzador.
+Por ejemplo, en la alternativa discriminativa de elección subóptima se asume que los animales responden en el IL en 1s.
+Dado que la probabilidad de reforzamiento es de .2, las palomas deben pasar en promedio 5 veces por el IL para obtener un reforzador, lo que es un total de 5s esperando por comida en el eslabón inicial.
 
+El tiempo de espera en el eslabón terminal se calcula de forma similar, pero integrando las dos posibilidades que el organismo se puede encontrar: para $a1$, que ocurre con probabilidad de .2, hay un eslabón de 10s.
+Para $a2$, que ocurre con probabilidad .8, se asume un eslabón de 1s, dado que se supone que las palomas no toman en cuenta ese tiempo.
+En promedio, el tiempo pasado en un eslabón terminal es de $0.2 \times 10 + 0.8 \time 1 = 2.8s$.
+El tiempo promedio esperando por comida en la fase de eslabón terminal es de $2.8 \times (1 / 0.2) = 14s$, donde 0.2 es la probabilidad de reforzamiento de la alternativa.
+La tasa de reforzamiento de la alternativa $A$ es el inverso del tiempo total pasado en los eslabones iniciales y terminales de la alternativa: $r_{a} = \frac{1}{5 + 14} = 0.053$.
+Aplicar la misma lógica a la alternativa $B$, el tiempo promedio pasado en eslabones iniciales por entrega de comida es de 2s, y el tiempo promedio pasado en eslabones terminales es de 20s.
+Por lo tanto, $r_{b} = \frac{1}{2 + 20} = 0.045$.
 
+Con $r_{a}$ y $r_{b}$ fijos, el tiempo promedio programado hasta el reforzamiento primario desde el inicio de un eslabón inicial es:
+\[
+    T = \mathbf{P}_{a} \frac{1}{r_a} + \mathbf{P}_{b}\frac{1}{r_b}
+,\]
+donde  $\mathbf{P}_{a}$ y  $\mathbf{P}_{b}$ son las proporciones programadas de entrega de comida en cada alternativa con relación a la otra.
+
+En el ejemplo de .2 vs .5: $\mathbf{P}_a = \frac{0.2}{0.2 + 0.5} = 0.286$, donde .2 y .5 son las probabilidades de reforzamiento en las alternativas $A$ y $B$.
+$\mathbf{P}_b = 1 - \mathbf{P}_a$. El cálculo de $T$ resulta entonces en 21.143s.
 
 
 \end{document}
