@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
+\spanishdecimal{.}
 \usepackage{csquotes}
 \usepackage{anysize}
 \usepackage{graphicx}
@@ -233,8 +234,8 @@ El modelo SiGN puede declararse formalmente así:
     \end{array}
 \]
 donde $\delta$ representa el reforzamiento condicionado de una alternativa determinado por la suma de la reducción promedio de demora, $D_{\mbox{avg}}$, y la reducción bonus, $D_{\mbox{bonus}}$, ajustada por $\beta$.
- \[
-\delta = D_{\mbox{avg}} + \beta \cdot D_{\mbox{bonus}}
+\[
+    \delta = D_{\mbox{avg}} + \beta \cdot D_{\mbox{bonus}}
 .\]
 En esta forma el modelo puede cambiarse a una razón con parámetros de sesgo y sensibilidad.
 
@@ -257,7 +258,76 @@ Con $r_{a}$ y $r_{b}$ fijos, el tiempo promedio programado hasta el reforzamient
 donde  $\mathbf{P}_{a}$ y  $\mathbf{P}_{b}$ son las proporciones programadas de entrega de comida en cada alternativa con relación a la otra.
 
 En el ejemplo de .2 vs .5: $\mathbf{P}_a = \frac{0.2}{0.2 + 0.5} = 0.286$, donde .2 y .5 son las probabilidades de reforzamiento en las alternativas $A$ y $B$.
-$\mathbf{P}_b = 1 - \mathbf{P}_a$. El cálculo de $T$ resulta entonces en 21.143s.
+$\mathbf{P}_b = 1 - \mathbf{P}_a$.
+El cálculo de $T$ resulta entonces en 21.143s.
+
+Las duraciones de TL para $A$ y $B$ son de 2.8 y 10s.
+El reforzamiento condicionado de la alternativa $A$ es la reducción en la demora de la alternativa más la reducción bonus ajustada por $\beta$.
+La reducción promedio en $A$ es $D_{\mbox{avg}} = 21.143 \times 0.2 - 2.8 = 1.429s$.
+La reducción bonus en $A$ es $D_{\mbox{bonus}} = 21.143 \times 0.8 - 10 + 2.8 = 9.714s$.
+$\beta$ para la alternativa $A$ es $\beta = \log_{10} (1 + \frac{10}{1} = 1.041$.
+El reforzamiento condicionado total de la alternativa $A$ es $\delta_a = 1.429 + 1.041 \times 9.714 = 11.545$.
+
+Para la alternativa $B$ los resultados no son señalados, por lo que la única fuente de reforzamiento condicionado es la reducción en la demora promedio, $\delta_b = D_{\mbox{avg}} = 21.143 \times 0.5 - 10 = 0.571s$.
+Zentall obtuvo, con estos parámetros, proporción de elección de 0.92.
+El valor predicho por el modelo SiGN sería:
+
+\begin{eqnarray*}
+    \frac{
+        R_a
+    }{
+        R_a+R_b
+    } = 
+    \frac{
+        r_a \delta_a
+    }{
+        r_a \delta_a + r_b \delta_b
+    } &=&
+    \frac{
+        0.053(11.545)
+    }{
+        0.053(11.545) + 0.045(0.571)
+    }\\
+        &=& 0.959
+\end{eqnarray*}
+
+El modelo se ajusta también a situaciones con duraciones y consecuencias probabilísticas.
+Por ejemplo, Pisklak (2015) utilizó IL de FR 1 que llevaban, en una alternativa, a FT 10s con comida o FT 40s sin comida; y en la otra, a FT 10s con comida o FT 40s con comida. Su proporción obtenida fue de .56, y la predicción del modelo es:
+\[
+    \frac{R_a}{R_a + R_b} =
+    \frac{
+        0.077(11.929)
+    }{
+        0.077(11.929) + 0.038(12.288)
+    } = 
+    0.660
+.\]
+
+\section{Evaluating the SiGN model}
+
+\subsection{Data set}
+
+Se evaluaron varios parámetros dentro de los estudios de elección subóptima con palomas:
+\begin{itemize}
+    \item Duración del eslabón inicial en cada alternativa
+    \item Duración de cada eslabón terminal (4 en total)
+    \item Probabilidad de entrada en cada eslabón terminal
+    \item Probabilidad de entrega de comida al final de cada eslabón terminal
+\end{itemize}
+Los procedimientos con uno y dos estímulos discriminativos son tomados como iguales: como dos estímulos distintos con la misma probabilidad de entrega de comida.
+No se tomaron en cuenta condiciones que no fuesen representables con estos parámetros, por ejemplo, la contigüidad temporal entre la elección y el inicio del eslabón terminal, los escapes, o variación en la probabilidad de cantidades de reforzamiento.
+Tampoco se tomaron en cuenta experimentos sin aves o con topografías de respuesta distintas al picoteo.
+El conteo final incluyó 236 datos de 37 publicaciones.
+
+Los criterios de inclusión para las predicciones del modelo fueron:
+\begin{itemize}
+    \item $n > 2$ 
+    \item Eslabones terminales de FT o FI
+    \item Eslabones iniciales de VI o FR 1
+    \item Condiciones en que las alternativas diferían en valores especificados de tiempo o probabilidad
+\end{itemize}
+
+La variación en los valores observados explicada por los valores predichos fue de ${R^{2} = 0.84}$ incluyendo la reducción bonus; sin incluirla, la varianza explicada fue de $R^{2} = 0.48$.
 
 
 \end{document}
