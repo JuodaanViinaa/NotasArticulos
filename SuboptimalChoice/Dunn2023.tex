@@ -9,7 +9,8 @@
 \marginsize{25mm}{25mm}{25mm}{25mm}
 
 \title{Suboptimal choice: a review and quantification of the signal for good news (SiGN) model}
-\author{Roger M. Dunn \and Jeffrey M. Pisklak \and Margaret A. McDevitt \and Marcia L. Spetch}
+\author{Roger M.
+Dunn \and Jeffrey M. Pisklak \and Margaret A. McDevitt \and Marcia L. Spetch}
 \date{2023}
 
 \begin{document}
@@ -328,6 +329,63 @@ Los criterios de inclusión para las predicciones del modelo fueron:
 \end{itemize}
 
 La variación en los valores observados explicada por los valores predichos fue de ${R^{2} = 0.84}$ incluyendo la reducción bonus; sin incluirla, la varianza explicada fue de $R^{2} = 0.48$.
+Si no se incluye la modulación por $\beta$, la varianza explicada es de $R^{2} = 0.82$.
+$\beta$ es importante para las predicciones de los efectos del eslabón terminal: en su ausencia se subestima el alza en suboptimalidad mientras incrementan las duraciones de TL.
+
+\subsection{Predicted (a priori) functions}
+
+El modelo predice que según incrementa la duración del VI del eslabón inicial, disminuirá la elección subóptima.
+Aunque hay pocas pruebas directas, los datos son en general consistentes con la predicción.
+
+Se predice que según incrementan los TL, incrementa rápidamente la preferencia subóptima, aunque entre distintos experimentos hay una asíntota distinta.
+
+Se predice un efecto de la integridad de las señales: cuanto mejor predictor es $S^{+}$, más incrementa la preferencia subóptima.
+
+Una predicción contraintuitiva es que al agregar incluso una baja probabilidad de reforzamiento en presencia del estímulo $S^{-}$ debería disminuir la preferencia subóptima (similar al ``engagement'' de Fortes).
+La elección subóptima debería abajar rápidamente si hay una pequeña probabilidad de comida en $S^{-}$, y después subir cuando su probabilidad incremente.
+No hay evidencia empírica a favor de esa predicción, y hay algo de evidencia en contra (Fortes, 2018).
+
+\section{Discussion}
+
+La investigación muestra que las palomas prefieren alternativas con señales para resultados probabilísticos que siguen a una demora, y la mayoría de las teorías de elección subóptima se han enfocado en el papel de las señales.
+
+Algunas características del modelo se parecen a otros modelos recientes, por ejemplo, se asume una importancia casi nula para los eslabones terminales señalados pero no reforzados (Mazur, Daniels y Sanabria, Vasconcelos).
+Esta decisión viene de la presunción de que los animales aprenden que esos tiempos no son parte del tiempo de espera a la comida.
+
+Otra característica en común es el supuesto de que la elección es controlada por dos fuentes de reforzamiento: reforzamiento primario y condicionado.
+En el modelo de información temporal de Cunningham y Shahan se asume que la elección la determina el reforzamiento primario y diferencias en la información temporal.
+En la hipótesis $\Delta \Sigma$ la elección la determinan diferencias en la probabilidad de reforzamiento dentro de cada eslabón terminal ($\Delta$) y diferencias en la probabilidad global de reforzamiento de cada alternativa ($\Sigma$).
+
+Finalmente, suponer que las buenas noticias son reforzantes tampoco es novedad, aunque lo que se considera buenas noticias cambia entre modelos.
+El modelo SiGN supone que las buenas noticias son reducciones en la demora al reforzamiento; Zentall supone que lo bueno son las mejoras en la probabilidad de entrega de comida; y Anselme supone que la conducta subóptima puede ser un reflejo de una tendencia evolutiva a buscar estímulos que señalan confiablemente la comida.
+
+El modelo tiene también características propias: se deriva de la teoría de reducción de la demora, y tiene la ventaja de que cuando los resultados, cantidades y demoras no son probabilísticos, se reduce a un modelo que ha descrito la conducta de elección por más de medio siglo.
+
+Tiene soporte de otros dominios: la literatura de respuestas de observación muestra que el inicio de estímulos relacionados con la disponibilidad de comida refuerza los picoteos aun si no cambian la disponibilidad.
+Algunos estudios han mostrado la importancia de las buenas noticias: monos prefieren la información sobre la incertidumbre, aun si tiene el costo de disminuir la recompensa.
+Además, la presentación de estímulos relacionados con ganancias ha mostrado incrementar la elección riesgosa en ratas y humanos.
+
+Otro beneficio del modelo es que puede incorporar variación tanto en la probabilidad de entrar a cada eslabón terminal, como la duración de los eslabones iniciales y terminales.
+
+Finalmente, el ajuste con los datos se dio sin ningún parámetro libre.
+
+Algunas limitaciones del modelo son que no da cuenta de la inserción de un {\itshape gap} entre la respuesta y el inicio del TL, lo que ha mostrado afectar a la elección.
+Además, el modelo no hace predicciones para situaciones con distintas cantidades de comida entre alternativas.
+
+El modelo actual describe solo nivel asintóticos de elección, no la adquisición de preferencia.
+
+Finalmente, aunque los resultados de aves se explican sin parámetros libres, se necesitarían parámetros para explicar los resultados de ratas y humanos: con ratas, los mismos parámetros de tiempo y probabilidad dan proporciones que van de la preferencia fuerte por la alternativa óptima a preferencia por la subóptima dependiendo de modalidades o saliencia de los estímulos.
+El modelo actual no tiene parámetros para dar cuenta de los cambios de esas variables.
+A pesar de las diferencias en niveles absolutos de suboptimalidad, los efectos paralelos de la duración del TL entre especies sugieren que sería fructífero explorar extensiones del modelo SiGN.
+
+El modelo asume que la conducta es reforzada por las recompensas y por los estímulos que anuncian una reducción en la demora a ellas.
+Esto es consistente con literatura en neurociencia que indica que las recompensas y la información sobre ellas refuerzan la conducta.
+
+\section{Conclusion}
+
+La elección subóptima ha sido usada como ejemplo de conducta maladaptativa similar a la de apostadores humanos, pero la conducta que es subóptima en el laboratorio puede venir de procesos que son adaptativos en la naturaleza.
+Se mostró que la elección de palomas y estorninos puede describirse bien mediante el modelo SiGN, que asume que la elección es determinada por la tasa de entrega de comida y por la ocurrencia de señales que anuncian reducción en la demora a la comida.
+Repetir conductas que llevan a señales de buenas noticias es adaptativo en la mayoría de situaciones naturales, pero puede llevar a elecciones maladaptativas.
 
 
 \end{document}
