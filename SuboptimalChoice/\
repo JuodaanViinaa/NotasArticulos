@@ -73,59 +73,5 @@ P_{\mbox{info}} = \frac{
 Este modelo predice preferencia por la alternativa informativa cuanto más grandes sean las diferencias entre las demoras dentro de la alternativa; y predice indiferencia si la diferencia es de cero.
 
 Se especula de un razonamiento ecológico según el cual sería ventajoso conocer las posibles demoras de captura de tipos de presa, por lo cuál podría existir un sesgo inherente en los animales para preferir alternativas señaladas.
-Según este razonamiento, el beneficio de preferir la información también incrementa según son mayores las diferencias entre las demoras, pues rechazar una presa cuando su demora de captura es alta con respecto a otra presa con demora menor incrementa en mayor medida la tasa media de captura.
-
-Algunos argumentan que la información es reforzante {\itshape per se}, independiente de cualquier valor instrumental ({\slshape hipótesis del valor intrínseco}).
-Algunos hallazgos indican que el valor subjetivo de la información no instrumental comparte un código neural con las recompensas primarias (Bromberg-Martin \& Hikosaka, 2009).
-Sin embargo, esta propuesta solo predice la preferencia por las demoras señaladas, pero dado que el valor de la información sería independiente de las diferencias en las demoras señaladas, no tendría que haber modulación por esta diferencia.
-
-Se ha encontrado evidencia de preferencia por demoras señaladas cuando las diferencias entre demoras son grandes, pero el efecto de la similitud entre demoras no se ha estudiado.
-
-Este experimento busca contrastar las hipótesis $\Delta$-$\Sigma$, ecológica, y de valor intrínseco.
-La última difiere de las primeras solo en la falta de predicción de un efecto modulador para las diferencias entre demoras.
-
-\section{Method}
-
-\subsection{Subjects}
-
-Siete palomas con experiencia en elección subóptima (Fortes et al, 2016).
-
-\subsection{Apparatus}
-
-Tres cajas con un panel de respuesta con tres teclas, comedero, y luz general.
-
-\subsection{Procedure}
-
-{\itshape Preentrenamiento}. Para evitar acarreo se entrenaron respuestas ante los colores y símbolos en diferentes programas FR.
-
-{\itshape Tarea experimental}. Cada sesión constaba de 96 ensayos: 32 de elección y 64 forzados.
-En el eslabón inicial las teclas izquierda y derecha se iluminaban con una cruz y un círculo.
-Una respuesta en cualquiera apagaba ambas y llevaba a su eslabón terminal.
-Al elegirse la alternativa informativa las demoras corta y larga estaban señaladas por un color específico en la tecla central; al elegirse la no informativa, las demoras no estaban correlacionadas con el color de la tecla central.
-La localización de las alternativas cambiaba aleatoriamente tanto en ensayos forzados como de elección.
-
-Cada paloma pasó por dos condiciones de línea base y tres experimentales.
-En línea base todas las demoras se ajustaron a 12.5 s; en las experimentales se incrementaron las diferencias entre las demoras, pero se mantuvo constante el promedio (10 vs 15, 7.5 vs 17.5, 5 vs 20).
-El orden de las condiciones fue contrabalanceado entre palomas.
-Cada condición duró al menos 10 sesiones y permaneció hasta obtener estabilidad.
-
-\section{Results}
-
-Las palomas tardaron 16 sesiones en promedio en alcanzar la estabilidad por condición, y el tiempo para llegar a estabilidad no varió entre condiciones.
-
-Las palomas eran indiferentes con la razón long/short de 1.0, pero se encontró una preferencia por la información en las demás condiciones que incrementó en función de la diferencia entre demoras.
-
-Las predicciones del modelo $\Delta$-$\Sigma$ modificado describen bien los datos.
-
-Se ha mostrado que la latencia es una medida sensible de preferencia, así que se analizó la latencia a responder en los eslabones iniciales en ensayos forzados.
-Las latencias en línea base eran similares, así que se promediaron en una sola medida.
-Según incrementaron las diferencias, las latencias comenzaron a divergir y los animales mostraron latencias mayores para la alternativa menos preferida.
-Las latencias son consistentes con los datos de preferencia.
-
-Finalmente se analizaron las tasas de respuesta a los estímulos de los eslabones terminales.
-Cuatro de siete palomas no picaban ninguno de los estímulos.
-Para el resto, las respuestas entre los estímulos no discriminativos permanecieron indistinguibles, y las respuestas al estímulo que señalaba la demora corta en la alternativa informativa fueron mayores que para el estímulo complementario.
-Esto sugiere que esas palomas aprendieron las demoras señaladas por cada estímulo.
-
 
 \end{document}
