@@ -6,10 +6,12 @@
 \usepackage{csquotes}
 \usepackage{anysize}
 \usepackage{graphicx}
+\usepackage{txfonts}
 \marginsize{25mm}{25mm}{25mm}{25mm}
 
 \title{Time, uncertainty, and suboptimal choice}
-\author{Alejandro Macías \and Valeria V. González \and Armando Machado \and Marco Vasconcelos}
+\author{Alejandro Macías \and Valeria V.
+González \and Armando Machado \and Marco Vasconcelos}
 \date{2024}
 
 \begin{document}
@@ -30,7 +32,7 @@ La evidencia indica que posponer la resolución de la ambigüedad debería dismi
 En el segundo experimento se hizo la manipulación complementaria: ahora se encendía $S^{R}$ por default y cambiaba o se mantenía en su color tras $t$ segundos.
 
 Se varió $t$ de 0 a 10 s.
-Se espera que cuando $t = 0$ el resultado sea el de elección subóptima normal; y cuando $t = 10$ la preferencia se revierta.
+Se espera que cuando $t = 0$ el resultado sea el de elección subóptima normal; y cuando $t = 10$ la preferencia se revierta, dado que la alternativa pasa a ser no informativa.
 Se predice que la preferencia por la opción informativa disminuirá monotónicamente con $t$.
 
 \section{Experiment 1 - Temporarily reducing the reliability of $S^{G}$}
@@ -43,7 +45,7 @@ Bajo la tecla central había un dispensador de comida, y en la pared opuesta hab
 
 \subsection{Pretraining}
 
-Las palomas fueron entrenadas con programas de FR con los seis estímulos del experimento (rojo, verde, amarillo, azul, más y círculo).
+Las palomas fueron entrenadas con programas de FR con los seis estímulos del experimento (rojo, verde, amarillo, azul, $+$ y $\medcirc$).
 
 \subsection{Training}
 
@@ -52,7 +54,44 @@ Cada paloma pasó por 9 longitudes de $t$, cada una de al menos 12 sesiones de d
 Cada sesión consistía en 120 ensayos, 40 de elección y 80 forzados, con las condiciones normales de elección subóptima más la manipulación ya descrita.
 
 Todas las palomas comenzaron con $t = 0$ (procedimiento estándar), seguido de $t = 5$.
-Después, cuatro palomas pasaron por $t = 1.5$ \textrightarrow $t = 8.5$, mientras tres más pasaron por 
+Después, cuatro palomas pasaron por $t = 1.5$ \textrightarrow $t = 8.5$, mientras tres más pasaron por $t = 8.5$ \textrightarrow $t = 1.5$.
+Tras un regreso a línea base, todas pasaron por	$t = 3.25$ \textrightarrow $t = 0.75$ \textrightarrow $t = 6.75$ o el orden contrario.
+Finalmente todas experimentaron $t = 10$, momento en el cual la opción ya no era informativa.
+
+\subsection{Results and discussion}
+
+Se analizaron los resultados de las últimas tres sesiones de cada condición.
+Dado que no hubo diferencias entre las dos condiciones de $t = 0$, sus resultados se promediaron.
+
+Como se esperaba, cuando $t = 0$ hubo preferencia por la alternativa informativa.
+La preferencia por la alternativa informativa disminuyó con incrementos en $t$.
+La tasa de respuestas a la tecla incrementó según se aproximaba $t$.
+Después de $t$ segundos las palomas continuaban picando la tecla si $S^{G}$ prevalecía, pero dejaban de picar si $S^{R}$ era presentado, con excepción de la condición de $t = 0$, donde las palomas picaban durante $S^{R}$ infrecuentemente.
+
+En cuanto a la alternativa no informativa, la tasa de respuesta fue consistentemente baja.
+
+En resumen, la preferencia por la alternativa informativa disminuyó cuando el estímulo presentado no eliminaba la ambigüedad inmediatamente después de la elección.
+
+\section{Experiment 2 - Temporarily reducing the reliability of $S^{R}$}
+
+Todo ensayo informativo comenzaba con $S^{R}$, que podía cambiar a $S^{G}$ después de $t$ segundos o permanecer igual.
+Se hipotetizaba que el valor predictivo de la alternativa informativa disminuiría al no resolver la ambigüedad inmediatamente.
+
+\subsection{Procedure}
+
+Todos los detalles fueron idénticos al experimento 1.
+
+\subsection{Results and discussion}
+
+De nuevo se promediaron los resultados de las condiciones de $t = 0$ al no haber diferencias entre ellos.
+
+Cuando $t = 0$ las palomas mostraron preferencia marcada por la alternativa informativa.
+La preferencia tendió a disminuir con $t$, aunque el efecto fue menos pronunciado que en el experimento 1.
+Una correlación rank-order de Spearman mostró que la tendencia era significativa para cuatro de seis palomas.
+
+Prácticamente no hubo respuestas durante $S^{R}$ tanto antes como después de $t$.
+Las respuestas comenzaron cuando se presentó $S^{G}$.
+En este caso la conducta estaba bajo control de los estímulos solamente, y no bajo control temporal como en el experimento 1.
 
 
 \end{document}
