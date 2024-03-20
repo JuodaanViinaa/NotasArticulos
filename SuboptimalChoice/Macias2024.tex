@@ -6,6 +6,7 @@
 \usepackage{csquotes}
 \usepackage{anysize}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \usepackage{txfonts}
 \marginsize{25mm}{25mm}{25mm}{25mm}
 
@@ -92,6 +93,60 @@ Una correlación rank-order de Spearman mostró que la tendencia era significati
 Prácticamente no hubo respuestas durante $S^{R}$ tanto antes como después de $t$.
 Las respuestas comenzaron cuando se presentó $S^{G}$.
 En este caso la conducta estaba bajo control de los estímulos solamente, y no bajo control temporal como en el experimento 1.
+
+En resumen, la preferencia por la alternativa informativa disminuyó con incrementos en $t$, pero el efecto no fue tan pronunciado como en el experimento 1.
+Hubo mayor variabilidad, y algunas palomas solamente revirtieron su preferencia cuando la alternativa informativa se volvió completamente no informativa ($t = 10$).
+
+\section{General discussion}
+
+Se muestra que la preferencia paradójica por la información costosa no depende solamente en la información transmitida, sino también de cuándo se entrega esa información.
+Se encontró que inicialmente hay una preferencia fuerte por la alternativa informativa, pero esta preferencia disminuye según se demora la información.
+Se argumenta que la preferencia por la alternativa informativa incrementa con el tiempo en certidumbre, y disminuye con el tiempo en incertidumbre.
+
+\vspace{2mm}
+{\centering\fbox{\parbox{0.95\textwidth}{%
+Idea: se podrían manipular independientemente las duraciones de los tiempos bajo certidumbre e incertidumbre para dar soporte a la hipótesis de la información.
+}}}
+\vspace{2mm}
+
+Estos hallazgos son consistentes con un reporte previo (McDevitt et al, 1997), en el cual se introdujo un {\slshape gap} de 5 s antes de la presentación de los estímulos manteniendo constante la duración del eslabón terminal.
+Hubo pocos cambios en la preferencia cuando el {\slshape gap} precedía solamente a $S^{-}$, pero hubo un cambio sustancial cuando precedía solamente a $S^{+}$, a ambos estímulos informativos, o a todos los estímulos.
+Una diferencia entre los procedimientos es que McDevitt utilizó un estímulo neutro (la tecla apagada) para llenar el {\slshape gap}, mientras que aquí se utilizaron $S^{+}$ y $S^{-}$.
+Solo el milagro sabe si esto tiene un efecto importante en los resultados.
+
+Stagner et al (2015) usaron un procedimiento en el cual $S^{+}$ cambiaba a $S^{-}$ después de 2, 5 u 8 segundos en un eslabón terminal de 10 s.
+Encontraron que cambiar $S^{+}$ por $S^{-}$ bajaba la preferencia por la alternativa informativa con algo de evidencia que indica que $t$ más largos llevan a preferencias más débiles.
+
+Bromberg-Martin usó un procedimiento de elección en monos en el cual ambas alternativas eran informativas, pero diferían en la demora con que entregaban información.
+Los monos preferían la alternativa con la menor demora, siendo todo lo demás igual.
+
+Se puede interpretar este procedimiento suponiendo que el eslabón inicial persiste hasta el evento que resuelve la ambigüedad a los $t$ segundos.
+Esto sería consistente con investigación previa que manipula la duración de los eslabones mostrando que eslabones iniciales más largos disminuyen la elección subóptima.
+En general, la preferencia subóptima parece depender de eslabones iniciales cortos y eslabones terminales largos.
+
+En ambos experimentos de este estudio hubo in decremento en la preferencia por la alternativa informativa en función de $t$, pero el efecto fue más pronunciado para el experimento 1.
+Es decir, aunque en ambos casos la duración de certidumbre e incertidumbre fue la misma, la reducción en la preferencia fue mayor cuando la incertidumbre estaba señalada por el estímulo positivo que por el negativo.
+
+Varias asimetrías pueden explicar las diferencias:
+\begin{itemize}
+    \item El nivel de degradación de contingencias: en el experimento 1 $S^{G}$ engañó a los sujetos en el 80\% de los ensayos, mientras que en el 2 $S^{R}$ los engañó solo el 20\% de las ocasiones.
+	Formalmente, cuando $t = 0$ en ambos experimentos $p (\text{ reinforcer } | S^{G}) = 1.0$, y $p (\text{ reinforcer } | S^{R}) = 0$, lo que da una contingencia positiva perfecta.
+	Pero cuando $t > 0$, en el experimento 1, $p (\text{ reinforcer } | S^{G}) = 0.2$, y $p (\text{ reinforcer } | S^{R}) = 0$, lo que resulta en una contingencia positiva débil de 0.2; mientras que en el experimento 2 $p (\text{ reinforcer } | S^{G}) = 1$, y $p (\text{ reinforcer } | S^{R}) = 0.2$, lo que resulta en una fuerte contingencia positiva de 0.8.
+	Es decir, la degradación de la contingencia es mayor en el experimento 1 (de 1.0 a 0.2) que en el 2 (de 1.0 a 0.8), por lo que la incertidumbre del resultado era mayor en el experimento 1.
+    \item Según incrementaba $t$, $S^{G}$ señalaba la recompensa con una demora promedio mayor en el experimento 1.
+	Por ejemplo, cuando $t = 0$, $S^{G}$ señala comida tras 10 s; cuando $t = 1.5$, señala comida tras $10 + (4 \times 1.5)$ segundos (los 10 s de cada ensayo reforzado más 1.5 s de los ensayos no reforzados que son 4 veces más frecuentes); y cuando $t = 8.5$, la demora promedio incrementaba a 44 s.
+	En contraste, en el experimento 2 los incrementos en $t$ hacían que $S^{G}$ señalara la comida con demoras cada vez menores, iguales a $10 - t$.
+	Esta asimetría podría haber desviado la preferencia.
+    \item Los ensayos reforzados en el experimento 2 implicaban un cambio exteroceptivo de $S^{R}$ a $S^{G}$, lo que implica que las palomas podrían involucrarse en otras actividades durante $S^{R}$, y retornar a picar cuando había un cambio a $S^{G}$, por lo que la espera podría implicar un costo de oportunidad menor en el experimento 2 que en el 1.
+\end{itemize}
+
+Una explicación de las diferencias requeriría de un modelo que relacione la confiabilidad de las señales con la probabilidad y demora, y que especifique su interacción con el costo de oportunidad.
+
+Estos hallazgos junto a los de McDevitt y Stagner presentan el desafío de integrar la probabilidad y la demora en los modelos de elección subóptima.
+La hipótesis $\delta-\Sigma$, por ejemplo, hace predicciones utilizando las probabilidades de reforzamiento de los eslabones terminales, pero no tiene manera de explicar los hallazgos actuales, pues no integra en ningún sitio la duración de los eslabones.
+Una posibilidad es hacer que la razón entre las duraciones de los eslabones terminales amplifique los efectos de la diferencia en probabilidades.
+
+Estos resultados señalan la complejidad de elección subóptima, y presentan el desafío de integrar los parámetros temporales con los probabilísticos.
 
 
 \end{document}
