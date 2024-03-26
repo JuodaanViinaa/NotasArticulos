@@ -6,6 +6,7 @@
 \usepackage{csquotes}
 \usepackage{anysize}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \marginsize{25mm}{25mm}{25mm}{25mm}
 
 \title{Suboptimal choice: a review and quantification of the signal for good news (SiGN) model}
@@ -186,7 +187,7 @@ En este y otros modelos se hacen los cálculos con los valores programados y no 
 
 Esta ecuación solo puede ajustarse a situaciones donde todo eslabón inicial es seguido de un solo eslabón terminal que siempre lleva a reforzamiento, pero el principio es generalizable.
 Una aproximación de Dunn y Spetch lleva esa lógica a situaciones probabilísticas describiendo cómo la probabilidad afecta a la demora.
-El tiempo al reforzamiento primario desde el eslabón terminal no señalado está dado por la expresión $p_{a} \dot t_{a} + (1 - p_{a})(t_{a} + T)$, donde $p_{a}$ es la probabilidad de comida al final del eslabón, es decir, con probabilidad $(1 - p_{a})$ el tiempo incrementa en $T$ dado que la recompensa se omite.
+El tiempo al reforzamiento primario desde el eslabón terminal no señalado está dado por la expresión $p_{a} \cdot t_{a} + (1 - p_{a})(t_{a} + T)$, donde $p_{a}$ es la probabilidad de comida al final del eslabón, es decir, con probabilidad $(1 - p_{a})$ el tiempo incrementa en $T$ dado que la recompensa se omite.
 Así, la reducción promedio en demora señalada por los estímulos de una alternativa probabilística no señalada está dada por
 \[
     D_{avg} = T - (p_{a} \cdot t_{a} + (1 - p_{a})(t_{a} + T))
@@ -196,7 +197,7 @@ lo que se simplifica a
     D_{avg} = T \cdot p_{a} - t_{a}
 .\]
 Cuando una alternativa es no señalada, $p$ y $t$ son los valores promedio de la alternativa.
-Cuando los resultados son señalados, el estímulo con mayor probabilidad de reforzamiento relativa a su demora (i.e., $\frac{p}{t}$) provee una reducción de demora {\itshape bonus} ($D_{\mbox{bonus}}$) relativa al tiempo promedio señalada por el inicio del eslabón terminal.
+Cuando los resultados son señalados, el estímulo con mayor probabilidad de reforzamiento relativa a su demora (i.e., $\frac{p}{t}$) provee una reducción de demora {\itshape bonus} ($D_{\text{bonus}}$) relativa al tiempo promedio señalada por el inicio del eslabón terminal.
 Este bonus son las ``buenas noticias''.
 Sin embargo, las ``buenas noticias'' se definen en términos de los parámetros experimentales y no se refieren a la ``información''.
 Es decir, se trata de una descripción funcional.
@@ -205,7 +206,7 @@ Este modelo es especial porque incorpora la idea de que la reducción opera entr
 Esas son las demoras promedio y {\itshape bonus} que llevan a la reducción {\itshape total} dentro de una alternativa.
 La reducción {\itshape bonus} del $S^{+}$ es la reducción promedio de un eslabón en esa alternativa menos la demora señalada por el $S^{+}$:
 \[
-    D_{\mbox{bonus}} = T \cdot (p_{S^{+}} - p) - t_{S^{+}} + t
+    D_{\text{bonus}} = T \cdot (p_{S^{+}} - p) - t_{S^{+}} + t
 .\]
 
 El modelo asume que el tiempo pasado en presencia de $S^{-}$ no tiene ningún efecto más allá del tiempo que lleva a los organismos percibir el estímulo (se asume alrededor de 1 s).
