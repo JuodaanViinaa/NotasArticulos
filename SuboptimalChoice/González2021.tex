@@ -32,7 +32,7 @@ Más tarde, el grupo de Zentall encontró que esta preferencia por la informaci�
 Varias explicaciones presumen que el $S^{-}$ es ignorado y no tiene efecto en la elección ({\itshape e.g.,} el reinforcement rate model), lo que contrasta con la evidencia que indica que los animales prefieren un mal resultado señalado que uno sin señalar.
 Del mismo modo, la explicación de la información temporal de Cunningham y Shahan supone que el $S^{-}$, al no señalar ninguna relación temporal con un reforzador, es ignorado.
 Por otro lado, la hipótesis $\Delta-\Sigma$ supone que los animales deben prestar atención a todas las probabilidades, incluida la de $S^{-}$.
-En resumen, no es si $S^{-}$ afecta la elección; y si lo hace, no es claro si se debe a un proceso perceptual, atencional o de aprendizaje.
+En resumen, no es claro si $S^{-}$ afecta la elección; y si lo hace, no es claro si se debe a un proceso perceptual, atencional o de aprendizaje.
 
 Se propone que el $S^{-}$ sí contribuye a la elección subóptima al volverse un inhibidor condicionado.
 Laude, utilizando el procedimiento de elección subóptima de magnitudes, encontró que se desarrolla inhibición condicionada, pero esta se pierde con entrenamiento extendido.
@@ -47,6 +47,74 @@ Se requieren de más pruebas (por ejemplo, con estímulos novedosos) para descar
 
 Fortes incrementó la probabilidad y longitud del $S^{-}$, manipulaciones que deberían incrementar la inhibición condicionada, pero no hubo cambios en la preferencia.
 Trujano, por otro lado, encontró que la inhibición en ratas incrementa con el entrenamiento, pero no encontró elección subóptima y concluyó que la diferencia en resultados está relacionada con una diferencia en el impacto de los inhibidores condicionados.
+
+Estos experimentos pretendían determinar si $S^{-}$ adquiría propiedades inhibitorias en un procedimiento más convencional, sin las desviaciones de Laude; y probar la relación entre el desarrollo de la inhibición a $S^{-}$ y la fuerza de la preferencia subóptima.
+Trujano dijo que las ratas no son subóptimas debido a la inhibición, pero evidencia reciente muestra que sí pueden ser subóptimas (Cunningham, Ojeda).
+
+En el experimento 1 se entrenaron palomas en automoldeamiento solo con los estímulos de TL ($S^{+}, S^{-}, S3, S4$), señalando 1, 0, .5 y .5 de probabilidad de reforzamiento.
+Se presentaron ensayos de sondeo con compuestos de $S^{+}S^{-}$, $S3S4$, $S3S^{-}$, y $S^{+}S4$ para medir las propiedades inhibitorias de $S^{-}$.
+Si es inhibidor, se esperaría una reducción en $S^{+}S^{-}$ comparada con $S^{+}$ o $S3S4$.
+También se probaron los compuestos $S3S^{-}$ y $S^{+}S4$ para comparar las propiedades excitatorias de un estímulo parcialmente reforzado con las de uno continuamente reforzado.
+
+El experimento 2 midió la inhibición de $S^{-}$ después de entrenamiento en elección subóptima.
+Después de establecerse una preferencia confiable, se probó la inhibición pavloviana con una prueba de sumación.
+Se presentaron ensayos de sondeo con compuestos de $S^{+}S^{-}$, pero también $S^{+}$ en compuesto con un estímulo novedoso para descartar la inhibición externa.
+Si $S^{-}$ se vuelve inhibidor, debería evocar una tasa de respuestas menor que la del compuesto con estímulo novedoso.
+
+Para explorar la relación entre la inhibición y la elección subóptima en el experimento 3 las palomas fuero entrenadas en elección subóptima con estímulos tanto en eslabones iniciales como terminales.
+Se midió el desarrollo de inhibición ante $S^{-}$ usando pruebas de sumación con compuestos como los de los experimentos 1 y 2, y el desarrollo de la preferencia por el estímulo de eslabón inicial subóptimo en ensayos de elección durante el entrenamiento.
+Si la preferencia subóptima está relacionada con la inhibición condicionada, entonces se predice que la fuerza de la preferencia subóptima estará correlacionada con la inhibición condicionada.
+Una ausencia de correlación implicaría una ausencia de relación entre las variables.
+Y si la elección subóptima depende de ignorar el $S^{-}$ como sugiere Laude, entonces la fuerza de la preferencia subóptima debería correlacionar negativamente con la inhibición.
+Se usarán pruebas de sumación negativa, en las cuales el $S^{+}$ y el supuesto estímulo inhibitorio  $S^{-}$ se presentan en compuesto y las respuestas a ellos se comparan con las respuestas a presentaciones no reforzadas de $S^{+}$.
+
+\section{Experiment 1}
+
+Primero se quiso determinar si los estímulos de los eslabones terminales entrenados por sí solos adquirirían propiedades excitatorias o inhibitorias.
+Se realizó un procedimiento de automoldeamiento pavloviano con los cuatro estímulos y las probabilidades de reforzamiento dichas, y se midió la tasa de respuesta a cada estímulo.
+Las tasas de respuesta a los compuestos se compararon con las tasas de respuesta a los estímulos individuales y otros compuestos.
+Se predice una reducción en la tasa de respuesta en los compuestos $S^{+}S^{-}$ y $S3S^{-}$.
+
+\subsection{Method}
+
+\subsubsection{Subjects}
+
+Cinco palomas con experiencia en múltiples procedimientos, pero ingenuas con respecto a este procedimiento y estímulos.
+
+\subsubsection{Materials}
+
+Los estímulos se presentaron en una pantalla LCD mediante PsychoPy.
+Las picadas se detectaron mediante una pantalla táctil infrarroja.
+
+Los estímulos estaban compuestos por dos círculos (rojo, verde, amarillo o azul) alineados vertical u horizontalmente.
+
+\subsubsection{Procedure}
+
+Se entrenó a las palomas a picar cada estímulo en FR1 y FR10.
+
+En sesiones diarias se presentó el procedimiento de automoldeamiento, que consistía en 80 ensayos.
+$S^{+}$ se presentaba 8 veces seguido de comida, $S^{-}$ se presentaba 32 veces seguido de omisión, $S3$ se presentaba 8 veces seguido en 4 de comida y 4 de omisión, y $S4$ se presentaba 32 veces seguido en 16 por comida y 16 por omisión.
+
+Tras 15 sesiones de entrenamiento se hicieron pruebas en bloques de 5 sesiones intercaladas con bloques de 5 sesiones de solo entrenamiento.
+Cada sesión de prueba de 56 ensayos comenzaba con diez presentaciones de los estímulos de entrenamiento.
+Después, nueve ensayos no reforzados se presentaban aleatoriamente entre ensayos de entrenamiento por lo restante de la sesión.
+Los ensayos de prueba no eran reforzados y duraban 30 segundos.
+
+\subsubsection{Data analysis}
+
+Se calculó la tasa de respuesta a cada estímulo y se promedió en bloques de cinco sesiones.
+
+Un análisis de varianza factorial de medidas repetidas se implementó para analizar los bloques de entrenamiento y prueba.
+
+\subsubsection{Results}
+
+La tasa de respuesta a $S^{-}$ fue menor que la de todos los demás estímulos en solitario.
+Hubo una menor tasa de reforzamiento a $S^{+}S^{-}$ y $S3S^{-}$ que a los demás compuestos.
+Esto es importante ya que indica que presentar dos estímulos juntos en un compuesto novedoso no produce inhibición externa ni decremento de generalización.
+
+\section{Experiment 2}
+
+
 
 
 \end{document}
