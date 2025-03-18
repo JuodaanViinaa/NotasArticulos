@@ -1,0 +1,184 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\spanishdecimal{.}
+\usepackage{csquotes}
+\usepackage{anysize}
+\usepackage{graphicx}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+
+\title{Rats' performance in a suboptimal choice procedure implemented in a natural foraging analogue}
+\author{Fernanda González-Barriga \and Vladimir Orduña}
+\date{2024}
+
+\begin{document}
+{\scshape\bfseries \maketitle}
+
+Elección subóptima se separa de teorías de maximización y se ha visto como modelo de gambling.
+
+Se ha mostrado que las palomas son subóptimas y las ratas óptimas.
+Entre las explicaciones propuestas están diferencias en saliencia incentiva, la sensibilidad a información temporal (con TLs largos se llegó a encontrar suboptimalidad en ratas, pero el resultado no se pudo replicar ni por el mismo laboratorio), diferencias en los modos de búsqueda activados para cada especie (general con luces o tonos, que predice conducta óptima; focal con palancas, que predice subóptima).
+
+Timberlake dice que el modo focal de búsqueda se activa por claves que predicen el tiempo o lugar de presentación de comida, y que el modo se caracteriza por conducta más enfocada en la procuración de comida.
+Esto, sumado a la facilidad de las ratas para navegar laberintos, sugiere que algunos estímulos de los laberintos activan el modo focal.
+Esto señala la posibilidad de estudiar las preferencias de ratas en un entorno que involucre esas señales ecológicamente válidas: locomoción y alternativas definidas espacialmente.
+
+Se evalúan ratas en un laberinto que incorpora estímulos y respuestas relacionados con el forrajeo natural para analizar su impacto en las preferencias en elección subóptima.
+
+\section{Experiment 1}
+
+\subsection{Method}
+
+Ocho ratas Wistar, en pares, con restricción al 85\% del peso libre.
+
+Se utilizó un laberinto con puertas de guillotina con detector infrarrojo.
+Tenía tres espacios:
+\begin{enumerate}
+    \item Espacio de elección, con la puerta A en la parte trasera.
+	Dos puertas en la parte frontal (B y C).
+    \item Espacio de resultados, con puertas D, E, F y G, dividido en dos partes por una pared.
+	Espacio de reforzamiento, en donde se entregaba comida desde dos receptáculos de pellet.
+\end{enumerate}
+
+Los espacios estaban conectados por túneles de PVC.
+Además, después del espacio de reforzamiento había un túnel que regresaba a los animales al espacio de elección.
+
+Para el preentrenamiento se utilizó una versión simplificada del laberinto.
+
+\subsection{Procedure}
+
+Los sujetos fueron habituados y entrenados a comedero y a los túneles.
+Si durante el preentrenamiento los sujetos mostraban preferencia por las puertas B o C, la alternativa discriminativa era asignada a esa puerta.
+Si no había preferencia, la asignación era contrabalanceada.
+
+Se pasó al procedimiento de elección subóptima.
+Durante las primeras 10 sesiones solo se presentaron ensayos forzados, divididos en ocho bloques de ocho ensayos.
+De los cuatro ensayos discriminativos, dos eran positivos y dos negativos.
+De los cuatro ensayos no discriminativos, dos eran ND1 y dos ND2.
+Cada ensayo comenzó cuando los sujetos cruzaron la puerta A, momento en el que se abría la puerta B o C.
+Tras cruzar la nueva puerta se abría ahora D, E, F o G con probabilidad .5.
+D era la puerta discriminativa reforzada; E, no reforzada, y F y G eran no discriminativas con probabilidad de reforzamiento de .75.
+5 segundos después de entregar comida, u 8 segundos después de llegar a la caja meta cuando no había reforzamiento, se abría la puerta final.
+
+En las sesiones 11, 12 y 13 se agregaron dos ensayos de elección a cada bloque para un total de 16 ensayos de elección por sesión.
+
+Después se procedió a una reversión de las alternativas discriminativa y no discriminativa para evaluar un sesgo de posición.
+En las sesiones 14 a 23 solo hubo ensayos forzados, mientras que en 24, 25 y 26 hubo ensayos de elección.
+
+{\noindent\scshape\bfseries Data analysis}
+
+Como índice de preferencia en ensayos forzados se analizaron las latencias para cruzar las puertas discriminativa y no discriminativa en ensayos forzados.
+Se calculo la mediana de cada sujeto y se realizó un {\scshape Anova} con los datos de las últimas cinco sesiones.
+
+En ensayos libres se analizó la proporción de elección por la alternativa discriminativa.
+Las medias de las tres sesiones de prueba de cada fase se analizaron con pruebas t de una muestra contra 0.5.
+
+Como índice de discriminación se analizó la latencia para cruzar cada puerta de resultado (positivo, negativo, ND1 y ND2), y el tiempo de viaje para cada tipo de resultado.
+Se calculo la mediana de cada resultado y se analizaron las últimas 5 sesiones con {\scshape Anova}.
+
+\subsection{Results}
+
+Se observó una latencia menor para entrar a la alternativa no discriminativa en los ensayos forzados.
+En los ensayos de elección se encontró preferencia por la alternativa no discriminativa, con proporción de elección media de 0.033.
+
+Un {\scshape Anova} mostró que el tipo de resultado tuvo un efecto significativo en la latencia para entrar en cada puerta, lo que indica discriminación.
+Hubo una diferencia significativa entre resultados positivo y negativo, pero no entre ND1 y ND2.
+
+Para los tiempos de viaje, se observó que el tiempo fue mayor para el resultado negativo que para los demás.
+
+\subsection{Discussion}
+
+Evalúa la generalidad de subcho en un contexto más ecológicamente válido en el que las alternativas se definen exclusivamente por su localización espacial, y se requiere esfuerzo alto para llegar a cada resultado.
+
+Las ratas prefieren la alternativa discriminativa, y discriminan bien los túneles.
+
+Hubo una rápida adquisición de la preferencia subóptima, especialmente durante la reversión.
+Además, la preferencia fue más marcada que en cualquier otro estudio.
+
+Se pueden hacer otras manipulaciones, como alterar las probabilidades de reforzamiento o la longitud de TL (mediante la longitud de los túneles).
+
+En el segundo experimento se evaluaron probabilidades de .2 y .5, y se utilizaron túneles más largos.
+También se implementó una economía cerrada, y en otra condición se permitió a los animales escapar del resultado.
+
+\section{Experiment 2}
+
+\subsection{Method}
+
+Seis ratas Wistar en cajas individuales al 85\% de su peso libre.
+El peso se mantuvo artificialmente durante el pre entrenamiento; después, se mantuvo mediante el acceso a la comida durante la sesión entre 80 y 92\%.
+
+En el laberinto se integraron dos puertas de escape en el espacio de resultados, y se extendieron los túneles de 0.5 a 1.5 metros.
+Había agua disponible libremente durante la sesión.
+
+El preentrenamiento fue igual al anterior.
+
+El entrenamiento difirió en que había ensayos de elección desde el inicio del entrenamiento y durante todo el experimento, se entregaban dos pellets como reforzador, y los ensayos se presentaron en bloques de 12, de los cuales cinco eran discriminativos, cinco no discriminativos, y dos de elección.
+En los ensayos discriminativos uno presentaba el túnel positivo y cuatro el negativo; en los no discriminativos sucedía igual, pero cualquier túnel tenía probabilidad de reforzamiento de .5.
+La condición terminaba cuando los sujetos concluían 20 bloques de 60 ensayos.
+Después se implementó una reversión.
+Finalmente, después de la reversión se implementó el escape, en el cual se presentaba una puerta disponible en el espacio de resultados y que llevaba de vuelta al espacio de elección.
+
+{\noindent\scshape\bfseries Data analysis}
+
+La preferencia se evaluó de la misma manera que en el experimento anterior.
+La discriminación se analizó igual también al inicio, pero al introducir el escape se comenzó a evaluar como la proporción de ensayos escapados para cada resultado.
+
+La latencia para entrar a la puerta no discriminativa fue menor que para la puerta discriminativa.
+La proporción de elección mostró la misma tendencia.
+
+A partir del quinto bloque de sesiones la latencia para el resultado negativo fue mayor que para los demás.
+Lo mismo sucedió con el tiempo de cruce.
+
+Sobre el escape, se observó una alta proporción de escapes durante el resultado negativo, y ningún escape en los otros resultados.
+
+\subsection{Discussion}
+
+Se replicaron los resultados del experimento 1 con probabilidades y longitudes diferentes, además de la economía cerrada.
+También se replicó un alto nivel de discriminación.
+
+Como evidencia adicional de discriminación está la proporción de escapes.
+
+Finalmente, la economía cerrada no generó diferencias con respecto al experimento 1.
+Las latencias para entrar a las alternativas fueron en general mayores para la economía cerrada, pero la diferencia entre alternativas se mantuvo.
+
+\section{General discussion}
+
+Se replica elección subóptima con alternativas diferenciadas por su ubicación espacial, con respuestas de locomoción para elegir, y con locomoción necesaria para acceder a la consecuencia final.
+Aunque los índices de discriminación fueron distintos de los experimentos usuales, se encontró buena discriminación.
+
+En economía cerrada no se encontraron diferencias relevantes aunque se ha observado que el tipo de economía tiene un efecto en la determinación del valor de un reforzador y en la relación entre un programa de reforzamiento y la tasa de respuestas que mantiene.
+Aquí la economía cerrada tenía el único propósito de simular más cercanamente al forrajeo natural.
+
+El procedimiento se parece a procedimientos que han buscado simular al forrajeo natural en modelos de dieta óptima.
+El procedimiento prototípico de encuentros sucesivos tiene como características principales la simulación de diferentes fases de un episodio de forrajeo (búsqueda, elección, manejo y consumo).
+Después de cumplir el programa que representa a la fase de búsqueda, la fase de elección se presenta cuando una de dos ``presas'' se encuentra.
+Aquí, los organismos pueden aceptar o rechazar.
+Así, los organismos nunca eligen entre dos resultados, sino que eligen aceptar o rechazar cada uno.
+
+En este procedimiento la elección y el manejo están separados, los sujetos encuentran los resultados secuencialmente y no simultáneamente (en la mayoría de las sesiones del experimento 1), y los sujetos podían rechazar el resultado que se presentaba.
+Esto, unido a la discusión de Timberlake de cómo el desempeño de ratas en laberintos se beneficia de la similitud entre los laberintos y sus entornos naturales, fortalece la analogía con el forrajeo natural.
+
+En subcho el escape es un aspecto novedoso y relevante del procedimiento.
+Modela la situación de forrajeo natural en la que, se propone, se basa la preferencia de las aves por la alternativa discriminativa.
+Solo un estudio ha implementado escape en ratas y no fue exitoso dado que no escapaban consistentemente.
+
+En este estudio los animales no fueron entrenados a escapar.
+Es posible que la disposición de las ratas a escapar se relaciones con el uso de una topografía relevante (alejarse del resultado negativo) como respuesta de escape.
+Además, la rapidez de adquisición y especificidad de la emisión de la respuesta indica que el resultado negativo puede ser aversivo, lo que podría incrementar la preferencia por la alternativa sin componente aversivo (no discriminativa).
+Aunque esa interpretación sugeriría que al implementar el escape la preferencia por la alternativa discriminativa debería incrementar y no sucedió.
+Quizá esto se deba a que el ahorro de tiempo y esfuerzo al escapar no fue suficiente para revertir la preferencia.
+
+Se ha reportado que en estado estable el estímulo negativo no tiene propiedades de inhibición condicionada, lo que se ha tomado como base para su preferencia subóptima.
+Sin embargo, investigación posterior reportó que la preferencia subóptima se encontró aunque había inhibición condicionada y que la fuerza de la inhibición correlacionaba con la preferencia subóptima.
+Esto sugiere que las propiedades de inhibición condicionada por sí mismas no explican el desarrollo de preferencia subóptima, y sugiere la necesidad de analizar otras variables.
+Una posibilidad es una diferencia en la aversión al estímulo negativo entre ratas y palomas.
+Esa diferencia explicaría, además de la preferencia, la distinta proporción de escapes entre este estudio y el de Fortes con palomas.
+
+Alargar los túneles pretendía incidir en el reporte de Cunningham y Shahan sobre cómo alargar los TL lleva a elección subóptima.
+No se encontró un efecto, aunque es posible que la longitud simplemente no fuese suficiente.
+
+En resumen se replicó elección subóptima en laberintos.
+
+
+\end{document}
