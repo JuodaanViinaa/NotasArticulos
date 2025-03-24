@@ -1,0 +1,137 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\spanishdecimal{.}
+\usepackage{csquotes}
+\usepackage{anysize}
+\usepackage{graphicx}
+\marginsize{25mm}{25mm}{25mm}{25mm}
+
+\title{Temporal context effects on suboptimal choice}
+\author{Margaret A. McDevitt \and Jeffrey M. Pisklak \and Roger M. Dunn \and Marcia L. Spetch}
+\date{2024}
+
+\begin{document}
+{\scshape\bfseries \maketitle}
+
+Se prefiere la información; se prefiere la mayor probabilidad de reforzamiento.
+Si ambas variables se cruzan, algunos animales prefieren la información aunque lleve a considerablemente menos comida.
+Se ha llamado elección subóptima, paradójica, o ``curiosidad costosa''.
+
+La tendencia a elegir alternativas que proporcionan señales de recompensa (búsqueda de información no instrumental) ha ganado gran interés reciente en neurociencia, ciencia cognitiva, y aprendizaje por refuerzo.
+
+El modelo SiGN (Signal for Good News), una extensión de la hipótesis de reducción de la demora, propone que los estímulos que señalan reducción en el tiempo de espera a la recompensa se hacen reforzadores condicionados.
+La hipótesis describe la elección entre diferentes demoras a comida, pero no estaba hecha para dar cuenta de procedimientos probabilísticos.
+Dunn y Spetch postulan que si los resultados son demorados e inciertos, entonces las señales son aun más reforzantes.
+El modelo da cuenta de los resultados de 33 publicaciones y no tiene parámetros libres, por lo que puede generar predicciones cuantitativas basadas en variables procedimentales.
+En este trabajo se hace la primera prueba con predicciones {\itshape a priori}.
+
+En el modelo las demoras mayores generan mayor preferencia por la alternativa subóptima en palomas.
+Además, la preferencia por información incrementa en función de la demora en otras especies.
+
+Hay evidencia limitada de que la duración del eslabón inicial (fase de elección) influye en la elección, pero los resultados son poco concluyentes.
+El modelo predice que manipular la duración de la fase de elección debería producir una reversión completa de la preferencia de las palomas.
+
+Probar los efectos del contexto temporal en la elección subóptima daría una conexión con otros ejemplos de relaciones entre la conducta y factores temporales.
+
+Aunque hay evidencia de la importancia del tiempo, pocos modelos de elección subóptima integran parámetros temporales, y solo SiGN hace predicciones a priori de su efecto.
+La hipótesis del contraste se enfoca en las diferencias en la probabilidad, que no da un efecto obvio de factores temporales.
+La hipótesis $\Delta\Sigma$ también se basa en probabilidades sin provisión de parámetros temporales.
+Cunningham y Shahan atribuyen la ausencia de factores temporales a la limitada e inconsistente evidencia de los efectos del eslabón inicial.
+
+Estos experimentos manipulan el eslabón inicial y ponen a prueba la predicción de SiGN de que incrementar la duración de la fase de elección reduce la preferencia por la alternativa subóptima.
+
+\section{Experiment 1}
+
+El eslabón inicial era FR1 en una condición, y VI30s en otra.
+El modelo SiGN predice preferencia exclusiva por la alternativa subóptima en FR1 y preferencia fuerte por la óptima en VI30s.
+
+\subsection{Method}
+
+Diez palomas con experiencia en cadenas concurrentes y procedimientos de discriminación.
+
+Dos cajas operantes con tres teclas de respuesta y un dispensador de comida.
+No se utilizó la tecla central.
+
+\subsubsection{Procedure}
+
+Preentrenamiento de dos a tres sesiones con FR1 a FR20.
+
+Al presionar la alternativa subóptima cambiaba de color y permanecía iluminada por 20 s.
+Tenía .2 de probabilidad de reforzamiento.
+
+Al presiona la óptima también cambiaba de color, y las probabilidades de cada color eran .5 (no de .2 y .8).
+La probabilidad de reforzamiento era de .5.
+
+La localización de alternativas fue contrabalanceada.
+Había un ITI de 5 segundos.
+En cada sesión había ensayos forzados y de elección en bloques de tres, pero el orden era aleatorio.
+Las sesiones eran de 30 ensayos o 40 minutos.
+
+Para un grupo el eslabón inicial era FR1; para el otro, VI30s.
+Para el segundo grupo se usó un solo cronómetro de 30 s.
+Usar uno solo, en lugar de los comunes cronómetros concurrentes, elimina el incentivo de cambiar entre alternativas.
+
+Después de 16 sesiones se cambió el estímulo del eslabón inicial de líneas a cuadrados, los programas de eslabón inicial se intercambiaron entre grupos, y se continuó por 30 sesiones más.
+
+Se analizaron los efectos intra y entre sujetos con ajuste lineal multinivel con estimación de máxima verosimilitud.
+
+\subsection{Results}
+
+Se calculó la proporción de elección usando las últimas tres sesiones de cada condición.
+Se encontró fuerte preferencia por la alternativa subóptima en FR1, y preferencia por la óptima con VI30s.
+Hubo un efecto significativo del programa, pero no del orden ni la interacción.
+
+Las respuestas durante el eslabón terminal en la alternativa subóptima mostró que las señales eran discriminables.
+
+\section{Experiment 2}
+
+Todas las palomas iniciaron en línea base con una duración de eslabón inicial intermedia, y después se dividieron en grupos de mayor y menor duración.
+Los valores de eslabón inicial y terminal se eligieron para que el modelo SiGN predijera cambios simétricos desde la indiferencia hacia preferencia por la alternativa subóptima en un grupo y la óptima en el otro.
+
+\subsection{Method}
+
+Las mismas palomas del experimento 1 con dos cambios por enfermedad y muerte, y el mismo equipo.
+
+\subsubsection{Prodecure}
+
+El mismo preentrenamiento que en el experimento 1.
+
+El mismo procedimiento general pero con cambios: una X negra como estímulo del eslabón inicial; la probabilidad de los estímulos esta vez fue equiparada a .2 y .8 para ambas alternativas; al inicio el eslabón inicial fue VI4.75s para todas las palomas, y el eslabón terminal fue FT8s.
+Se continuó así por 17 sesiones.
+Después, la X negra fue reemplazada con un cuadrado y el eslabón inicial de un grupo bajó a VI1.7s, y el del otro subió a VI35s.
+
+\subsection{Results}
+
+Cuando el eslabón inicial era VI4.75s la preferencia estaba en la alternativa subóptima con gran variabilidad (esperada porque se eligió esa duración para favorecer indiferencia).
+Quienes pasaron a VI1.7s prefirieron la alternativa subóptima, y quienes pasaron a VI35s prefirieron la óptima.
+Comparaciones entre sujetos mostraron diferencias significativas entre condiciones.
+También se encontró buena discriminación.
+
+\section{General discussion}
+
+Se muestra un claro efecto del contexto temporal en elección subóptima.
+Es improbable que los cambios en preferencia vengan de artefactos en el arreglo de los programas porque el cronómetro único eliminó el reforzamiento accidental del cambio entre alternativas y disminuyó la discrepancia entre los valores programados y obtenidos de VI.
+
+La relación inversa entre duración del eslabón inicial y elección subóptima da apoyo a las predicciones a priori del modelo SiGN.
+Según el modelo, tanto el reforzamiento condicionado relativo como la tasa relativa de reforzamiento primario se desplazan hacia la alternativa óptima con eslabones iniciales más largos.
+Hay una correlación alta entre las preferencias predichas por el modelo y las encontradas.
+
+El modelo SiGN predice la elección considerando el impacto del reforzamiento primario y condicionado, pero el modelo de información temporal también toma en cuenta factores temporales.
+Desde ese modelo hay elección subóptima cuando los estímulos del eslabón terminal de la alternativa subóptima dan más información sobre {\itshape cuándo} se entregará la comida y cuando la demora al estímulo del eslabón terminal es mucho menor que la demora a la comida en el momento de la elección, sesgando así a los animales a basarse en la información temporal y no en la tasa de entrega de comida.
+Ese modelo predice incremento en elección óptima con incrementos en la duración del eslabón inicial al alterar la competencia entre la información temporal y el reforzamiento primario.
+Ajustando el parámetro que modula el sesgo para usar la información para tomar decisiones ($m$) y la sensibilidad al reforzamiento primario ($b$), el modelo se ajusta bien a estos datos.
+Pero ello requiere valores para los parámetros que difieren de los obtenidos por Cunningham y Shahan, lo que resalta una limitación de los modelos con parámetros libres.
+
+Otros modelos no se ocupan de la duración del eslabón inicial.
+
+Otros animales, incluyendo a los humanos, a menudo prefieren la información anticipada al costo de otras recompensas.
+Un mecanismo propuesto es la persecución de errores de predicción, y la neurociencia detrás ha sido foco de investigación reciente.
+Las demoras entre la elección y la recompensa pueden incrementar la preferencia por la información en humanos, lo que señala que los factores temporales son importantes, pero la importancia de la duración de la fase de elección ha sido descontada en la literatura de búsqueda de información.
+
+Aquí se muestra que alterar la duración de la fase de elección tiene un efecto dramático en la preferencia de las palomas.
+Esto sugiere que se necesita mayor exploración del efecto del contexto temporal en la conducta de búsqueda de información.
+
+
+\end{document}
